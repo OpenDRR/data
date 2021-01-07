@@ -48,7 +48,7 @@ layout: single-page
 
         <h2 style="text-transform:uppercase">{{ prov }}</h2>
 
-        <table class="table">
+        <table class="table table-hover">
 
         {% assign eruid = "" %}
         {% for path in paths %}
@@ -61,7 +61,7 @@ layout: single-page
 
                     {% for er in site.data.er.regions %}
                         {% if er.code == eruid %}
-                            <tr><th>{{ er.title }} ({{ eruid }})</th><th>Last Modified</th><th>Format</th><th></th></tr>
+                            <tr><th scope="col" class="col-sm-8">{{ er.title }} ({{ eruid }})</th><th scope="col" class="col-sm-2">Last Modified</th><th scope="col" class="col-sm-1">Format</th><th scope="col" class="col-sm-1"></th></tr>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
@@ -88,7 +88,7 @@ layout: single-page
                             <td>{{folder.modified_time | date: "%a, %b %d, %y" }}</td>
                             <td><span class="label label-default">{{ folder.extname }}</span></td>
                             <td>
-                                <a class="btn btn-primary btn-sm map-link" href="#" data="{{ folder.path }}">Preview</a>
+                                <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a>
                             </td>
                         </tr>
                     {% endif %}
