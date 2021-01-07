@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+   <title>Downloads</title>
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+   <meta name="description" content="Downloads" />
+      <link href="https://wet-boew.github.io/themes-dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/css/theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.css" /></noscript>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "Downloads",
+            "url": "/en/single-page/",
+            "author": {
+               "@type": "GovernmentOrganization",
+               "name": "",
+               "url": "",
+               "parentOrganization": {
+                  "@type": "GovernmentOrganization",
+                  "name": "Government of Canada",
+                  "url": "http://www.canada.ca/"
+               }
+            },
+            "description": "Downloads"
+        }
+    </script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"
+      integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@ngageoint/leaflet-geopackage@3.0.3/dist/leaflet-geopackage.min.js"></script>
+    <script src="/assets/js/indicators.js"></script>
+    <script>
+      $( document ).ready(function() {
+        var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+        });
+        var map = L.map( 'map', { layers: [tiles] } ),
+          filter = null,
+          indicator = null,
+          gpkg;
+        map.setView( [49.25, -123], 10 );
+        // map.on( 'layeradd', function(evt){
+        //   console.log(evt);
+        // })
+        $( '.map-link' ).on('click', function( evt ) {
+          evt.preventDefault();
+          if ( gpkg ) { 
+            map.removeLayer( gpkg );
+          }
+          var geoPackageUrl = $(this).attr('data');
+          gpkg = L.geoPackageFeatureLayer( [], {
+            geoPackageUrl: geoPackageUrl,
+            layerName: 'sql_statement',
+            filter: function ( feature, layer ) {
+              if ( !filter ) {
+                return true;
+              }
+              if ( feature.properties[ filter.property ] == filter.value ) { return  'true' }
+            },
+            style: style,
+            onEachFeature: onEachFeature
+          } );
+          // gpkg.on( 'add', function( evt ) { 
+          //   console.log( gpkg.getEvents() );
+          // }); 
+          gpkg.addTo( map );
+        });
+        function getColor( d, indicator ) {
+          if ( indicator ) {
+            var color = indicators[ indicator ].style[ d ].color;
+            return color ? color : "#999";
+        } else {
+            return d > 1000 ? '#800026' :
+              d > 500  ? '#BD0026' :
+              d > 200  ? '#E31A1C' :
+              d > 100  ? '#FC4E2A' :
+              d > 50   ? '#FD8D3C' :
+              d > 20   ? '#FEB24C' :
+              d > 10   ? '#FED976' :
+                        '#FFEDA0';
+          }
+        }
+        function style( feature ) {
+          if ( indicator ) {
+            return {
+                fillColor: getColor( feature.properties[ indicator ], indicator ),
+                weight: 1,
+                opacity: 1,
+                color: 'white',
+                dashArray: '0',
+                fillOpacity: 0.7
+            };
+          } else {
+            return {
+                fillColor: getColor( feature.properties[4] ),
+                weight: 1,
+                opacity: 1,
+                color: 'white',
+                dashArray: '0',
+                fillOpacity: 0.7
+            };
+          }
+        }
+        function highlightFeature(e) {
+          var layer = e.target;
+          layer.setStyle({
+              fillColor: 'red',
+              fillOpacity: 0.7
+          });
+          if ( !L.Browser.ie && !L.Browser.opera && !L.Browser.edge ) {
+              layer.bringToFront();
+          }
+        }
+        function resetHighlight(e) {
+          gpkg.resetStyle(e.target);
+        }
+        function zoomToFeature(e) {
+          map.fitBounds( e.target.getBounds() );
+        }
+        function onEachFeature( feature, layer ) {
+          var ignore = [
+            'fid',
+            'Sauid',
+            'pruid',
+            'prname',
+            'eruid',
+            'ername',
+            'cduid',
+            'cdname',
+            'csduid',
+            'csdname',
+            'SauidLon',
+            'SauidLat'
+          ];
+          let string = '';
+          for ( const key in feature.properties ) {
+            if ( ignore.includes( key ) ) { 
+              continue;
+            }
+            string +=
+              '<div class="item"><span class="label">' +
+              key +
+              ': </span><span class="value">' +
+              feature.properties[key] +
+              '</span></div>';
+          }
+          layer.bindPopup( string );
+          layer.on({
+              mouseover: highlightFeature,
+              mouseout: resetHighlight,
+              // click: zoomToFeature
+          });
+        }
+        var legend = L.control( { position: 'bottomright' } );
+        legend.onAdd = function ( map ) {
+          var div = L.DomUtil.create('div', 'info legend');
+          div.innerHTML += '<p><center><strong>' + indicators[ indicator ].title['en'] + '</strong></center></p>';
+          // loop throught the indicator specification in indicators.js
+          var indicatorStyle = indicators[ indicator ].style;
+          for (var key in indicatorStyle) {
+            if (indicatorStyle.hasOwnProperty(key)) {
+              div.innerHTML +=
+                '<i style="background:' + indicatorStyle[key].color + '"></i> ' + indicatorStyle[key].label + '<br>';
+              // console.log(key + " -> " + indicatorStyle[key]);
+            }
+          }
+          // var div = L.DomUtil.create('div', 'info legend'),
+          //     grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+          //     labels = [];
+          // // loop through our density intervals and generate a label with a colored square for each interval
+          // for (var i = 0; i < grades.length; i++) {
+          //     div.innerHTML +=
+          //         '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+          //         grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+          // }
+          return div;
+        };
+        // legend.addTo( map );
+      });
+    </script>
+ </head>
+ <body class="page" vocab="http://schema.org/" typeof="WebPage">
+   <nav>
+		<ul id="wb-tphp">
+			<li class="wb-slc">
+				<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+			</li>
+			<li class="wb-slc visible-sm visible-md visible-lg">
+				<a class="wb-sl" href="#wb-info">Skip to About this site</a>
+			</li>
+		</ul>
+	</nav>
+	<header>
+		<div id="wb-bnr" class="container">
+			<section id="wb-lng" class="text-right">
+				<h2 class="wb-inv">Language selection</h2>
+				<ul class="list-inline margin-bottom-none">
+					<li><a lang="fr" hreflang="fr" href="/fr/Downloads.html">Français</a></li>
+				</ul>
+			</section>
+			<div class="row">
+				<div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+					<a href="https://www.canada.ca/en.html" property="url">
+						<img src="https://wet-boew.github.io/themes-dist/GCWeb/assets/sig-blk-en.svg" alt="page.i18n.tmpl-gc-wmms[page.lang]" property="logo" />
+						<span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+					</a>
+					<meta property="areaServed" typeOf="Country" content="Canada" />
+					<link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/assets/wmms-blk.svg" />
+				</div>
+				<section id="wb-srch" class="col-lg-8 text-right">
+					<h2>Search</h2>
+					<form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+						<div class="form-group">
+							<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+							<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca" />
+							<datalist id="wb-srch-q-ac">
+							</datalist>
+						</div>
+						<div class="form-group submit">
+							<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</header>
+    <!-- Static header ends -->
+   <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+     <section>
+       <div id="map" class="leafmap" style="width: 100%;height:500px;"></div>
+     </section>
+     <h2>Downloads</h2>
+<section>
+    <a href="#bc" style="text-transform:uppercase">bc</a> 
+       <div class="bc">
+        <a name="bc"></a>
+       <h2 style="text-transform:uppercase">bc</h2>
+       <table class="table">
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5910/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5910.gpkg" style="text-transform:capitalize">multi hazard threat</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5910/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5910.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5910/physical_exposure/nhsl_physical_exposure_all_indicators_s_5910.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5910/physical_exposure/nhsl_physical_exposure_all_indicators_s_5910.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5910/risk_dynamics/nhsl_risk_dynamics_all_indicators_5910.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5910/risk_dynamics/nhsl_risk_dynamics_all_indicators_5910.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5910/social_fabric/nhsl_social_fabric_all_indicators_s_5910.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5910/social_fabric/nhsl_social_fabric_all_indicators_s_5910.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5920/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5920.gpkg" style="text-transform:capitalize">multi hazard threat</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5920/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5920.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5920/physical_exposure/nhsl_physical_exposure_all_indicators_s_5920.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5920/physical_exposure/nhsl_physical_exposure_all_indicators_s_5920.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5920/risk_dynamics/nhsl_risk_dynamics_all_indicators_5920.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5920/risk_dynamics/nhsl_risk_dynamics_all_indicators_5920.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5920/social_fabric/nhsl_social_fabric_all_indicators_s_5920.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5920/social_fabric/nhsl_social_fabric_all_indicators_s_5920.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5930/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5930.gpkg" style="text-transform:capitalize">multi hazard threat</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5930/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5930.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5930/physical_exposure/nhsl_physical_exposure_all_indicators_s_5930.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5930/physical_exposure/nhsl_physical_exposure_all_indicators_s_5930.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5930/risk_dynamics/nhsl_risk_dynamics_all_indicators_5930.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5930/risk_dynamics/nhsl_risk_dynamics_all_indicators_5930.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5930/social_fabric/nhsl_social_fabric_all_indicators_s_5930.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5930/social_fabric/nhsl_social_fabric_all_indicators_s_5930.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5940/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5940.gpkg" style="text-transform:capitalize">multi hazard threat</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5940/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5940.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5940/physical_exposure/nhsl_physical_exposure_all_indicators_s_5940.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5940/physical_exposure/nhsl_physical_exposure_all_indicators_s_5940.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5940/risk_dynamics/nhsl_risk_dynamics_all_indicators_5940.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5940/risk_dynamics/nhsl_risk_dynamics_all_indicators_5940.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5940/social_fabric/nhsl_social_fabric_all_indicators_s_5940.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5940/social_fabric/nhsl_social_fabric_all_indicators_s_5940.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5950/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5950.gpkg" style="text-transform:capitalize">multi hazard threat</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5950/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5950.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5950/physical_exposure/nhsl_physical_exposure_all_indicators_s_5950.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5950/physical_exposure/nhsl_physical_exposure_all_indicators_s_5950.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5950/risk_dynamics/nhsl_risk_dynamics_all_indicators_5950.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5950/risk_dynamics/nhsl_risk_dynamics_all_indicators_5950.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5950/social_fabric/nhsl_social_fabric_all_indicators_s_5950.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5950/social_fabric/nhsl_social_fabric_all_indicators_s_5950.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5960/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5960.gpkg" style="text-transform:capitalize">multi hazard threat</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5960/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5960.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5960/physical_exposure/nhsl_physical_exposure_all_indicators_s_5960.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5960/physical_exposure/nhsl_physical_exposure_all_indicators_s_5960.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5960/risk_dynamics/nhsl_risk_dynamics_all_indicators_5960.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5960/risk_dynamics/nhsl_risk_dynamics_all_indicators_5960.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5960/social_fabric/nhsl_social_fabric_all_indicators_s_5960.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5960/social_fabric/nhsl_social_fabric_all_indicators_s_5960.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5970/nhsl_hazard_threat_all_indicators_s_5970.gpkg" style="text-transform:capitalize">nhsl hazard threat all indicators s 5970.gpkg</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Thu, Jan 07, 21</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5970/nhsl_hazard_threat_all_indicators_s_5970.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5970/physical_exposure/nhsl_physical_exposure_all_indicators_s_5970.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5970/physical_exposure/nhsl_physical_exposure_all_indicators_s_5970.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5970/risk_dynamics/nhsl_risk_dynamics_all_indicators_5970.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5970/risk_dynamics/nhsl_risk_dynamics_all_indicators_5970.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5970/social_fabric/nhsl_social_fabric_all_indicators_s_5970.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5970/social_fabric/nhsl_social_fabric_all_indicators_s_5970.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5980/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5980.gpkg" style="text-transform:capitalize">multi hazard threat</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5980/multi_hazard_threat/nhsl_hazard_threat_all_indicators_s_5980.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5980/physical_exposure/nhsl_physical_exposure_all_indicators_s_5980.gpkg" style="text-transform:capitalize">physical exposure</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5980/physical_exposure/nhsl_physical_exposure_all_indicators_s_5980.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5980/risk_dynamics/nhsl_risk_dynamics_all_indicators_5980.gpkg" style="text-transform:capitalize">risk dynamics</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5980/risk_dynamics/nhsl_risk_dynamics_all_indicators_5980.gpkg">Preview</a>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                                <img width="36" src="/assets/img/polygon.svg" style="margin-right:10px;" />
+                                <a href="/assets/data/bc/5980/social_fabric/nhsl_social_fabric_all_indicators_s_5980.gpkg" style="text-transform:capitalize">social fabric</a> <span>( Census Subdivision)</span>
+                           </td>
+                           <td>Sat, Dec 12, 20</td>
+                           <td><span class="label label-default">.gpkg</span></td>
+                           <td>
+                                <a class="btn btn-primary btn-sm map-link" href="#" data="/assets/data/bc/5980/social_fabric/nhsl_social_fabric_all_indicators_s_5980.gpkg">Preview</a>
+                           </td>
+                       </tr>
+       </table>
+   </div>
+</section>
+    </main>
+    <!-- Static footer starts -->
+   <footer id="wb-info">
+	<div class="landscape">
+		<nav class="container wb-navcurr">
+			<h2 class="wb-inv"></h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+</ul>
+		</nav>
+	</div>
+	<div class="brand">
+	<div class="container">
+		<div class="row ">
+			<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+				<h2 class="wb-inv">About this site</h2>
+				<ul>
+					<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+					<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+					<li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+				</ul>
+			</nav>
+			<div class="col-xs-6 visible-sm visible-xs tofpg">
+				<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+			</div>
+			<div class="col-xs-6 col-md-3 col-lg-2 text-right">
+				<img src="https://wet-boew.github.io/themes-dist/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--  -->
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/js/theme.min.js"></script>
+ </body>
+</html>
