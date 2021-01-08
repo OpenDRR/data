@@ -63,16 +63,23 @@ layout: compress
             },
             style: style,
             onEachFeature: onEachFeature
-          } );
+          });
 
-          // gpkg.on( 'add', function( evt ) { 
-          //   console.log( gpkg.getEvents() );
-          // }); 
+          gpkg.on( 'add', function( evt ) { 
+            zoomToExtent();
+          }); 
 
           gpkg.addTo( map );
-          
             
         });
+
+        function zoomToExtent( layer ) {
+          if ( !gpkg.geoPackageLoaded ) {
+            setTimeout( zoomToExtent, 100 );
+          } else {
+            map.fitBounds( gpkg.getBounds() );
+          }
+        }
 
         function getColor( d, indicator ) {
 

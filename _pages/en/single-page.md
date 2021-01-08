@@ -69,10 +69,10 @@ layout: single-page
                 {% for folder in site.static_files %}
 
                     {% if folder.path contains "_b_" %}
-                        {% assign geom = " Buildings" %}
+                        {% assign geom = "Buildings" %}
                         {% assign icon = "multipoint.svg" %}
                     {% else %}
-                        {% assign geom = " Census Subdivision" %}
+                        {% assign geom = "Census Subdivision" %}
                         {% assign icon = "polygon.svg" %}
                     {% endif %}
 
