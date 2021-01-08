@@ -36,11 +36,9 @@ layout: compress
           indicator = null,
           gpkg;
 
-        map.setView( [49.25, -123], 10 );
+        var pane = map.createPane( 'fixed', document.getElementById( 'map' ) );
 
-        // map.on( 'layeradd', function(evt){
-        //   console.log(evt);
-        // })
+        map.setView( [65, -106], 3 );
 
         $( '.map-link' ).on('click', function( evt ) {
 
@@ -50,7 +48,7 @@ layout: compress
             map.removeLayer( gpkg );
           }
 
-          var geoPackageUrl = $(this).attr('data');
+          var geoPackageUrl = $( this ).attr( 'data' );
           
           gpkg = L.geoPackageFeatureLayer( [], {
             geoPackageUrl: geoPackageUrl,
