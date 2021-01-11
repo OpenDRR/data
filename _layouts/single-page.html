@@ -74,7 +74,36 @@ layout: compress
 
           gpkg.on( 'click', function ( e ) {
             var source = e.sourceTarget;
-            console.log(source.getProps());
+            var props = source.getProps();
+
+            var ignore = [
+            'fid',
+            'Sauid',
+            'pruid',
+            'prname',
+            'eruid',
+            'ername',
+            'cduid',
+            'cdname',
+            'csduid',
+            'csdname',
+            'SauidLon',
+            'SauidLat'
+          ];
+
+          let string = '';
+          for ( const key in props ) {
+            if ( ignore.includes( key ) ) { 
+              continue;
+            }
+            string +=
+              '<div class="item"><span class="label">' +
+              key +
+              ': </span><span class="value">' +
+              props[key] +
+              '</span></div>';
+          }
+            $( '#sidebar' ).html( string );
           });
 
           gpkg.on( 'add', function( evt ) { 
@@ -252,6 +281,7 @@ layout: compress
     <main property="mainContentOfPage" class="container" typeof="WebPageElement">
       <section>
         <div id="map" class="leafmap" style="width: 100%;height:500px;"></div>
+        <div id="sidebar"><h3>Query Results here</h3></div>
       </section>
       {{ content }}
      </main>
