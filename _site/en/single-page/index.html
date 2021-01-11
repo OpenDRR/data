@@ -47,12 +47,20 @@
         });
         var map = L.map( 'map', { layers: [tiles] } ),
           filter = null,
-          indicator = null,
+          indicator = null, //"E_LandUse",
           gpkg;
         map.setView( [49.25, -123], 10 );
         // map.on( 'layeradd', function(evt){
         //   console.log(evt);
         // })
+        L.Layer.include({
+          getProps: function () {
+            var feature = this.feature = this.feature || {}; // Initialize the feature, if missing.
+            feature.type = 'Feature';
+            feature.properties = feature.properties || {}; // Initialize the properties, if missing.
+            return feature.properties;
+          }
+        });
         $( '.map-link' ).on('click', function( evt ) {
           evt.preventDefault();
           if ( gpkg ) { 
@@ -68,8 +76,12 @@
               }
               if ( feature.properties[ filter.property ] == filter.value ) { return  'true' }
             },
-            style: style,
-            onEachFeature: onEachFeature
+            style: style
+            // onEachFeature: onEachFeature
+          });
+          gpkg.on( 'click', function ( e ) {
+            var source = e.sourceTarget;
+            console.log(source.getProps());
           });
           gpkg.on( 'add', function( evt ) { 
             zoomToExtent();
@@ -162,6 +174,7 @@
               feature.properties[key] +
               '</span></div>';
           }
+          console.log( string );
           layer.bindPopup( string );
           layer.on({
               mouseover: highlightFeature,
@@ -171,29 +184,31 @@
         }
         var legend = L.control( { position: 'bottomright' } );
         legend.onAdd = function ( map ) {
-          var div = L.DomUtil.create('div', 'info legend');
-          div.innerHTML += '<p><center><strong>' + indicators[ indicator ].title['en'] + '</strong></center></p>';
-          // loop throught the indicator specification in indicators.js
-          var indicatorStyle = indicators[ indicator ].style;
-          for (var key in indicatorStyle) {
-            if (indicatorStyle.hasOwnProperty(key)) {
-              div.innerHTML +=
-                '<i style="background:' + indicatorStyle[key].color + '"></i> ' + indicatorStyle[key].label + '<br>';
-              // console.log(key + " -> " + indicatorStyle[key]);
+          if ( indicator ) {
+            var div = L.DomUtil.create('div', 'info legend');
+            div.innerHTML += '<p><center><strong>' + indicators[ indicator ].title['en'] + '</strong></center></p>';
+            // loop throught the indicator specification in indicators.js
+            var indicatorStyle = indicators[ indicator ].style;
+            for (var key in indicatorStyle) {
+              if (indicatorStyle.hasOwnProperty(key)) {
+                div.innerHTML +=
+                  '<i style="background:' + indicatorStyle[key].color + '"></i> ' + indicatorStyle[key].label + '<br>';
+                // console.log(key + " -> " + indicatorStyle[key]);
+              }
             }
+            // var div = L.DomUtil.create('div', 'info legend'),
+            //     grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+            //     labels = [];
+            // // loop through our density intervals and generate a label with a colored square for each interval
+            // for (var i = 0; i < grades.length; i++) {
+            //     div.innerHTML +=
+            //         '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            //         grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+            // }
+            return div;
           }
-          // var div = L.DomUtil.create('div', 'info legend'),
-          //     grades = [0, 10, 20, 50, 100, 200, 500, 1000],
-          //     labels = [];
-          // // loop through our density intervals and generate a label with a colored square for each interval
-          // for (var i = 0; i < grades.length; i++) {
-          //     div.innerHTML +=
-          //         '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-          //         grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-          // }
-          return div;
         };
-        // legend.addTo( map );
+        legend.addTo( map );
       });
     </script>
  </head>
