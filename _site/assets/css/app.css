@@ -38,6 +38,25 @@
     margin-right: 8px;
     opacity: 0.7;
   }
+
+  .popup-fixed {
+    position: fixed;
+    top: auto;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    margin: 0;
+    border-radius: 0;
+    
+    /* .leaflet-popup-tip-container {
+      display: none;
+    }
+    
+    .leaflet-popup-content-wrapper {
+      border-radius: 0;
+    } */
+  }
   /* d3 styling */
   /* svg {
     position: relative;

@@ -49,10 +49,8 @@
           filter = null,
           indicator = null, //"E_LandUse",
           gpkg;
-        map.setView( [49.25, -123], 10 );
-        // map.on( 'layeradd', function(evt){
-        //   console.log(evt);
-        // })
+        var pane = map.createPane( 'fixed', document.getElementById( 'map' ) );
+        map.setView( [65, -106], 3 );
         L.Layer.include({
           getProps: function () {
             var feature = this.feature = this.feature || {}; // Initialize the feature, if missing.
@@ -66,7 +64,7 @@
           if ( gpkg ) { 
             map.removeLayer( gpkg );
           }
-          var geoPackageUrl = $(this).attr('data');
+          var geoPackageUrl = $( this ).attr( 'data' );
           gpkg = L.geoPackageFeatureLayer( [], {
             geoPackageUrl: geoPackageUrl,
             layerName: 'sql_statement',
