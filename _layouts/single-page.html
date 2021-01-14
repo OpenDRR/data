@@ -15,14 +15,14 @@ layout: compress
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin="" />
     <link rel="stylesheet" href="/assets/css/app.css" />
-    
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""></script>
     <script src="https://code.jquery.com/jquery-1.12.2.min.js"
       integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@ngageoint/leaflet-geopackage@3.0.3/dist/leaflet-geopackage.min.js"></script>
-    <script src="/assets/js/indicators.js"></script>
+    <script src="/assets/js/classybrew.min.js"></script>
     
     <script>
       $( document ).ready(function() {
@@ -33,10 +33,10 @@ layout: compress
 
         var map = L.map( 'map', { layers: [tiles] } ),
           filter = null,
-          indicator = null, //"E_LandUse",
+          indicator = "Mht_CensusPop",
           gpkg;
 
-        var pane = map.createPane( 'fixed', document.getElementById( 'map' ) );
+        var legend = L.control( { position: 'bottomright' } );
 
         map.setView( [65, -106], 3 );
 
@@ -49,9 +49,9 @@ layout: compress
           }
         });
 
-        $( '.map-link' ).on('click', function( evt ) {
+        $( '.map-link' ).on( 'click', function( evt ) {
 
-          evt.preventDefault();
+          // evt.preventDefault();
 
           if ( gpkg ) { 
             map.removeLayer( gpkg );
@@ -68,8 +68,8 @@ layout: compress
               }
               if ( feature.properties[ filter.property ] == filter.value ) { return  'true' }
             },
-            style: style
-            // onEachFeature: onEachFeature
+            style: brewStyle,
+            onEachFeature: onEachFeature
           });
 
           gpkg.on( 'click', function ( e ) {
@@ -77,41 +77,42 @@ layout: compress
             var props = source.getProps();
 
             var ignore = [
-            'fid',
-            'Sauid',
-            'pruid',
-            'prname',
-            'eruid',
-            'ername',
-            'cduid',
-            'cdname',
-            'csduid',
-            'csdname',
-            'SauidLon',
-            'SauidLat'
-          ];
+              'fid',
+              'Sauid',
+              'pruid',
+              'prname',
+              'eruid',
+              'ername',
+              'cduid',
+              'cdname',
+              'csduid',
+              'csdname',
+              'SauidLon',
+              'SauidLat'
+            ];
 
-          let string = '';
-          for ( const key in props ) {
-            if ( ignore.includes( key ) ) { 
-              continue;
+            let string = '';
+            for ( const key in props ) {
+              if ( ignore.includes( key ) ) { 
+                continue;
+              }
+
+              var cls = key.split("_")[0].toLowerCase();
+
+              string +=
+                '<div class="item col-md-3 small"><span class="prop ' + cls + '">' + key + '</span><span class="val pull-right">' + props[key] + '</span></div>';
             }
-            string +=
-              '<div class="item"><span class="label">' +
-              key +
-              ': </span><span class="value">' +
-              props[key] +
-              '</span></div>';
-          }
+          
             $( '#sidebar' ).html( string );
+
           });
 
           gpkg.on( 'add', function( evt ) { 
-            zoomToExtent();
+            postLayerAdd();
           }); 
 
           gpkg.addTo( map );
-            
+
         });
 
         function zoomToExtent( layer ) {
@@ -122,52 +123,85 @@ layout: compress
           }
         }
 
-        function getColor( d, indicator ) {
-
-          if ( indicator ) {
-            var color = indicators[ indicator ].style[ d ].color;
-
-            return color ? color : "#999";
+        // create classybrew object
+        // See: http://tannerjt.github.io/classybrew-www/examples/basic/
+        //      https://github.com/tannerjt/classybrew
+        var brew = new classyBrew(),
+            values = [];
           
-        } else {
+        // function changeIndicator( indctr ) {
+        //   console.log( indctr );
+        // }
 
-            return d > 1000 ? '#800026' :
-              d > 500  ? '#BD0026' :
-              d > 200  ? '#E31A1C' :
-              d > 100  ? '#FC4E2A' :
-              d > 50   ? '#FD8D3C' :
-              d > 20   ? '#FEB24C' :
-              d > 10   ? '#FED976' :
-                        '#FFEDA0';
-
-          }
+        // style function to return
+        // fill color based on brew.getColorInRange() method
+        function brewStyle( feature ) {
+            return {
+                weight: 2,
+                opacity: 1,
+                color: '#333',
+                dashArray: '1',
+                fillOpacity: 0.7,
+                fillColor: brew.getColorInRange( feature.properties[ indicator ] )
+            }
         }
 
-        function style( feature ) {
-
-          if ( indicator ) {
-
-            return {
-                fillColor: getColor( feature.properties[ indicator ], indicator ),
-                weight: 1,
-                opacity: 1,
-                color: 'white',
-                dashArray: '0',
-                fillOpacity: 0.7
-            };
-
+        function postLayerAdd( layer ) {
+          if ( !gpkg.geoPackageLoaded ) {
+            setTimeout( postLayerAdd, 100 );
           } else {
+            map.fitBounds( gpkg.getBounds() );
             
-            return {
-                fillColor: getColor( feature.properties[4] ),
-                weight: 1,
-                opacity: 1,
-                color: 'white',
-                dashArray: '0',
-                fillOpacity: 0.7
-            };
-
+            for ( lyr in gpkg._layers ) {
+              var feature = gpkg._layers[ lyr ].feature;
+              if ( feature.properties[ indicator ] == null ) continue;
+              values.push( feature.properties[ indicator ] );
+            }
           }
+
+          brew.setSeries( values );
+          
+          // define number of classes
+          brew.setNumClasses( 6 );
+            
+          // set color ramp code
+          // e.g. Greens, Blues, Oranges, Purples, Greys, Reds
+          brew.setColorCode( "Purples" );
+            
+          // classify by passing in statistical method
+          // i.e. equal_interval, jenks, quantile
+          brew.classify( "equal_interval" );
+
+          gpkg.setStyle( brewStyle );
+
+          legend.onAdd = function ( map ) {
+
+            var div = L.DomUtil.create('div', 'info legend');
+
+            if ( values.length === 0 ) { 
+              return L.DomUtil.create('div'); 
+            }
+          
+            if ( indicator ) {
+            
+              var breaks = brew.getBreaks(),
+                  colors = brew.getColors();
+                  
+              // div.innerHTML += '<p><center><strong>' + indicators[ indicator ].title['en'] + '</strong></center></p>';
+              div.innerHTML += '<p><center><strong>' + indicator + '</strong></center></p>';
+
+              for ( var i = 0; i < breaks.length; i++ ) {
+                  if ( !breaks[i + 1] ) { continue; }
+                  div.innerHTML +=
+                      '<i style="background:' + colors[i] + '"></i> ' +
+                      breaks[i].toFixed(6) + '&ndash;' + breaks[i + 1].toFixed(6) + '<br>';
+              }
+
+              return div;
+            }
+          };
+
+          legend.addTo( map );
 
         }
 
@@ -193,81 +227,12 @@ layout: compress
         }
 
         function onEachFeature( feature, layer ) {
-
-          var ignore = [
-            'fid',
-            'Sauid',
-            'pruid',
-            'prname',
-            'eruid',
-            'ername',
-            'cduid',
-            'cdname',
-            'csduid',
-            'csdname',
-            'SauidLon',
-            'SauidLat'
-          ];
-
-          let string = '';
-          for ( const key in feature.properties ) {
-            if ( ignore.includes( key ) ) { 
-              continue;
-            }
-            string +=
-              '<div class="item"><span class="label">' +
-              key +
-              ': </span><span class="value">' +
-              feature.properties[key] +
-              '</span></div>';
-          }
-
-          console.log( string );
-          
-          layer.bindPopup( string );
           layer.on({
               mouseover: highlightFeature,
               mouseout: resetHighlight,
-              // click: zoomToFeature
+              click: zoomToFeature
           });
         }
-
-        var legend = L.control( { position: 'bottomright' } );
-
-        legend.onAdd = function ( map ) {
-          
-          if ( indicator ) {
-           
-            var div = L.DomUtil.create('div', 'info legend');
-            div.innerHTML += '<p><center><strong>' + indicators[ indicator ].title['en'] + '</strong></center></p>';
-
-            // loop throught the indicator specification in indicators.js
-            var indicatorStyle = indicators[ indicator ].style;
-
-            for (var key in indicatorStyle) {
-              if (indicatorStyle.hasOwnProperty(key)) {
-                div.innerHTML +=
-                  '<i style="background:' + indicatorStyle[key].color + '"></i> ' + indicatorStyle[key].label + '<br>';
-                // console.log(key + " -> " + indicatorStyle[key]);
-              }
-            }
-
-            // var div = L.DomUtil.create('div', 'info legend'),
-            //     grades = [0, 10, 20, 50, 100, 200, 500, 1000],
-            //     labels = [];
-
-            // // loop through our density intervals and generate a label with a colored square for each interval
-            // for (var i = 0; i < grades.length; i++) {
-            //     div.innerHTML +=
-            //         '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-            //         grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-            // }
-
-            return div;
-          }
-        };
-
-        legend.addTo( map );
 
       });
 
@@ -279,11 +244,14 @@ layout: compress
     {% include header.html %}
     <!-- Static header ends -->
     <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-      <section>
-        <div id="map" class="leafmap" style="width: 100%;height:500px;"></div>
-        <div id="sidebar"><h3>Query Results here</h3></div>
-      </section>
+
+      <div id="map" class="leafmap" style="width: 100%;height:500px;"></div>
+      <div class="row">
+        <div id="sidebar"></div>
+      </div>
+
       {{ content }}
+
      </main>
     <!-- Static footer starts -->
     {% include footer.html %}
