@@ -22,7 +22,7 @@ layout: single-page
 
 Welcome to the OpenDRR data download site. Here you will find the latest versions of all datasets.
 
-These datasets are available for download by Province and Economic Region.
+These datasets are available for download by Province/Territory and by Economic Region.
 
 Currently only GeoPackage (.gpkg) format is provided.
 
@@ -63,7 +63,7 @@ Currently only GeoPackage (.gpkg) format is provided.
         <table class="table">
           <tr>
             <th scope="col" class="col-sm-8"></th>
-            <th scope="col" class="col-sm-2">Date modifiée</th>
+            <th scope="col" class="col-sm-2">Date modified</th>
             <th scope="col" class="col-sm-1">Format</th>
             <th scope="col" class="col-sm-1"></th>
           </tr>
@@ -87,12 +87,14 @@ Currently only GeoPackage (.gpkg) format is provided.
                   <tr>
                       <td>
                           <img width="36" src="/assets/img/{{ icon }}" style="margin-right:10px;"/>
-                          <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[4] | replace: "_", " " }}</a> <span>({{ geom }})</span>
+                         <!-- <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</a> <span>({{ geom }})</span> -->
+                          <span style="text-transform:capitalize">{{ my_array[4] | replace: "_", " " }}</span> <span>({{ geom }})</span>
                       </td>
                       <td>{{folder.modified_time | date: "%a, %b %d, %y" }}</td>
                       <td><span class="label label-default">{{ folder.extname }}</span></td>
                       <td>
-                          <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a>
+                          <!-- <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a> -->
+                          <a class="btn btn-primary btn-sm pull-right" href="{{ folder.path }}">Download</a>
                       </td>
                   </tr>
 
@@ -116,7 +118,11 @@ Currently only GeoPackage (.gpkg) format is provided.
 
                     {% for er in site.data.er.regions %}
                         {% if er.code == eruid %}
-                            <tr><th scope="col" class="col-sm-8">{{ er.title }} ({{ eruid }})</th><th scope="col" class="col-sm-2">Date modifiée</th><th scope="col" class="col-sm-1">Format</th><th scope="col" class="col-sm-1"></th></tr>
+                            <tr>
+                              <th scope="col" class="col-sm-8">{{ er.title }} ({{ eruid }})</th>
+                              <th scope="col" class="col-sm-2">Date modified</th><th scope="col" class="col-sm-1">Format</th>
+                              <th scope="col" class="col-sm-1"></th>
+                            </tr>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
@@ -138,12 +144,14 @@ Currently only GeoPackage (.gpkg) format is provided.
                         <tr>
                             <td>
                                 <img width="36" src="/assets/img/{{ icon }}" style="margin-right:10px;"/>
-                                <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</a> <span>({{ geom }})</span>
+                                <!-- <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</a> <span>({{ geom }})</span> -->
+                                <span style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</span> <span>({{ geom }})</span>
                             </td>
                             <td>{{folder.modified_time | date: "%a, %b %d, %y" }}</td>
                             <td><span class="label label-default">{{ folder.extname }}</span></td>
                             <td>
-                                <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a>
+                                <!-- <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a> -->
+                                <a class="btn btn-primary btn-sm pull-right" href="{{ folder.path }}">Download</a>
                             </td>
                         </tr>
                     {% endif %}
