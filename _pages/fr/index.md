@@ -17,6 +17,7 @@ subject:
 title: OpenDRR
 lang: fr
 layout: single-page
+sitesearch: false
 ---
 # {{ page.contentTitle.fr }}
 
