@@ -94,7 +94,7 @@ Currently only GeoPackage (.gpkg) format is provided.
                       <td><span class="label label-default">{{ folder.extname }}</span></td>
                       <td>
                           <!-- <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a> -->
-                          <a class="btn btn-primary btn-sm pull-right" href="{{ folder.path }}">Download</a>
+                          <a class="btn btn-primary btn-sm pull-right" href="{{ site.baseurl }}{{ folder.path }}">Download</a>
                       </td>
                   </tr>
 
@@ -151,7 +151,7 @@ Currently only GeoPackage (.gpkg) format is provided.
                             <td><span class="label label-default">{{ folder.extname }}</span></td>
                             <td>
                                 <!-- <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a> -->
-                                <a class="btn btn-primary btn-sm pull-right" href="{{ folder.path }}">Download</a>
+                                <a class="btn btn-primary btn-sm pull-right" href="{{ site.baseurl }}{{ folder.path }}">Download</a>
                             </td>
                         </tr>
                     {% endif %}
