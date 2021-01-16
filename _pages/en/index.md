@@ -3,8 +3,8 @@ altLangPrefix: index
 authorName: Natural Resources Canada
 authorUrl:
 contentTitle:
-  en: Downloads
-  fr: Téléchargements
+  en: OpenDRR Downloads
+  fr: Téléchargements de OpenDRR
 dateModified: 2020-11-01
 description:
   en: Available datasets
