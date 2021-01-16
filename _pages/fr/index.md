@@ -86,7 +86,7 @@ Actuellement, seul le format GeoPackage (.gpkg) est fourni.
 
                   <tr>
                       <td>
-                          <img width="36" src="/assets/img/{{ icon }}" style="margin-right:10px;"/>
+                          <img width="36" src="{{ site.baseurl }}/assets/img/{{ icon }}" style="margin-right:10px;"/>
                           <!-- <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[4] | replace: "_", " " }}</a> <span>({{ geom }})</span> -->
                           <span style="text-transform:capitalize">{{ my_array[4] | replace: "_", " " }}</span> <span>({{ geom }})</span>
                       </td>
@@ -94,7 +94,7 @@ Actuellement, seul le format GeoPackage (.gpkg) est fourni.
                       <td><span class="label label-default">{{ folder.extname }}</span></td>
                       <td>
                           <!-- <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a> -->
-                          <a class="btn btn-primary btn-sm pull-right" href="#" data="{{ folder.path }}">Téléchargement</a>
+                          <a class="btn btn-primary btn-sm pull-right" href="{{ folder.path }}">Téléchargement</a>
                       </td>
                   </tr>
 
@@ -139,7 +139,7 @@ Actuellement, seul le format GeoPackage (.gpkg) est fourni.
                         
                         <tr>
                             <td>
-                                <img width="36" src="/assets/img/{{ icon }}" style="margin-right:10px;"/>
+                                <img width="36" src="{{ site.baseurl }}/assets/img/{{ icon }}" style="margin-right:10px;"/>
                                 <!-- <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</a> <span>({{ geom }})</span> -->
                                 <span style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</span> <span>({{ geom }})</span>
                             </td>
@@ -147,7 +147,7 @@ Actuellement, seul le format GeoPackage (.gpkg) est fourni.
                             <td><span class="label label-default">{{ folder.extname }}</span></td>
                             <td>
                                 <!-- <a class="btn btn-primary btn-sm map-link pull-right" href="#" data="{{ folder.path }}">Preview</a> -->
-                                <a class="btn btn-primary btn-sm pull-right" href="#" data="{{ folder.path }}">Téléchargement</a>
+                                <a class="btn btn-primary btn-sm pull-right" href="{{ folder.path }}">Téléchargement</a>
                             </td>
                         </tr>
                     {% endif %}

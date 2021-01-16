@@ -86,7 +86,7 @@ Currently only GeoPackage (.gpkg) format is provided.
 
                   <tr>
                       <td>
-                          <img width="36" src="/assets/img/{{ icon }}" style="margin-right:10px;"/>
+                          <img width="36" src="{{ site.baseurl }}/assets/img/{{ icon }}" style="margin-right:10px;"/>
                          <!-- <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</a> <span>({{ geom }})</span> -->
                           <span style="text-transform:capitalize">{{ my_array[4] | replace: "_", " " }}</span> <span>({{ geom }})</span>
                       </td>
@@ -143,7 +143,7 @@ Currently only GeoPackage (.gpkg) format is provided.
                         
                         <tr>
                             <td>
-                                <img width="36" src="/assets/img/{{ icon }}" style="margin-right:10px;"/>
+                                <img width="36" src="{{ site.baseurl }}/assets/img/{{ icon }}" style="margin-right:10px;"/>
                                 <!-- <a href="{{ folder.path }}" style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</a> <span>({{ geom }})</span> -->
                                 <span style="text-transform:capitalize">{{ my_array[6] | replace: "_", " " }}</span> <span>({{ geom }})</span>
                             </td>
