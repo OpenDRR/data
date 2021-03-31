@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -8,6 +8,7 @@ export default function Template({
   return (
     <div className="container">
       <div className="news">
+        <Link to="/">Home</Link>
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <div
@@ -23,7 +24,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY DD, MM")
         slug
         title
       }

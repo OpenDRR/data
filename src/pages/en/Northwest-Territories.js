@@ -2,7 +2,7 @@ import React from "react"
 import NTMapComponent from "../../svg/NT-Generalized.svg"
 import YAMLData from "../../../content/data/yaml/prov-terr.yaml"
 import { Link } from "gatsby"
-
+import { Accordion, Card, Button } from "react-bootstrap"
 
 const NorthwestTerritories = () => {
   return (
@@ -77,47 +77,64 @@ const NorthwestTerritories = () => {
         <section className="container">
           <div className="container">
       <h2>Economic Region Level Datasets</h2>
-
-
-      <table className="table table-hover container">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date Modified</th>
-              <th>Format</th>
-            </tr>
-          </thead>
-          <tbody>
-            {YAMLData.downloads5910.map((data, index) => {
-              return (
-                <tr key={`downloads5910_${index}`}>
-                  <td key={`downloads5910_threat_title_${index}`}>
-                    {data.title}
-                  </td>
-                  <td
-                    key={`downloads5910_threat_lastUpdated_${index}`}
-                  >
-                    {data.lastUpdated}
-                  </td>
-                  <td key={`downloads5910_threat_format_${index}`}>
-                    <span className="label label-default">
-                      {data.format}
-                    </span>
-                  </td>
-                  <td key={`downloads5910_threat_url_${index}`}>
-                    <a
-                      className="btn btn-primary btn-sm pull-right"
-                      href={data.url}
-                      download
-                    >
-                      Download
-                    </a>
-                  </td>
-                </tr>
-              )
-            })}
-          </tbody>
-  </table>
+      <Accordion
+            defaultActiveKey="0"
+            style={{
+              marginBottom: "20vh",
+              marginTop: "5vh",
+            }}
+          >
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                  Northwest Territories (6110)
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="0">
+                <Card.Body>
+                  <table className="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Date Modified</th>
+                        <th>Format</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {YAMLData.downloads6110.map((data, index) => {
+                        return (
+                          <tr key={`downloads6110_${index}`}>
+                            <td key={`downloads6110_threat_title_${index}`}>
+                              {data.title}
+                            </td>
+                            <td
+                              key={`downloads6110_threat_lastUpdated_${index}`}
+                            >
+                              {data.lastUpdated}
+                            </td>
+                            <td key={`downloads6110_threat_format_${index}`}>
+                              <span className="label label-default">
+                                {data.format}
+                              </span>
+                            </td>
+                            <td key={`downloads6110_threat_url_${index}`}>
+                              <a
+                                className="btn btn-primary btn-sm pull-right"
+                                href={data.url}
+                                download
+                              >
+                                Download
+                              </a>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </tbody>
+                  </table>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+          </Accordion>
   </div>
   </section>
     </>

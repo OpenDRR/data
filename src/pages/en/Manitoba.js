@@ -86,7 +86,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Vancouver Island & Coast (5910)
+                  Southeast (4610)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -100,23 +100,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5910.map((data, index) => {
+                      {YAMLData.downloads4610.map((data, index) => {
                         return (
-                          <tr key={`downloads5910_${index}`}>
-                            <td key={`downloads5910_threat_title_${index}`}>
+                          <tr key={`downloads4610_${index}`}>
+                            <td key={`downloads4610_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5910_threat_lastUpdated_${index}`}
+                              key={`downloads4610_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5910_threat_format_${index}`}>
+                            <td key={`downloads4610_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5910_threat_url_${index}`}>
+                            <td key={`downloads4610_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -136,7 +136,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  Lower Mainland Southwest (5920)
+                  South Central (4620)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">
@@ -150,23 +150,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5920.map((data, index) => {
+                      {YAMLData.downloads4620.map((data, index) => {
                         return (
-                          <tr key={`downloads5920_${index}`}>
-                            <td key={`downloads5920_threat_title_${index}`}>
+                          <tr key={`downloads4620_${index}`}>
+                            <td key={`downloads4620_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5920_threat_lastUpdated_${index}`}
+                              key={`downloads4620_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5920_threat_format_${index}`}>
+                            <td key={`downloads4620_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5920_threat_url_${index}`}>
+                            <td key={`downloads4620_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -186,7 +186,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  Thompson Okanagan (5930)
+                  Southwest (4630)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="2">
@@ -200,23 +200,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5930.map((data, index) => {
+                      {YAMLData.downloads4630.map((data, index) => {
                         return (
-                          <tr key={`downloads5930_${index}`}>
-                            <td key={`downloads5930_threat_title_${index}`}>
+                          <tr key={`downloads4630_${index}`}>
+                            <td key={`downloads4630_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5930_threat_lastUpdated_${index}`}
+                              key={`downloads4630_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5930_threat_format_${index}`}>
+                            <td key={`downloads4630_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5930_threat_url_${index}`}>
+                            <td key={`downloads4630_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -236,7 +236,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                  Kootenay (5940)
+                  North Central (4640)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="3">
@@ -250,23 +250,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5940.map((data, index) => {
+                      {YAMLData.downloads4640.map((data, index) => {
                         return (
-                          <tr key={`downloads5940_${index}`}>
-                            <td key={`downloads5940_threat_title_${index}`}>
+                          <tr key={`downloads4640_${index}`}>
+                            <td key={`downloads4640_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5940_threat_lastUpdated_${index}`}
+                              key={`downloads4640_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5940_threat_format_${index}`}>
+                            <td key={`downloads4640_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5940_threat_url_${index}`}>
+                            <td key={`downloads4640_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -286,7 +286,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                  Cariboo (5950)
+                  Winnipeg (4650)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="4">
@@ -300,23 +300,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5950.map((data, index) => {
+                      {YAMLData.downloads4650.map((data, index) => {
                         return (
-                          <tr key={`downloads5950_${index}`}>
-                            <td key={`downloads5950_threat_title_${index}`}>
+                          <tr key={`downloads4650_${index}`}>
+                            <td key={`downloads4650_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5950_threat_lastUpdated_${index}`}
+                              key={`downloads4650_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5950_threat_format_${index}`}>
+                            <td key={`downloads4650_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5950_threat_url_${index}`}>
+                            <td key={`downloads4650_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -336,7 +336,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                  North Coast (5960)
+                  Interlake (4660)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="5">
@@ -350,23 +350,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5960.map((data, index) => {
+                      {YAMLData.downloads4660.map((data, index) => {
                         return (
-                          <tr key={`downloads5960_${index}`}>
-                            <td key={`downloads5960_threat_title_${index}`}>
+                          <tr key={`downloads4660_${index}`}>
+                            <td key={`downloads4660_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5960_threat_lastUpdated_${index}`}
+                              key={`downloads4660_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5960_threat_format_${index}`}>
+                            <td key={`downloads4660_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5960_threat_url_${index}`}>
+                            <td key={`downloads4660_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -386,7 +386,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="6">
-                  Nechako (5970)
+                  Parklands (4670)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="6">
@@ -400,23 +400,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5970.map((data, index) => {
+                      {YAMLData.downloads4670.map((data, index) => {
                         return (
-                          <tr key={`downloads5970_${index}`}>
-                            <td key={`downloads5970_threat_title_${index}`}>
+                          <tr key={`downloads4670_${index}`}>
+                            <td key={`downloads4670_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5970_threat_lastUpdated_${index}`}
+                              key={`downloads4670_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5970_threat_format_${index}`}>
+                            <td key={`downloads4670_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5970_threat_url_${index}`}>
+                            <td key={`downloads4670_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -436,7 +436,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="7">
-                  Northeast (5980)
+                  North (4680)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="7">
@@ -450,23 +450,23 @@ const Manitoba = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5980.map((data, index) => {
+                      {YAMLData.downloads4680.map((data, index) => {
                         return (
-                          <tr key={`downloads5980_${index}`}>
-                            <td key={`downloads5980_threat_title_${index}`}>
+                          <tr key={`downloads4680_${index}`}>
+                            <td key={`downloads4680_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5980_threat_lastUpdated_${index}`}
+                              key={`downloads4680_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5980_threat_format_${index}`}>
+                            <td key={`downloads4680_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5980_threat_url_${index}`}>
+                            <td key={`downloads4680_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -485,59 +485,6 @@ const Manitoba = () => {
             </Card>
           </Accordion>
         </div>
-      </section>
-      <section className="container">
-        {/* <MapContainer
-          doubleClickZoom={false}
-          id="mapId"
-          zoom={8}
-          style={{ height: "100vh" }}
-          center={{ lat: 5121238.451499999, lng: -5858630.3324 }}
-        >
-          <TileLayer
-            url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
-            attribution="Esri, USGS | Esri, Garmin, FAO, NOAA, NRCan, Parks Canada | Murray Journeay"
-          />
-
-          <LayersControl collapsed={false}>
-            <LayersControl.BaseLayer name="Feature Layer" checked>
-              <EsriLeafletLayer
-                opacity={1}
-                layerType="featureLayer"
-                url="https://sampleserver6.arcgisonline.com/arcgis/rest/services/Earthquakes_Since1970/MapServer/0"
-              />
-            </LayersControl.BaseLayer>
-            <LayersControl.BaseLayer name="Tiled Map Layer">
-              <EsriLeafletLayer
-                opacity={1}
-                layerType="tiledMapLayer"
-                url="https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WUI_2010_01/MapServer"
-              />
-            </LayersControl.BaseLayer>
-            <LayersControl.BaseLayer name="Base Map Layer">
-              <EsriLeafletLayer
-                opacity={1}
-                layerType="basemapLayer"
-                name="Imagery"
-              />
-            </LayersControl.BaseLayer>
-            <LayersControl.BaseLayer name="Dynamic Map Layer">
-              <EsriLeafletLayer
-                opacity={1}
-                layerType="dynamicMapLayer"
-                url="https://services.arcgisonline.com/arcgis/rest/services/Specialty/Soil_Survey_Map/MapServer"
-              />
-            </LayersControl.BaseLayer>
-            <LayersControl.BaseLayer name="Image Map Layer">
-              <EsriLeafletLayer
-                opacity={1}
-                layerType="imageMapLayer"
-                url="https://landsat.arcgis.com/arcgis/rest/services/Landsat/PS/ImageServer"
-                attribution="United States Geological Survey (USGS), National Aeronautics and Space Administration (NASA)"
-              />
-            </LayersControl.BaseLayer>
-          </LayersControl>
-        </MapContainer> */}
       </section>
     </>
   )

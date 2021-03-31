@@ -86,7 +86,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Vancouver Island & Coast (5910)
+                  Southeast (4610)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -136,7 +136,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  Lower Mainland Southwest (5920)
+                  South Central (4620)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">
@@ -186,7 +186,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  Thompson Okanagan (5930)
+                  Southwest (4630)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="2">
@@ -236,7 +236,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                  Kootenay (5940)
+                  North Central (4640)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="3">
@@ -286,7 +286,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                  Cariboo (5950)
+                  Winnipeg (4650)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="4">
@@ -336,7 +336,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                  North Coast (5960)
+                  Interlake (4660)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="5">
@@ -386,7 +386,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="6">
-                  Nechako (5970)
+                  Parklands (4670)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="6">
@@ -436,7 +436,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="7">
-                  Northeast (5980)
+                  North (4680)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="7">

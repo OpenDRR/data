@@ -313,6 +313,224 @@ enContentAB:
     title: "Athabasca Grande Prairie Peace River"
     url: "/economic-regions/Athabasca-Grande-Prairie-Peace-River"
 
+
+
+downloads4810:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4820:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4830:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4840:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4850:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4860:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4870:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4880:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
 # Alberta End
 
 # Saskatchewan Start
@@ -344,6 +562,169 @@ enContentSK:
   - region: 
     title: "Prince Albert"
     url: "/economic-regions/Prince-Albert"
+
+downloads4710:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4720:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4730:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4740:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads4750:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4760:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
 
 # Saskatchewan End
 
@@ -384,6 +765,225 @@ enContentMB:
   - region: 
     title: "North"
     url: "/economic-regions/North"
+
+
+downloads4610:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4620:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4630:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads4640:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4650:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4660:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads4670:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads4680:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
 
 # Manitoba End
 
@@ -436,6 +1036,305 @@ enContentON:
   - region: 
     title: "Northwest"
     url: "/economic-regions/Northwest"
+
+
+downloads3510:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3515:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3520:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3530:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3540:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3550:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3560:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3570:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3580:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3590:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads3595:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
 
 # Ontario End
 
@@ -513,6 +1412,439 @@ enContentQC:
     title: "Nord du Quebec"
     url: "/economic-regions/Nord-du-Quebec"
 
+downloads2410:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2415:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2420:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2425:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2430:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2433:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2435:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2440:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2450:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads2455:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2460:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2465:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2470:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2475:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2480:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads2490:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
 # Quebec End
 
 # New Brunswick Start
@@ -540,6 +1872,141 @@ enContentNB:
   - region: 
     title: "Edmundston Woodstock"
     url: "/economic-regions/Edmundston-Woodstock"
+
+downloads1310:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads1320:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads1330:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads1340:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads1350:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
 
 # New Brunswick End
 
@@ -569,6 +2036,145 @@ enContentNS:
     title: "Halifax"
     url: "/economic-regions/Halifax"
 
+downloads1210:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+downloads1220:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads1230:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads1240:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads1250:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
 # Nova Scotia End
 
 # Prince Edward Island Start
@@ -580,6 +2186,34 @@ enContentPEI:
   - region: 
     title: "Prince Edward Island"
     url: "/economic-regions/Prince-Edward-Island"
+
+downloads1110:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
 
 # Prince Edward Island End
 
@@ -605,6 +2239,118 @@ enContentNL:
     title: "Notre Dame Central Bonavista Bay"
     url: "/economic-regions/Notre-Dame-Central-Bonavista-Bay"
 
+downloads1010:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads1020:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads1030:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
+downloads1040:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
 # Newfoundland & Labrador End
 
 # Northwest Territories Start
@@ -616,6 +2362,34 @@ enContentNT:
   - region: 
     title: "Northwest Territories"
     url: "/economic-regions/Northwest-Territories"
+
+
+downloads6110:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
 
 # Northwest Territories End
 
@@ -629,6 +2403,34 @@ enContentNV:
     title: "Nunavut"
     url: "/economic-regions/Nunavut"
 
+downloads6210:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
+
 
 # Nunavut End
 
@@ -641,5 +2443,33 @@ enContentYK:
   - region: 
     title: "Yukon"
     url: "/economic-regions/Yukon"
+
+downloads6010:
+  - threat:  
+    title: "Multi Hazard Threat (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Buildings)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Physical Exposure (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Risk Dynamics"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+  - threat:
+    title: "Social Fabric (Census Subdivision)"
+    url: "/"
+    lastUpdated: 2021-03-18
+    format: ".gpkg"
+
 
 # Yukon End

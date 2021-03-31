@@ -86,7 +86,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Vancouver Island & Coast (5910)
+                  Ottawa (3510)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -100,23 +100,23 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5910.map((data, index) => {
+                      {YAMLData.downloads3510.map((data, index) => {
                         return (
-                          <tr key={`downloads5910_${index}`}>
-                            <td key={`downloads5910_threat_title_${index}`}>
+                          <tr key={`downloads3510_${index}`}>
+                            <td key={`downloads3510_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5910_threat_lastUpdated_${index}`}
+                              key={`downloads3510_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5910_threat_format_${index}`}>
+                            <td key={`downloads3510_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5910_threat_url_${index}`}>
+                            <td key={`downloads3510_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -136,7 +136,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  Lower Mainland Southwest (5920)
+                  Kingston Pembroke (3515)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">
@@ -150,23 +150,23 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5920.map((data, index) => {
+                      {YAMLData.downloads3515.map((data, index) => {
                         return (
-                          <tr key={`downloads5920_${index}`}>
-                            <td key={`downloads5920_threat_title_${index}`}>
+                          <tr key={`downloads3515_${index}`}>
+                            <td key={`downloads3515_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5920_threat_lastUpdated_${index}`}
+                              key={`downloads3515_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5920_threat_format_${index}`}>
+                            <td key={`downloads3515_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5920_threat_url_${index}`}>
+                            <td key={`downloads3515_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -186,7 +186,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  Thompson Okanagan (5930)
+                  Muskoka Kawarthas (3520)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="2">
@@ -200,23 +200,23 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5930.map((data, index) => {
+                      {YAMLData.downloads3520.map((data, index) => {
                         return (
-                          <tr key={`downloads5930_${index}`}>
-                            <td key={`downloads5930_threat_title_${index}`}>
+                          <tr key={`downloads3520_${index}`}>
+                            <td key={`downloads3520_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5930_threat_lastUpdated_${index}`}
+                              key={`downloads3520_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5930_threat_format_${index}`}>
+                            <td key={`downloads3520_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5930_threat_url_${index}`}>
+                            <td key={`downloads3520_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -236,7 +236,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                  Kootenay (5940)
+                  Toronto (3530)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="3">
@@ -250,23 +250,23 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5940.map((data, index) => {
+                      {YAMLData.downloads3530.map((data, index) => {
                         return (
-                          <tr key={`downloads5940_${index}`}>
-                            <td key={`downloads5940_threat_title_${index}`}>
+                          <tr key={`downloads3530_${index}`}>
+                            <td key={`downloads3530_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5940_threat_lastUpdated_${index}`}
+                              key={`downloads3530_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5940_threat_format_${index}`}>
+                            <td key={`downloads3530_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5940_threat_url_${index}`}>
+                            <td key={`downloads3530_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -286,7 +286,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                  Cariboo (5950)
+                  Kitchener Waterloo Barrie (3540)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="4">
@@ -300,23 +300,23 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5950.map((data, index) => {
+                      {YAMLData.downloads3540.map((data, index) => {
                         return (
-                          <tr key={`downloads5950_${index}`}>
-                            <td key={`downloads5950_threat_title_${index}`}>
+                          <tr key={`downloads3540_${index}`}>
+                            <td key={`downloads3540_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5950_threat_lastUpdated_${index}`}
+                              key={`downloads3540_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5950_threat_format_${index}`}>
+                            <td key={`downloads3540_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5950_threat_url_${index}`}>
+                            <td key={`downloads3540_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -336,7 +336,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                  North Coast (5960)
+                  Hamilton Niagra Peninsula (3550)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="5">
@@ -350,23 +350,23 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5960.map((data, index) => {
+                      {YAMLData.downloads3550.map((data, index) => {
                         return (
-                          <tr key={`downloads5960_${index}`}>
-                            <td key={`downloads5960_threat_title_${index}`}>
+                          <tr key={`downloads3550_${index}`}>
+                            <td key={`downloads3550_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5960_threat_lastUpdated_${index}`}
+                              key={`downloads3550_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5960_threat_format_${index}`}>
+                            <td key={`downloads3550_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5960_threat_url_${index}`}>
+                            <td key={`downloads3550_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -386,7 +386,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="6">
-                  Nechako (5970)
+                  London (3560)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="6">
@@ -400,23 +400,23 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5970.map((data, index) => {
+                      {YAMLData.downloads3560.map((data, index) => {
                         return (
-                          <tr key={`downloads5970_${index}`}>
-                            <td key={`downloads5970_threat_title_${index}`}>
+                          <tr key={`downloads3560_${index}`}>
+                            <td key={`downloads3560_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5970_threat_lastUpdated_${index}`}
+                              key={`downloads3560_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5970_threat_format_${index}`}>
+                            <td key={`downloads3560_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5970_threat_url_${index}`}>
+                            <td key={`downloads3560_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
@@ -436,7 +436,7 @@ const Ontario = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="7">
-                  Northeast (5980)
+                 Windsor Sarnia (3570)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="7">
@@ -450,23 +450,173 @@ const Ontario = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5980.map((data, index) => {
+                      {YAMLData.downloads3570.map((data, index) => {
                         return (
-                          <tr key={`downloads5980_${index}`}>
-                            <td key={`downloads5980_threat_title_${index}`}>
+                          <tr key={`downloads3570_${index}`}>
+                            <td key={`downloads3570_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5980_threat_lastUpdated_${index}`}
+                              key={`downloads3570_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5980_threat_format_${index}`}>
+                            <td key={`downloads3570_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5980_threat_url_${index}`}>
+                            <td key={`downloads3570_threat_url_${index}`}>
+                              <a
+                                className="btn btn-primary btn-sm pull-right"
+                                href={data.url}
+                                download
+                              >
+                                Download
+                              </a>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </tbody>
+                  </table>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                 Stratford Bruce Peninsula (3580)
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="7">
+                <Card.Body>
+                  <table className="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Date Modified</th>
+                        <th>Format</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {YAMLData.downloads3580.map((data, index) => {
+                        return (
+                          <tr key={`downloads3580_${index}`}>
+                            <td key={`downloads3580_threat_title_${index}`}>
+                              {data.title}
+                            </td>
+                            <td
+                              key={`downloads3580_threat_lastUpdated_${index}`}
+                            >
+                              {data.lastUpdated}
+                            </td>
+                            <td key={`downloads3580_threat_format_${index}`}>
+                              <span className="label label-default">
+                                {data.format}
+                              </span>
+                            </td>
+                            <td key={`downloads3580_threat_url_${index}`}>
+                              <a
+                                className="btn btn-primary btn-sm pull-right"
+                                href={data.url}
+                                download
+                              >
+                                Download
+                              </a>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </tbody>
+                  </table>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                 Northeast (3590)
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="7">
+                <Card.Body>
+                  <table className="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Date Modified</th>
+                        <th>Format</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {YAMLData.downloads3590.map((data, index) => {
+                        return (
+                          <tr key={`downloads3590_${index}`}>
+                            <td key={`downloads3590_threat_title_${index}`}>
+                              {data.title}
+                            </td>
+                            <td
+                              key={`downloads3590_threat_lastUpdated_${index}`}
+                            >
+                              {data.lastUpdated}
+                            </td>
+                            <td key={`downloads3590_threat_format_${index}`}>
+                              <span className="label label-default">
+                                {data.format}
+                              </span>
+                            </td>
+                            <td key={`downloads3590_threat_url_${index}`}>
+                              <a
+                                className="btn btn-primary btn-sm pull-right"
+                                href={data.url}
+                                download
+                              >
+                                Download
+                              </a>
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </tbody>
+                  </table>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                 Northwest (3595)
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="7">
+                <Card.Body>
+                  <table className="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Date Modified</th>
+                        <th>Format</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {YAMLData.downloads3595.map((data, index) => {
+                        return (
+                          <tr key={`downloads3595_${index}`}>
+                            <td key={`downloads3595_threat_title_${index}`}>
+                              {data.title}
+                            </td>
+                            <td
+                              key={`downloads3595_threat_lastUpdated_${index}`}
+                            >
+                              {data.lastUpdated}
+                            </td>
+                            <td key={`downloads3595_threat_format_${index}`}>
+                              <span className="label label-default">
+                                {data.format}
+                              </span>
+                            </td>
+                            <td key={`downloads3595_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}
