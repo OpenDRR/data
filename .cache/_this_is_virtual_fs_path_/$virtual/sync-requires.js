@@ -40,8 +40,6 @@ exports.components = {
   "component---src-pages-index-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/index.js")),
   "component---src-pages-indicator-modal-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/indicatorModal.js")),
   "component---src-pages-indicators-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/indicators.js")),
-  "component---src-pages-leaflet-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/leaflet.js")),
-  "component---src-pages-test-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/test.js")),
   "component---src-templates-downloads-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/templates/downloads.js")),
   "component---src-templates-economic-regions-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/templates/economicRegions.js")),
   "component---src-templates-news-and-updates-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/templates/newsAndUpdates.js"))
