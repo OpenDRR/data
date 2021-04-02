@@ -7,6 +7,10 @@ import { SliderData } from '../../config/SliderData'
 
 const IndexPage = () => (
   <div className="container">
+    <h1>OpenDRR Downloads</h1>
+    <p>Welcome to the OpenDRR data download site. Here you will find the latest versions of all datasets.</p>
+    <p>These datasets are available for download by Province/Territory and by Economic Region.</p>
+
     <SEO title="Home" />
     <Banner slides={SliderData} />
     <HomeCardGrid/>
