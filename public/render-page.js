@@ -5335,24 +5335,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _images_sig_blk_en_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/sig-blk-en.svg */ "./src/images/sig-blk-en.svg");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
 
 
 
 
 class Header extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "container header navbar navbar-default"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
       href: "/"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
       className: "navbar-brand",
       src: _images_sig_blk_en_svg__WEBPACK_IMPORTED_MODULE_1__.default,
       alt: "logo"
-    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "lang-toggle"
-    }));
+    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      to: "/fr/"
+    }, "Fran\xE7ais")));
   }
 
 }

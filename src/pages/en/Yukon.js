@@ -97,23 +97,23 @@ const Yukon = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5910.map((data, index) => {
+                      {YAMLData.downloads6010.map((data, index) => {
                         return (
-                          <tr key={`downloads5910_${index}`}>
-                            <td key={`downloads5910_threat_title_${index}`}>
+                          <tr key={`downloads6010_${index}`}>
+                            <td key={`downloads6010_threat_title_${index}`}>
                               {data.title}
                             </td>
                             <td
-                              key={`downloads5910_threat_lastUpdated_${index}`}
+                              key={`downloads6010_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5910_threat_format_${index}`}>
+                            <td key={`downloads6010_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5910_threat_url_${index}`}>
+                            <td key={`downloads6010_threat_url_${index}`}>
                               <a
                                 className="btn btn-primary btn-sm pull-right"
                                 href={data.url}

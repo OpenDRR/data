@@ -14,9 +14,11 @@ const NationalDatasetsPage = () => {
           <hr />
           <table className="table table-hover">
             <thead>
+              <tr>
               <th>Name</th>
               <th>Last Updated</th>
               <th>Format</th>
+              </tr>
             </thead>
             <tbody>
 
@@ -28,9 +30,11 @@ const NationalDatasetsPage = () => {
         <hr />
         <table className="table table-hover">
             <thead>
+              <tr>
               <th>Name</th>
               <th>Last Updated</th>
               <th>Format</th>
+              </tr>
             </thead>
             <tbody>
               
@@ -43,9 +47,11 @@ const NationalDatasetsPage = () => {
         <hr />
         <table className="table table-hover">
             <thead>
+            <tr>
               <th>Name</th>
               <th>Last Updated</th>
               <th>Format</th>
+              </tr>
             </thead>
             <tbody>
               

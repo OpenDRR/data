@@ -1,0 +1,8 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+<<<<<<< HEAD
+.jekyll-cache/
+.cache/
+_site/
+vendor/
+=======
+>>>>>>> 7c12664fb8192e8dc1a7a1d6ddd3b1c918c8dda5
