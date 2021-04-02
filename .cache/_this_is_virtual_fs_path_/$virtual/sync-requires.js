@@ -26,6 +26,7 @@ exports.components = {
   "component---src-pages-fr-colombie-britannique-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/fr/Colombie-Britannique.js")),
   "component---src-pages-fr-ensembles-de-donnees-nationales-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/fr/Ensembles-De-Données-Nationales.js")),
   "component---src-pages-fr-ile-du-prince-edouard-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/fr/Île-du-Prince-Édouard.js")),
+  "component---src-pages-fr-index-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/fr/index.js")),
   "component---src-pages-fr-manitoba-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/fr/Manitoba.js")),
   "component---src-pages-fr-nouveau-brunswick-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/fr/Nouveau-Brunswick.js")),
   "component---src-pages-fr-nouvelle-ecosse-js": preferDefault(require("/Users/michaelchristianson/Documents/data/src/pages/fr/Nouvelle-Écosse.js")),

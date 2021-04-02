@@ -63,6 +63,26 @@ const data = [
 
 ]
 
+
+const mapServer = [
+    {
+        "title": "Hazard Threat",
+        "url": ""
+    },
+    {
+        "title": "Physical Exposure",
+        "url": ""
+    },
+    {
+        "title": "Risk Dynamics",
+        "url": ""
+    },
+    {
+        "title": "Social Fabric and Capacity Thresholds",
+        "url": ""
+    }
+]
+
 const MapboxGLMap = () => {
     const [map, setMap] = useState(null);
     const mapContainer = useRef(null);
@@ -73,10 +93,12 @@ const MapboxGLMap = () => {
         const initializeMap = ({ setMap, mapContainer }) => {
             const map = new mapboxgl.Map({
                 container: mapContainer.current,
-                style: "mapbox://styles/mbchristianson/ckmv8g5x109vt17su6obqz5is",
+                style: "mapbox://styles/mapbox/streets-v11",
                 center: [-123.1, 49.3],
                 zoom: 10
             });
+
+    
 
             data.forEach((location) => {
                 console.log(location)

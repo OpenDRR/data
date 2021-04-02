@@ -24,6 +24,7 @@ exports.components = {
   "component---src-pages-fr-colombie-britannique-js": () => import("./../../../src/pages/fr/Colombie-Britannique.js" /* webpackChunkName: "component---src-pages-fr-colombie-britannique-js" */),
   "component---src-pages-fr-ensembles-de-donnees-nationales-js": () => import("./../../../src/pages/fr/Ensembles-De-Données-Nationales.js" /* webpackChunkName: "component---src-pages-fr-ensembles-de-donnees-nationales-js" */),
   "component---src-pages-fr-ile-du-prince-edouard-js": () => import("./../../../src/pages/fr/Île-du-Prince-Édouard.js" /* webpackChunkName: "component---src-pages-fr-ile-du-prince-edouard-js" */),
+  "component---src-pages-fr-index-js": () => import("./../../../src/pages/fr/index.js" /* webpackChunkName: "component---src-pages-fr-index-js" */),
   "component---src-pages-fr-manitoba-js": () => import("./../../../src/pages/fr/Manitoba.js" /* webpackChunkName: "component---src-pages-fr-manitoba-js" */),
   "component---src-pages-fr-nouveau-brunswick-js": () => import("./../../../src/pages/fr/Nouveau-Brunswick.js" /* webpackChunkName: "component---src-pages-fr-nouveau-brunswick-js" */),
   "component---src-pages-fr-nouvelle-ecosse-js": () => import("./../../../src/pages/fr/Nouvelle-Écosse.js" /* webpackChunkName: "component---src-pages-fr-nouvelle-ecosse-js" */),

@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import Logo from "../images/sig-blk-en.svg"
+import { Link } from 'gatsby'
+
 
 class Header extends Component {
   render() {
@@ -9,7 +11,7 @@ class Header extends Component {
           <img className="navbar-brand" src={Logo} alt="logo" />
         </a>
         <div className="lang-toggle">
-          {/* <Link to="/">Français</Link> */}
+          <Link to="/fr/">Français</Link>
         </div>
       </div>
     );
