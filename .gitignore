@@ -1,7 +1,4 @@
-.jekyll-cache/
-.cache/
-_site/
-vendor/
+
 
 # Local Netlify folder
 .netlify
