@@ -10,7 +10,7 @@ const ProvincesAndTerritories = () => {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-      d3.json("/MapData.json").then((d) => {
+      d3.json("../../components/MapOfCanada/MapData.json").then((d) => {
         setData(d);
         setLoading(false);
       });
