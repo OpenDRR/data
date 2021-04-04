@@ -1,9 +1,10 @@
 import React from "react"
-// import MapOfCanada from "../../svg/map-of-canada.svg"
 import { Link } from 'gatsby'
 import '../../components/SVGMapComponent/mapstyles.css'
 import Map from '../../components/MapOfCanada/map'
 import * as d3 from "d3"
+
+
 const ProvincesAndTerritories = () => {
 
   const [data, setData] = React.useState([]);
@@ -17,7 +18,6 @@ const ProvincesAndTerritories = () => {
       return () => undefined;
     }, []);
 
-
   return (
     <>
       <div className="container">
@@ -29,10 +29,7 @@ const ProvincesAndTerritories = () => {
         <h4>Select a Province or Territory to continue:</h4>
           {loading && <div>loading</div>}
           {!loading && <Map data={data}/>}
-          
         </div>
-        
-        {/* <Map/> */}
       </section>
       <section>
         <div className="container">
