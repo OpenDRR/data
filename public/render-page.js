@@ -3577,13 +3577,6 @@ var plugins = [{
     "plugins": []
   }
 }, {
-  name: 'gatsby-plugin-layout',
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-layout/gatsby-ssr */ "./node_modules/gatsby-plugin-layout/gatsby-ssr.js"),
-  options: {
-    "plugins": [],
-    "component": "/Users/michaelchristianson/Documents/gatsby-data/src/components/layout.js"
-  }
-}, {
   name: 'gatsby-plugin-manifest',
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
@@ -4964,58 +4957,6 @@ function stripPrefix(str, prefix = ``) {
 
 /***/ }),
 
-/***/ "./node_modules/gatsby-plugin-layout/gatsby-ssr.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/gatsby-plugin-layout/gatsby-ssr.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-exports.wrapPageElement = __webpack_require__(/*! ./wrap-page */ "./node_modules/gatsby-plugin-layout/wrap-page.js");
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-layout/wrap-page.js":
-/*!********************************************************!*\
-  !*** ./node_modules/gatsby-plugin-layout/wrap-page.js ***!
-  \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var React = __webpack_require__(/*! react */ "react");
-
-var preferDefault = function preferDefault(m) {
-  return m && m.default || m;
-};
-
-var Layout;
-
-try {
-  Layout = preferDefault(__webpack_require__(/*! ./src/components/layout.js */ "./src/components/layout.js"));
-} catch (e) {
-  if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "/Users/michaelchristianson/Documents/gatsby-data/src/components/layout.js" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
-  } else {
-    // Logging the error for debugging older browsers as there is no way
-    // to wrap the thrown error in a try/catch.
-    console.error(e);
-    throw e;
-  }
-} // eslint-disable-next-line react/prop-types,react/display-name
-
-
-module.exports = function (_ref) {
-  var element = _ref.element,
-      props = _ref.props;
-  return /*#__PURE__*/React.createElement(Layout, props, element);
-};
-
-/***/ }),
-
 /***/ "./node_modules/gatsby-plugin-manifest/common.js":
 /*!*******************************************************!*\
   !*** ./node_modules/gatsby-plugin-manifest/common.js ***!
@@ -5264,144 +5205,6 @@ var onRenderBody = function onRenderBody(_ref) {
 };
 
 exports.onRenderBody = onRenderBody;
-
-/***/ }),
-
-/***/ "./src/components/footer.jsx":
-/*!***********************************!*\
-  !*** ./src/components/footer.jsx ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_wmms_blk_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/wmms-blk.svg */ "./src/images/wmms-blk.svg");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
-
-
-
-
-const Footer = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-  className: "container Footer wb-info brand"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("hr", null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
-  className: "footer-ul"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-  className: "footer-li"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-  href: "https://www.canada.ca/en/social.html"
-}, "Social media ")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-  className: "footer-li"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-  href: "https://www.canada.ca/en/mobile.html"
-}, "Mobile applications")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-  className: "footer-li"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-  href: "https://www1.canada.ca/en/newsite.html"
-}, "About Canada.ca")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-  className: "footer-li"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-  href: "https://www.canada.ca/en/transparency/terms.html"
-}, "Terms and conditions")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-  className: "footer-li"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-  href: "https://www.canada.ca/en/transparency/privacy.html"
-}, "Privacy"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-  className: "col-md-2 pull-right"
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-  src: _images_wmms_blk_svg__WEBPACK_IMPORTED_MODULE_1__.default,
-  alt: "Symbol of the Government of Canada"
-})));
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
-
-/***/ }),
-
-/***/ "./src/components/header.jsx":
-/*!***********************************!*\
-  !*** ./src/components/header.jsx ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_sig_blk_en_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/sig-blk-en.svg */ "./src/images/sig-blk-en.svg");
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
-
-
-
-
-
-class Header extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
-  render() {
-    return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "container header navbar navbar-default"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-      href: "/"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-      className: "navbar-brand",
-      src: _images_sig_blk_en_svg__WEBPACK_IMPORTED_MODULE_1__.default,
-      alt: "logo"
-    })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "lang-toggle"
-    }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-      to: "/fr/"
-    }, "Fran\xE7ais")));
-  }
-
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-
-/***/ }),
-
-/***/ "./src/components/layout.js":
-/*!**********************************!*\
-  !*** ./src/components/layout.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ "./src/components/header.jsx");
-/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ "./src/components/footer.jsx");
-/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/index.scss */ "./src/styles/index.scss");
-/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_index_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
-
-
-
-
-
-
-
-const Layout = ({
-  children
-}) => {
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_header__WEBPACK_IMPORTED_MODULE_2__.default, null), children, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_footer__WEBPACK_IMPORTED_MODULE_3__.default, null));
-};
-
-Layout.propTypes = {
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().node.isRequired)
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
 
 /***/ }),
 
@@ -9800,16 +9603,6 @@ function mitt(all                 ) {
 
 /***/ }),
 
-/***/ "./src/styles/index.scss":
-/*!*******************************!*\
-  !*** ./src/styles/index.scss ***!
-  \*******************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -13053,36 +12846,6 @@ function combine (array, callback) {
 
 /***/ }),
 
-/***/ "./src/images/sig-blk-en.svg":
-/*!***********************************!*\
-  !*** ./src/images/sig-blk-en.svg ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/sig-blk-en-d3868130ff988f7f34a80bf5f56d9b2b.svg");
-
-/***/ }),
-
-/***/ "./src/images/wmms-blk.svg":
-/*!*********************************!*\
-  !*** ./src/images/wmms-blk.svg ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxNDMgMzQiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiPg0KPCEtLSBXZWIgRXhwZXJpZW5jZSBUb29sa2l0IChXRVQpIC8gQm/DrnRlIMOgIG91dGlscyBkZSBsJ2V4cMOpcmllbmNlIFdlYiAoQk9FVykNCnd3dy50YnMuZ2MuY2Evd3Mtbncvd2V0LWJvZXcvdGVybXMgLyB3d3cuc2N0LmdjLmNhL3dzLW53L3dldC1ib2V3L2NvbmRpdGlvbnMgLS0+DQoJPGRlZnM+DQoJCTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJCQkuZmlwX3RleHQge2ZpbGw6IzAwMDt9LmZpcF9mbGFnIHtmaWxsOiNGMDA7fQ0KCQk8L3N0eWxlPg0KCTwvZGVmcz4NCgk8ZyBpZD0id21tcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEsIC0xKSI+DQoJCTxwYXRoIGNsYXNzPSJmaXBfZmxhZyIgZD0iTTEzNy45LDEuMmg1LjJ2MTAuNGgtNS4yVjEuMnogTTEyOC45LDYuNGwtMC4zLDAuMWMwLDAsMS44LDEuNSwxLjgsMS42YzAuMSwwLjEsMC4yLDAuMSwwLjEsMC40IGMtMC4xLDAuMy0wLjIsMC42LTAuMiwwLjZzMS42LTAuMywxLjgtMC40YzAuMiwwLDAuMywwLDAuMywwLjJjMCwwLjItMC4xLDEuOS0wLjEsMS45aDAuNWMwLDAtMC4xLTEuOC0wLjEtMS45IGMwLTAuMiwwLjEtMC4yLDAuMy0wLjJjMC4yLDAsMS44LDAuNCwxLjgsMC40cy0wLjEtMC40LTAuMi0wLjZjLTAuMS0wLjMsMC0wLjMsMC4xLTAuNGMwLjEtMC4xLDEuOC0xLjYsMS44LTEuNmwtMC4zLTAuMSBjLTAuMi0wLjEtMC4xLTAuMi0wLjEtMC4zczAuMy0xLjEsMC4zLTEuMXMtMC44LDAuMi0wLjksMC4yYy0wLjEsMC0wLjIsMC0wLjItMC4xcy0wLjItMC41LTAuMi0wLjVzLTAuOSwxLTEsMS4xIGMtMC4yLDAuMi0wLjQsMC0wLjMtMC4yYzAtMC4yLDAuNS0yLjMsMC41LTIuM3MtMC41LDAuMy0wLjcsMC40cy0wLjMsMC4xLTAuMy0wLjFjLTAuMS0wLjItMC43LTEuMy0wLjctMS40YzAsMC0wLjYsMS4yLTAuNywxLjQgcy0wLjIsMC4yLTAuMywwLjFjLTAuMi0wLjEtMC43LTAuNC0wLjctMC40czAuNSwyLjEsMC41LDIuM3MtMC4xLDAuMy0wLjMsMC4ybC0xLTEuMWMwLDAtMC4xLDAuMy0wLjIsMC40YzAsMC4xLTAuMSwwLjItMC4yLDAuMSBjLTAuMiwwLTEtMC4yLTEtMC4yczAuMywxLDAuNCwxLjFDMTI5LjEsNi4xLDEyOS4xLDYuMywxMjguOSw2LjR6IE0xMjIuMiwxLjJoNS4ydjEwLjRoLTUuMlYxLjJ6Ii8+DQoJCTxwYXRoIGNsYXNzPSJmaXBfdGV4dCIgZD0iTTE0NC4yLDMyLjRjLTAuNCwwLjktMS4yLDEuMi0xLjcsMS4yYy0wLjYsMC0yLjQtMC4xLTIuNC00LjhjMCwwLDAtOS41LDAtMTAuMWMwLTMuMS0yLjQtNS42LTguNi01LjYJYy02LjcsMC02LjgsMy4zLTYuOCw0LjFjLTAuMSwwLjksMC40LDEuOSwyLjEsMS45YzEuNSwwLDEuOS0xLjcsMi4xLTIuM2MwLjItMC43LDAuMy0yLjcsMy0yLjdjMi4zLDAsMy43LDIsMy44LDQuOSBjMCwwLjUsMCwwLjgsMCwxLjFjMCwwLjIsMCwwLjMsMCwwLjVsMCwwbDAsMHYwLjFjLTAuMiwxLTAuNywxLjUtMS42LDEuOWMtMS4yLDAuNi00LjcsMS4xLTUuMSwxLjJjLTEuNCwwLjMtNS4zLDEuMy01LjIsNS40IGMwLjEsNCw0LjEsNS40LDYuOSw1LjNjMi43LTAuMSw0LjMtMS4yLDUtMS44YzAuNC0wLjMsMC40LTAuMywwLjcsMC4xYzAuNCwwLjQsMS43LDEuNyw0LjgsMS43YzMuMiwwLDMuNi0xLjUsMy44LTIgQzE0NS4xLDMyLjIsMTQ0LjQsMzEuOSwxNDQuMiwzMi40eiBNMTMxLjcsMzMuNWMtMi44LDAtMy41LTIuMy0zLjUtMy41YzAtMS4xLDAuNi0zLjQsMy40LTVjMCwwLDEuMy0wLjgsMy44LTEuOCBjMC4xLDAsMC4yLDAsMC4yLDBzMC4xLDAuMSwwLjEsMC4ybDAsMGwwLDB2MC4xbDAsMGwwLDB2MC4xbDAsMGwwLDBsMCwwdjQuMkMxMzUuNywzMS4xLDEzNC4xLDMzLjUsMTMxLjcsMzMuNXogTTEyMi41LDMzLjQgYy0wLjQtMC4xLTIuOSwwLjItMi45LTcuNHMwLTIzLjksMC0yMy45YzAtMC4zLDAtMS4xLTAuOS0xLjFjLTAuOSwwLTYuOSwwLjMtNy4zLDAuNGMtMC40LDAtMC43LDAuNSwwLDAuNSBjMC43LDAuMSwzLjksMC4zLDMuOSw1LjZjMCwyLjYsMCw1LjIsMCw3LjFjMCwwLjEsMCwwLjIsMCwwLjJjMCwwLjIsMCwwLjMtMC4xLDAuNGMwLDAsMCwwLDAsMC4xbDAsMGMtMC4xLDAuMS0wLjIsMC0wLjUtMC4yIGMtMC41LTAuNC0yLjgtMS44LTUuNy0xLjhjLTQuNywwLTEwLjUsMy40LTEwLjUsMTAuNGMwLDcuNSw1LjMsMTEuMSwxMC44LDExLjFjMi43LDAsNC42LTEuMiw1LjMtMS42YzAuOC0wLjUsMC43LTAuNCwwLjgsMC4zIGMwLjEsMC41LDAsMS41LDEuNCwxLjRjMS41LTAuMiw1LjEtMC42LDUuOC0wLjdDMTIzLjMsMzMuOSwxMjMuMSwzMy41LDEyMi41LDMzLjR6IE0xMTAuMSwzMy43Yy00LjQsMC02LjctNS4yLTYuNy0xMC4yIGMwLTUuNSwzLjEtOS4yLDYuNC05YzQuMywwLjMsNS40LDMuNyw1LjUsOS44YzAsMC40LDAsMC44LDAsMS4zQzExNS4yLDMxLjYsMTEyLjcsMzMuNywxMTAuMSwzMy43eiBNOTguNCwzMi40IGMtMC40LDAuOS0xLjIsMS4yLTEuNywxLjJjLTAuNiwwLTIuNC0wLjEtMi40LTQuOGMwLDAsMC05LjUsMC0xMC4xYzAtMy4xLTIuNC01LjYtOC42LTUuNmMtNi43LDAtNi44LDMuMy02LjgsNC4xIGMtMC4xLDAuOSwwLjQsMS45LDIuMSwxLjljMS41LDAsMS45LTEuNywyLjEtMi4zYzAuMi0wLjcsMC4zLTIuNywzLTIuN2MyLjMsMCwzLjgsMiwzLjgsNXYwLjFjMCwwLjEsMCwwLjIsMCwwLjJ2MC4zIGMwLDAuMSwwLDAuMywwLDAuNGMtMC4xLDEuNS0wLjUsMi0xLjcsMi42Yy0xLjIsMC42LTQuNywxLjEtNS4xLDEuMmMtMS40LDAuMy01LjMsMS4zLTUuMiw1LjRjMC4xLDQsNC4xLDUuNCw2LjksNS4zIGMyLjctMC4xLDQuMy0xLjIsNS0xLjhjMC40LTAuMywwLjQtMC4zLDAuNywwLjFjMC40LDAuNCwxLjcsMS43LDQuOCwxLjdjMy4yLDAsMy42LTEuNSwzLjgtMkM5OS4zLDMyLjIsOTguNywzMS45LDk4LjQsMzIuNHogIE04NiwzMy41Yy0yLjgsMC0zLjUtMi4zLTMuNS0zLjVjMC0xLjEsMC42LTMuNCwzLjQtNWMwLDAsMS4zLTAuOCwzLjgtMS44YzAuMSwwLDAuMiwwLDAuMiwwdjAuMWwwLDBsMCwwYzAsMC4xLDAsMC4yLDAsMC40di0wLjEgYzAsMCwwLDAsMCwwLjF2NC4yQzg5LjksMzEuMSw4OC4zLDMzLjUsODYsMzMuNXogTTc2LjQsMzMuNGMtMC44LTAuMi0yLjItMS4xLTIuMi01LjV2LThjMC0xLjksMC4yLTYuOC03LjMtNi44IGMtMy45LDAtNi4xLDItNi4zLDIuMWMtMC4zLDAuMy0wLjUsMC40LTAuNi0wLjFjLTAuMS0wLjQtMC4zLTEtMC40LTEuNGMtMC4xLTAuMy0wLjMtMC42LTEtMC41Yy0wLjcsMC4xLTUuMSwwLjgtNS45LDEgYy0wLjcsMC4yLTAuNSwwLjUsMCwwLjZjMC41LDAuMSwyLjksMC4zLDIuOSw0LjRzMCw4LjYsMCw4LjZjMCw1LTEsNS40LTEuOSw1LjdjLTEuMiwwLjMtMC42LDAuNy0wLjEsMC43YzAsMCw4LjksMCw5LjEsMCBjMC42LDAsMC45LTAuNi0wLjMtMC44Yy0xLjItMC4yLTIuMy0wLjktMi4zLTQuOGMwLTAuNCwwLTQuNywwLTUuNWMwLTIuMS0wLjUtOC41LDUuMy04LjZjNC4xLTAuMSw0LjUsMy4zLDQuNSw1LjV2OC41IGMwLDMuNS0xLDQuNi0yLjIsNC44Yy0xLjEsMC4yLTAuOSwwLjctMC4zLDAuN2MwLjIsMCw5LjMsMCw5LjMsMEM3Ny4yLDM0LjIsNzcuNywzMy43LDc2LjQsMzMuNHogTTUyLjEsMzIuNCBjLTAuNCwwLjktMS4yLDEuMi0xLjcsMS4yYy0wLjYsMC0yLjQtMC4xLTIuNC00LjhjMCwwLDAtOS41LDAtMTAuMWMwLTMuMS0yLjQtNS42LTguNi01LjZjLTYuNywwLTYuOCwzLjMtNi44LDQuMSBjLTAuMSwwLjksMC40LDEuOSwyLjEsMS45YzEuNSwwLDEuOS0xLjcsMi4xLTIuM2MwLjItMC43LDAuMy0yLjcsMy0yLjdjMi4zLDAsMy43LDIsMy44LDQuOWMwLDAuNSwwLDAuOCwwLDEuMSBjMCwwLjIsMCwwLjQtMC4xLDAuNXYwLjFsMCwwYy0wLjIsMS0wLjcsMS41LTEuNiwxLjljLTEuMiwwLjYtNC43LDEuMS01LjEsMS4yYy0xLjQsMC4zLTUuMywxLjMtNS4yLDUuNGMwLjEsNCw0LjEsNS40LDYuOSw1LjMgYzIuNy0wLjEsNC4zLTEuMiw1LTEuOGMwLjQtMC4zLDAuNC0wLjMsMC43LDAuMWMwLjQsMC40LDEuNywxLjcsNC44LDEuN2MzLjIsMCwzLjYtMS41LDMuOC0yQzUzLDMyLjIsNTIuMywzMS45LDUyLjEsMzIuNHogIE0zOS42LDMzLjVjLTIuOCwwLTMuNS0yLjMtMy41LTMuNXMwLjYtMy40LDMuNC01YzAsMCwxLjMtMC44LDMuOC0xLjhjMC4xLDAsMC4yLDAsMC4yLDBzMC4xLDAuMSwwLjEsMC4ybDAsMGwwLDBsMCwwIGMwLDAsMCwwLjEsMCwwLjJsMCwwbDAsMHYwLjFsMCwwbDAsMGwwLDB2NC4yQzQzLjYsMzEuMSw0MiwzMy41LDM5LjYsMzMuNXogTTMwLDI0LjhjLTEsMy4yLTIuOSw4LjQtOS44LDguNiBDMTMsMzMuNSw4LjcsMjguNiw4LjUsMTkuNUM4LjIsOS44LDEyLjQsMi40LDE4LjksMi4yYzcuMy0wLjEsOS45LDguNiwxMCw5LjljMC4xLDEsMS40LDAuOSwxLjQtMC4xYzAtMC41LTAuNi05LjEtMC44LTEwLjEgYy0wLjItMS0xLTAuNi0xLjItMC4yQzI4LjIsMiwyOC40LDEuNCwyOCwyLjNjLTAuNCwwLjktMS41LDAuNC0xLjksMC4zYy0xLjItMC41LTMuNS0xLjctNy4yLTEuNmMtOC41LDAuMi0xNy4yLDYuNS0xNywxNy41IGMwLjIsMTAuNyw4LjgsMTYuNywxNi44LDE2LjZjNy4zLTAuMSwxMS40LTQuNywxMi42LTEwQzMxLjcsMjMuOCwzMC40LDIzLjUsMzAsMjQuOHoiLz4NCgk8L2c+DQo8L3N2Zz4NCg==");
-
-/***/ }),
-
 /***/ "react-dom/server":
 /*!****************************************************************************************************!*\
   !*** external "/Users/michaelchristianson/Documents/gatsby-data/node_modules/react-dom/server.js" ***!
@@ -13193,11 +12956,6 @@ module.exports = require("path");;
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

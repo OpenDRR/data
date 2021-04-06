@@ -4,6 +4,42 @@ const yaml = require("js-yaml")
 
 const path = require("path")
 
+
+const axios = require('axios');
+
+// send a call to the ARCGIS api  to retrieve layer data
+exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
+  const result = await axios({
+    method: 'GET',
+    // headers: {'X-Custom-Header': 'foobar'},
+    url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/0?f=pjson',
+    params: {
+      fields: "pruid",
+      sign: 'true',
+      page: 10
+    },
+  }).catch(error => {
+    console.error(error.message)
+  })
+  
+  const layers = result.data.layers
+console.log(layers);
+//   const nodeData = {
+//     title: 'Test Node',
+//     description: 'This is a test',
+//   };
+
+// const newNode = {
+//   ...nodeData,
+//   id: createNodeId('TestNode-test-id'), // required by gatsby
+//   internal: {
+//     type: 'TestNode', // required by gatsby
+//     contentDigest: createContentDigest(nodeData),
+//   },
+// };
+// actions.createNode(newNode);
+// }
+}
 exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
   const config = {
     resolve: {

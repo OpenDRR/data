@@ -15,12 +15,12 @@ module.exports = {
     `gatsby-transformer-yaml`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve(`./src/components/layout.js`),
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-layout`,
+    //   options: {
+    //     component: require.resolve(`./src/components/layout.js`),
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -63,6 +63,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon-1.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        defaultLangKey: "en",
+        useLangKeyLayout: false,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
