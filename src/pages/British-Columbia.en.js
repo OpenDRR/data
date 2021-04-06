@@ -48,9 +48,11 @@ const BritishColumbia = () => {
           >
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Date Modified</th>
+                <th>Resource Name</th>
+                <th>Resource Type</th>
                 <th>Format</th>
+                <th>Language</th>
+                <th>Links</th>
               </tr>
             </thead>
             <tbody>
@@ -58,19 +60,21 @@ const BritishColumbia = () => {
                 return (
                   <tr key={`downloads_${index}`}>
                     <td key={`downloads_file_title_${index}`}>{data.title}</td>
-                    <td key={`downloads_file_lastUpdated_${index}`}>
+                    <td>Dataset</td>
+                    {/* <td key={`downloads_file_lastUpdated_${index}`}>
                       {data.lastUpdated}
-                    </td>
+                    </td> */}
                     <td key={`downloads_file_format_${index}`}>
                       <span className="label label-default">{data.format}</span>
                     </td>
+                    <td>English</td>
                     <td key={`downloads_file_url_${index}`}>
                       <a
                         className="btn btn-primary btn-sm pull-right"
                         href={data.url}
                         download
                       >
-                        Download
+                        Access
                       </a>
                     </td>
                   </tr>
@@ -125,7 +129,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -175,7 +179,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -225,7 +229,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -275,7 +279,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -325,7 +329,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -375,7 +379,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -425,7 +429,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -475,7 +479,7 @@ const BritishColumbia = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
