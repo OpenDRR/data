@@ -1,11 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Layout from '../components/layout'
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
+    <Layout>
     <div className="container">
       <div className="news">
         <Link to="/">Home</Link>
@@ -17,6 +19,7 @@ export default function Template({
         />
       </div>
     </div>
+    </Layout>
   )
 }
 export const pageQuery = graphql`

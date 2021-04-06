@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from "gatsby"
 import  MapboxGlMap  from '../components/RegionMap/MapboxGlMap'
+import Layout from '../components/layout'
 const EconomicRegions = props => {
   const { pageContext } = props
   const { pageContent, aggregateData } = pageContext
 
   return (
+    <Layout>
     <div className="container">
       <div className="breadcrumb">
         <Link to="/">Home </Link><span>/ Economic Regions / </span>
@@ -100,6 +102,7 @@ const EconomicRegions = props => {
         </table>
       </div>
     </div>
+    </Layout>
   )
 }
 
