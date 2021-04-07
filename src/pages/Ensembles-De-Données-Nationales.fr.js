@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
+import LayoutFR from "../components/layoutFR";
 const NationalDatasetsPage = () => {
   return (
-    <Layout>
+    <LayoutFR>
       <div className="container">
         <div className="breadcrumb">
           <Link to="/">Home</Link>
@@ -49,7 +49,7 @@ const NationalDatasetsPage = () => {
           <p>Coming Soon</p>
         </section>
       </div>
-    </Layout>
+    </LayoutFR>
   );
 };
 export default NationalDatasetsPage;

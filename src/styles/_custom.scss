@@ -20,6 +20,24 @@
     
 }
 
+.supplemental {
+    margin-bottom: 10vw;
+
+
+    .contact-email, 
+    .keywords, 
+    .publisher,
+    .licence {
+        font-weight: bold;
+    }
+    .license-col {
+        display: flex;
+    }
+    .licence {
+        margin-right: .5vw;
+    }
+}
+
 .map-container {
     position: absolute;
     top: 0;

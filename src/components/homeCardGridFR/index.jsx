@@ -1,5 +1,9 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { 
+  Link
+  //  useStaticQuery,
+  //   graphql 
+  } from "gatsby";
 
 const HomeCardGrid = () => {
 //   const data = useStaticQuery(graphql`

@@ -3,11 +3,11 @@ import ABMapComponent from "../svg/AB-Generalized.svg";
 import YAMLData from "../../content/data/yaml/prov-terr.yaml";
 import { Link } from "gatsby";
 import { Accordion, Card, Button } from "react-bootstrap";
-import Layout from "../components/layout";
+import LayoutFR from "../components/layoutFR";
 
 const Alberta = () => {
   return (
-    <Layout>
+    <LayoutFR>
       <div className="container provincial-banner">
         <div className="breadcrumb">
           <Link to="/fr/Provinces-et-Territoires">
@@ -490,7 +490,7 @@ const Alberta = () => {
         </div>
       </section>
       <section className="container"></section>
-    </Layout>
+    </LayoutFR>
   );
 };
 

@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import "../components/SVGMapComponent/mapstyles.css";
 import Map from "../components/MapOfCanada/map";
 import * as d3 from "d3";
-import Layout from "../components/layout";
+import LayoutFR from "../components/layoutFR";
 
 const ProvincesEtTerritoires = () => {
   const [data, setData] = React.useState([]);
@@ -19,7 +19,7 @@ const ProvincesEtTerritoires = () => {
   }, []);
 
   return (
-    <Layout>
+    <LayoutFR>
       <div className="container">
         <div>
           <Link to="/">Accueil</Link> / Provinces et Territoires
@@ -83,7 +83,7 @@ const ProvincesEtTerritoires = () => {
           </ul>
         </div>
       </section>
-    </Layout>
+    </LayoutFR>
   );
 };
 
