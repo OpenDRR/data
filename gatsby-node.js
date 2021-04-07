@@ -5,25 +5,25 @@ const yaml = require("js-yaml")
 const path = require("path")
 
 
-const axios = require('axios');
+// const axios = require('axios');
 
-// send a call to the ARCGIS api  to retrieve layer data
-exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
-  const result = await axios({
-    method: 'GET',
-    // headers: {'X-Custom-Header': 'foobar'},
-    url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/0?f=pjson',
-    params: {
-      fields: "pruid",
-      sign: 'true',
-      page: 10
-    },
-  }).catch(error => {
-    console.error(error.message)
-  })
+// // send a call to the ARCGIS api  to retrieve layer data
+// exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
+//   const result = await axios({
+//     method: 'GET',
+//     // headers: {'X-Custom-Header': 'foobar'},
+//     url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/0?f=pjson',
+//     params: {
+//       fields: "pruid",
+//       sign: 'true',
+//       page: 10
+//     },
+//   }).catch(error => {
+//     console.error(error.message)
+//   })
   
-  const layers = result.data.layers
-console.log(layers);
+//   const layers = result.data.layers
+// console.log(layers);
 //   const nodeData = {
 //     title: 'Test Node',
 //     description: 'This is a test',
@@ -39,7 +39,7 @@ console.log(layers);
 // };
 // actions.createNode(newNode);
 // }
-}
+// }
 exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
   const config = {
     resolve: {
@@ -66,20 +66,14 @@ exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const ymlDoc = yaml.safeLoad(
-    fs.readFileSync("./content/data/yaml/downloads.yaml", "utf-8")
+    fs.readFileSync("./content/data/yaml/details.yaml", "utf-8")
   )
   ymlDoc.forEach(element => {
     createPage({
       path: element.path,
-      component: require.resolve("./src/templates/downloads.js"),
+      component: require.resolve("./src/templates/datasetDetails.js"),
       context: {
-        pageContent: element.content,
-        multiHazardThreat: element.multiHazardThreat,
-        physicalExposureB: element.physicalExposureB,
-        physicalExposureS: element.physicalExposureS,
-        riskDynamics: element.riskDynamics,
-        socialFabric: element.socialFabric
-
+        details: element.details
       },
     })
   })

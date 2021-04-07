@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import { IoArrowForward, IoArrowBack } from "react-icons/io5"
 import { Link } from 'gatsby'
+// import { StaticImage } from "gatsby-plugin-image"
 
 const Banner = ({ slides }) => {
   const [current, setCurrent] = useState(0)

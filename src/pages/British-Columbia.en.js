@@ -56,7 +56,7 @@ const BritishColumbia = () => {
               </tr>
             </thead>
             <tbody>
-              {YAMLData.downloads.map((data, index) => {
+              {YAMLData.downloadsBC.map((data, index) => {
                 return (
                   <tr key={`downloads_${index}`}>
                     <td key={`downloads_file_title_${index}`}>{data.title}</td>
@@ -69,13 +69,11 @@ const BritishColumbia = () => {
                     </td>
                     <td>English</td>
                     <td key={`downloads_file_url_${index}`}>
-                      <a
+                      <Link to={data.url}
                         className="btn btn-primary btn-sm pull-right"
-                        href={data.url}
-                        download
                       >
                         Access
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 );

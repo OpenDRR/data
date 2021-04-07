@@ -1,0 +1,175 @@
+- path: "/details/PSRA-All-Indicators-B"
+  details:
+  - title: "PSRA All Indicators B"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Web Service"
+  - lang: "English"
+  - format: "ESRI REST"
+
+
+- path: "/details/PSRA-All-Indicators-S"
+  details:
+  - title: "PSRA All Indicators S"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "psra_bc_all_indicators_s_.gpkg"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Web Service"
+  - format: "ESRI REST"
+    
+
+- path: "/details/PSRA-All-Indicators-Sauid-Aggregation"
+  details:  
+  - title: "PSRA All Indicators Sauid Aggregation"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_all_indicators_s_.gpkg"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/PSRA-All-Indicators-Building-Aggregation"
+  details:
+  - title: "PSRA All Indicators Building Aggregation"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_all_indicators_b_.gpkg"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+    
+
+- path: "/details/Hazard-Curves-SA-0-1"
+  details:
+  - title: "Hazard Curves SA 0.1"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hcurves_sa0p1_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+    
+
+- path: "/details/Hazard-Curves-SA-0-2"
+  details:
+  - title: "Hazard Curves SA 0.2"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hcurves_sa0p2_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/Hazard-Curves-SA-0-3"
+  details:
+  - title: "Hazard Curves SA 0.3"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hcurves_sa0p3_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/Hazard-Curves-SA-0-5"
+  details:
+  - title: "Hazard Curves SA 0.5"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hcurves_sa0p5_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+    
+
+- path: "/details/Hazard-Curves-SA-0-6"
+  details:
+  - title: "Hazard Curves SA 0.6"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hcurves_sa0p6_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/Hazard-Curves-SA-1-0"
+  details:
+  - title: "Hazard Curves SA 1.0"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hcurves_sa1p0_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+    
+
+- path: "/details/Hazard-Curves-SA-2-0"
+  details:
+  - title: "Hazard Curves SA 2.0"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hcurves_sa2p0_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/HMAPS"
+  details:
+  - title: "HMAPS"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_hmaps_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/PML"
+  details:
+  - title: "PML"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_pml_s_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+    
+
+- path: "/details/Source-Loss-Table"
+  details: 
+  - title: "Source Loss Table"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_src_loss_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/Hazard-Curves-SA-0-1"
+  details:
+  - title: "UHS"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "seismic_risk/bc/psra_bc_uhs_.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"

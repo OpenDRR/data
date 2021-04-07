@@ -42,7 +42,7 @@ exports.components = {
   "component---src-pages-territoires-du-nord-ouest-fr-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/Territoires-du-Nord-Ouest.fr.js")),
   "component---src-pages-yukon-en-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/Yukon.en.js")),
   "component---src-pages-yukon-fr-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/Yukon.fr.js")),
-  "component---src-templates-downloads-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/templates/downloads.js")),
+  "component---src-templates-dataset-details-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/templates/datasetDetails.js")),
   "component---src-templates-economic-regions-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/templates/economicRegions.js")),
   "component---src-templates-news-and-updates-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/templates/newsAndUpdates.js"))
 }

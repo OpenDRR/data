@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
-import splash from '../images/sp-bg-2.jpg'
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => (
   <div className="background">
-    <img className="splash-image" src={splash} alt="splash-image" />
+    <StaticImage width={'100%'} className="splash-image" src="../images/sp-bg-2.jpg" alt="splash-image" />
     <div className="container landing-content">
       <h1 className="wb-inv">
         Language selection - Web Experience Toolkit /{" "}
@@ -61,30 +61,7 @@ const IndexPage = () => (
         </ul>
       </section>
     </div>
-    {/* </div> */}
   </div>
-  //   <div classNameName="splash">
-  //     <div classNameName="container">
-  //       <h1>OpenDRR Downloads</h1>
-
-  //       <Link to="/en/en/">English</Link>
-  //       <Link to="/fr/fr/">Français</Link>
-  //     </div>
-  //   </div>
 );
 
 export default IndexPage;
-
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "../images/sp-bg-2.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 3000, quality: 80) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;

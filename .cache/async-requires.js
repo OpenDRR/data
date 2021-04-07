@@ -40,7 +40,7 @@ exports.components = {
   "component---src-pages-territoires-du-nord-ouest-fr-js": () => import("./../../../src/pages/Territoires-du-Nord-Ouest.fr.js" /* webpackChunkName: "component---src-pages-territoires-du-nord-ouest-fr-js" */),
   "component---src-pages-yukon-en-js": () => import("./../../../src/pages/Yukon.en.js" /* webpackChunkName: "component---src-pages-yukon-en-js" */),
   "component---src-pages-yukon-fr-js": () => import("./../../../src/pages/Yukon.fr.js" /* webpackChunkName: "component---src-pages-yukon-fr-js" */),
-  "component---src-templates-downloads-js": () => import("./../../../src/templates/downloads.js" /* webpackChunkName: "component---src-templates-downloads-js" */),
+  "component---src-templates-dataset-details-js": () => import("./../../../src/templates/datasetDetails.js" /* webpackChunkName: "component---src-templates-dataset-details-js" */),
   "component---src-templates-economic-regions-js": () => import("./../../../src/templates/economicRegions.js" /* webpackChunkName: "component---src-templates-economic-regions-js" */),
   "component---src-templates-news-and-updates-js": () => import("./../../../src/templates/newsAndUpdates.js" /* webpackChunkName: "component---src-templates-news-and-updates-js" */)
 }

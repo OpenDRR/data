@@ -70,7 +70,7 @@ const Manitoba = () => {
                         href={data.url}
                         download
                       >
-                        Download
+                        Access
                       </a>
                     </td>
                   </tr>
@@ -125,7 +125,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -175,7 +175,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                               Access
                               </a>
                             </td>
                           </tr>
@@ -225,7 +225,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -275,7 +275,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -325,7 +325,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                               Access
                               </a>
                             </td>
                           </tr>
@@ -375,7 +375,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                               Access
                               </a>
                             </td>
                           </tr>
@@ -425,7 +425,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
@@ -475,7 +475,7 @@ const Manitoba = () => {
                                 href={data.url}
                                 download
                               >
-                                Download
+                                Access
                               </a>
                             </td>
                           </tr>
