@@ -25,3 +25,28 @@ export const SliderData = [
     alt: "Earthquake Scenarios",
   },
 ]
+
+export const SliderDataFR = [
+  {
+    title: "Couche nationale des établissements humains",
+    path: "/fr/Ensembles-De-Données-Nationales#NHSL",
+    label: "Voir",
+    image: SliderImageOne,
+    alt: "National Human Settlement Layer",
+  },
+  {
+    title: "Risque sismique",
+    path: "/fr/Ensembles-De-Données-Nationales#SR",
+    label: "Voir",
+    image: SliderImageTwo,
+    alt: "Risque sismique",
+  },
+  {
+    title: "Scénarios de tremblement de terre",
+    path: "/fr/Ensembles-De-Données-Nationales#ES",
+    label: "Voir",
+    image: SliderImageThree,
+    alt: "Scénarios de tremblement de terre",
+  },
+]
+

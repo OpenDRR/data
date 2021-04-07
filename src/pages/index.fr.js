@@ -2,12 +2,12 @@ import React from "react";
 // import { Link } from "gatsby"
 import SEO from "../components/seo";
 import Banner from "../components/Banner";
-import HomeCardGrid from "../components/homeCardGrid/index.jsx";
-import { SliderData } from "../../config/SliderData";
+import HomeCardGridFR from "../components/HomeCardGridFR/index.jsx";
+import { SliderDataFR } from "../../config/SliderData";
 import { Helmet } from "react-helmet";
-import Layout from "../components/layout";
+import LayoutFR from "../components/layoutFR";
 const IndexPage = () => (
-  <Layout>
+  <LayoutFR>
     <div className="container">
       <Helmet>
         <html lang="fr"></html>
@@ -23,10 +23,10 @@ const IndexPage = () => (
       </p>
 
       <SEO title="Accueil" />
-      <Banner slides={SliderData} />
-      <HomeCardGrid />
+      <Banner slides={SliderDataFR} />
+      <HomeCardGridFR />
     </div>
-  </Layout>
+  </LayoutFR>
 );
 
 export default IndexPage;
