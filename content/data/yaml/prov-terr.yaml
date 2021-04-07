@@ -66,216 +66,216 @@ downloads:
 downloads5910:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5910.zip"
+    url: "/details/5910/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5910.zip"
+    url: "/details/5910/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5910.zip"
+    url: "/details/5910/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5910.zip"
+    url: "/details/5910/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5910.zip"
+    url: "/details/5910/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 
 downloads5920:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5920.zip"
+    url: "/details/5920/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5920.zip"
+    url: "/details/5920/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5920.zip"
+    url: "/details/5920/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5920.zip"
+    url: "/details/5920/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5920.zip"
+    url: "/details/5920/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 
 downloads5930:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5930.zip"
+    url: "/details/5930/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5930.zip"
+    url: "/details/5930/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5930.zip"
+    url: "/details/5930/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5930.zip"
+    url: "/details/5930/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5930.zip"
+    url: "/details/5930/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 
 downloads5940:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5940.zip"
+    url: "/details/5940/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5940.zip"
+    url: "/details/5940/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5940.zip"
+    url: "/details/5940/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5940.zip"
+    url: "/details/5940/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5940.zip"
+    url: "/details/5940/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 
 downloads5950:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5950.zip"
+    url: "/details/5950/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5950.zip"
+    url: "/details/5950/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5950.zip"
+    url: "/details/5950/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5950.zip"
+    url: "/details/5950/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5950.zip"
+    url: "/details/5950/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 
 downloads5960:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5960.zip"
+    url: "/details/5960/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5960.zip"
+    url: "/details/5960/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5960.zip"
+    url: "/details/5960/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5960.zip"
+    url: "/details/5960/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5960.zip"
+    url: "/details/5960/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 
 downloads5970:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5970.zip"
+    url: "/details/5970/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5970.zip"
+    url: "/details/5970/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5970.zip"
+    url: "/details/5970/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5970.zip"
+    url: "/details/5970/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5970.zip"
+    url: "/details/5970/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 
 downloads5980:
   - threat:
     title: "Multi Hazard Threat (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_hazard_threat_all_indicators_s_5980.zip"
+    url: "/details/5980/Multi-Hazard-Threat-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Buildings)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_b_5980.zip"
+    url: "/details/5980/Physical-Exposure-Buildings"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Physical Exposure (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_physical_exposure_all_indicators_s_5980.zip"
+    url: "/details/5980/Physical-Exposure-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Risk Dynamics"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_risk_dynamics_all_indicators_5980.zip"
+    url: "/details/5980/Risk-Dynamics"
     lastUpdated: 2021-03-18
     format: ".gpkg"
   - threat:
     title: "Social Fabric (Census Subdivision)"
-    url: "../../../assets/data/national_human_settlement_layers/bc/nhsl_social_fabric_all_indicators_s_5980.zip"
+    url: "/details/5980/Social-Fabric-Census-Subdivision"
     lastUpdated: 2021-03-18
     format: ".gpkg"
 

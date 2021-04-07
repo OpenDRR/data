@@ -12,6 +12,11 @@
      align-items: center;
     background-color: white;
 
+    @include media('<LGdesktop') {
+        top: 25%;
+        left: 10%;
+    }
+
 }
 
 .background{
