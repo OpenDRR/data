@@ -8,12 +8,12 @@ const DatasetDetails = (props) => {
   return (
     <Layout>
       <div className="container">
-      <div className="breadcrumb">
+      {/* <div className="breadcrumb">
           <Link to="/en/Provinces-and-Territories">
             Provinces and Territories 
           </Link>{" "}
           / Details
-        </div>
+        </div> */}
         <div id="wb-cont">
           {details.map((item, index) => {
             return <h1 key={`details_title_${index}`}>{item.title}</h1>;
