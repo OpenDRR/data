@@ -1,4 +1,4 @@
-OpenDRR Documentation
+## OpenDRR Documentation
 
 Configure Gatsby pages
 
@@ -36,7 +36,53 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 4. Using the context property we pass our data into the page as a special prop named 'details', allowing it to be consumed. Read more on contexts [here]('https://www.gatsbyjs.com/docs/creating-and-modifying-pages/') 
 
+Create a template 
+To finish the page generation process of the sourced content, we must create a template for producing dynamic pages from data
 
+src/templates/datasetDetails.js
+```
+import React from "react"
+import { Link } from "gatsby"
+const basicTemplate = props => {
+  const { pageContext } = props
+  const { pageContent, links } = pageContext
+
+  return (
+    <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
+      <ul>
+        {pageContent.map((data, index) => {
+          return <li key={`content_item_${index}`}>{data.item}</li>
+        })}
+      </ul>
+      <ul>
+        {links.map((item, index) => {
+          return (
+            <li key={`link_${index}`}>
+              <Link to={item.to}>{item.to}</Link>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
+}
+export default basicTemplate
+```
+
+
+Join the pieces
+After parsing a YAML file into data and configuring Gatsby to produce pages with a template, you should have the following file and folder structure:
+
+|gatsby-YAML-JSON-at-buildtime
+    |content
+      - index.yaml
+    |src
+      |templates
+        - basicTemplate.js
+    - gatsby-node.js
+
+
+Running gatsby develop in the terminal and opening a browser window to http://localhost:8000/page1 you’ll see a page with content that was sourced from a YAML file used to generate your site.
 
 
 
