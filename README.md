@@ -1,5 +1,7 @@
 ## OpenDRR Documentation
 
+# English
+
 Configure Gatsby pages
 
 Breaking down the code:
@@ -44,22 +46,13 @@ import React from "react"
 import { Link } from "gatsby"
 const basicTemplate = props => {
   const { pageContext } = props
-  const { pageContent, links } = pageContext
+  const { details } = pageContext
 
   return (
-    <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
+    <div>
       <ul>
-        {pageContent.map((data, index) => {
+        {details.map((data, index) => {
           return <li key={`content_item_${index}`}>{data.item}</li>
-        })}
-      </ul>
-      <ul>
-        {links.map((item, index) => {
-          return (
-            <li key={`link_${index}`}>
-              <Link to={item.to}>{item.to}</Link>
-            </li>
-          )
         })}
       </ul>
     </div>
@@ -69,6 +62,58 @@ export default basicTemplate
 ```
 
 Running gatsby develop in the terminal and opening a browser window to http://localhost:8000/page1 you’ll see a page with content that was sourced from a YAML file used to generate your site.
+
+
+# Français
+
+
+Configurer les pages Gatsby
+
+Décomposer le code :
+
+**``gatsby-node.js`` :
+
+```
+const fs = require("fs")
+const yaml = require("js-yaml")
+
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+  const details = yaml.load(fs.readFileSync("./content/data/yaml/details.yaml", "utf-8"))
+  details.forEach(element => {
+    createPage({
+      path: element.path,
+      component: require.resolve("./src/templates/datasetDetails.js"),
+      context: {
+        details: element.details
+      },
+    })
+  })
+
+```
+
+
+1. importez file sync(fs) & js-yaml
+2. Chargez le fichier 'details.yaml' et analysez son contenu.
+3. Utiliser la fonction createPage() [API]('https://www.gatsbyjs.com/docs/reference/config-files/actions/#createPage') de Gatsby,
+ nous créons des pages de façon programmatique à partir du fichier analysé.
+
+
+4. En utilisant la propriété contextuelle, nous transmettons nos données à la page sous la forme d'une propriété spéciale nommée "details", ce qui permet de les consommer. En savoir plus sur les contextes [ici]('https://www.gatsbyjs.com/docs/creating-and-modifying-pages/') 
+
+Créer un modèle 
+Pour terminer le processus de génération de pages à partir du contenu source, nous devons créer un modèle pour produire des pages dynamiques à partir de données.
+
+Traduit avec www.DeepL.com/Translator (version gratuite)
+
+
+
+
+
+
+
+
 
 
 
