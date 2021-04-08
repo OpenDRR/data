@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "gatsby"
 import SEO from "../components/seo";
 import Banner from "../components/Banner";
-import HomeCardGridFR from "../components/HomeCardGridFR/index.jsx";
+import HomeCardGridFR from "../components/homeCardGridFR";
 import { SliderDataFR } from "../../config/SliderData";
 import { Helmet } from "react-helmet";
 import LayoutFR from "../components/layoutFR";
