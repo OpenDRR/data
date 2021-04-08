@@ -6,12 +6,12 @@ const NationalDatasetsPage = () => {
     <LayoutFR>
       <div className="container">
         <div className="breadcrumb">
-          <Link to="/">Home</Link>
-          <span> / National Datasets </span>
+          <Link to="/fr/">Accueil</Link>
+          <span> / Ensembles de données nationales </span>
         </div>
         <h1 id="wb-cont">National Datasets</h1>
         <section style={{ marginTop: "20vh", marginBottom: "20vh" }} id="NHSL">
-          <h2>National Human Settlement Layers</h2>
+          <h2>Couches nationales d'établissements humains</h2>
           <hr />
           <table className="table table-hover">
             <thead>
@@ -23,30 +23,30 @@ const NationalDatasetsPage = () => {
           </table>
         </section>
         <section style={{ marginTop: "20vh", marginBottom: "20vh" }} id="SR">
-          <h2>Seismic Risk</h2>
+          <h2>Risque sismique</h2>
           <hr />
           <table className="table table-hover">
             <thead>
-              <th>Name</th>
-              <th>Last Updated</th>
+              <th>Nom</th>
+              <th>Dernière mise à jour</th>
               <th>Format</th>
             </thead>
             <tbody></tbody>
           </table>
-          <p>Coming Soon</p>
+          <p>Bientôt disponible</p>
         </section>
         <section style={{ marginTop: "20vh", marginBottom: "20vh" }} id="ES">
-          <h2>Earthquake Scenarios</h2>
+          <h2>Scénarios de tremblement de terre</h2>
           <hr />
           <table className="table table-hover">
             <thead>
-              <th>Name</th>
-              <th>Last Updated</th>
+              <th>Nom</th>
+              <th>Dernière mise à jour</th>
               <th>Format</th>
             </thead>
             <tbody></tbody>
           </table>
-          <p>Coming Soon</p>
+          <p>Bientôt disponible</p>
         </section>
       </div>
     </LayoutFR>

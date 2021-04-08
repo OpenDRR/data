@@ -61,7 +61,7 @@ const basicTemplate = props => {
 export default basicTemplate
 ```
 
-Running gatsby develop in the terminal and opening a browser window to http://localhost:8000/page1 you’ll see a page with content that was sourced from a YAML file used to generate your site.
+Running gatsby develop in the terminal and opening a browser window to http://localhost:8000/ you’ll see a page with content that was sourced from a YAML file used to generate your site.
 
 
 # Français
@@ -71,7 +71,7 @@ Configurer les pages Gatsby
 
 Décomposer le code :
 
-**``gatsby-node.js`` :
+**`gatsby-node.js`** :
 
 ```
 const fs = require("fs")
@@ -105,11 +105,28 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 Créer un modèle 
 Pour terminer le processus de génération de pages à partir du contenu source, nous devons créer un modèle pour produire des pages dynamiques à partir de données.
 
-Traduit avec www.DeepL.com/Translator (version gratuite)
+**`src/templates/datasetDetails.js`**
+```
+import React from "react"
+import { Link } from "gatsby"
+const basicTemplate = props => {
+  const { pageContext } = props
+  const { details } = pageContext
 
+  return (
+    <div>
+      <ul>
+        {details.map((data, index) => {
+          return <li key={`content_item_${index}`}>{data.item}</li>
+        })}
+      </ul>
+    </div>
+  )
+}
+export default basicTemplate
+```
 
-
-
+En exécutant gatsby develop dans le terminal et en ouvrant une fenêtre de navigateur sur http://localhost:8000/, vous verrez une page dont le contenu provient d'un fichier YAML utilisé pour générer votre site.
 
 
 
