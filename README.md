@@ -1,4 +1,47 @@
-[demo](https://opendrr-gatsby-data.netlify.app/)
+OpenDRR Documentation
+
+Configure Gatsby pages
+
+Breaking down the code:
+
+
+gatsby-node.js
+
+```
+const fs = require("fs")
+const yaml = require("js-yaml")
+
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+  const details = yaml.load(fs.readFileSync("./content/data/yaml/details.yaml", "utf-8"))
+  details.forEach(element => {
+    createPage({
+      path: element.path,
+      component: require.resolve("./src/templates/datasetDetails.js"),
+      context: {
+        details: element.details
+      },
+    })
+  })
+
+```
+
+
+1. import file sync(fs) & js-yaml
+2. Load the 'details.yaml' and parse the content
+3. Using Gatsby's createPage() [API]('https://www.gatsbyjs.com/docs/reference/config-files/actions/#createPage'),
+ we create pages programmatically from the parsed file.
+
+
+4. Using the context property we pass our data into the page as a special prop named 'details', allowing it to be consumed. Read more on contexts [here]('https://www.gatsbyjs.com/docs/creating-and-modifying-pages/') 
+
+
+
+
+
+
+
 
 
 ## 🚀 Quick start

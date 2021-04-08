@@ -122,13 +122,12 @@ const ColombieBritannique = () => {
                               </span>
                             </td>
                             <td key={`downloads5910_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
                                 Accès
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         );

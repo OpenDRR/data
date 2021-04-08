@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 const HomeCardGridFR = () => {
-
-
   return (
     <>
     <div className="col-md-12">
