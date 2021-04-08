@@ -4,8 +4,7 @@ Configure Gatsby pages
 
 Breaking down the code:
 
-
-gatsby-node.js
+**`gatsby-node.js`**:
 
 ```
 const fs = require("fs")
@@ -39,7 +38,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 Create a template 
 To finish the page generation process of the sourced content, we must create a template for producing dynamic pages from data
 
-src/templates/datasetDetails.js
+**`src/templates/datasetDetails.js`**
 ```
 import React from "react"
 import { Link } from "gatsby"
@@ -68,19 +67,6 @@ const basicTemplate = props => {
 }
 export default basicTemplate
 ```
-
-
-Join the pieces
-After parsing a YAML file into data and configuring Gatsby to produce pages with a template, you should have the following file and folder structure:
-
-|gatsby-YAML-JSON-at-buildtime
-    |content
-      - index.yaml
-    |src
-      |templates
-        - basicTemplate.js
-    - gatsby-node.js
-
 
 Running gatsby develop in the terminal and opening a browser window to http://localhost:8000/page1 you’ll see a page with content that was sourced from a YAML file used to generate your site.
 
