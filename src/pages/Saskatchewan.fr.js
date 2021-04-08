@@ -48,8 +48,8 @@ const Saskatchewan = () => {
           >
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Date Modified</th>
+                <th>Nom</th>
+                <th>Date de modification</th>
                 <th>Format</th>
               </tr>
             </thead>
@@ -65,13 +65,12 @@ const Saskatchewan = () => {
                       <span className="label label-default">{data.format}</span>
                     </td>
                     <td key={`downloads_file_url_${index}`}>
-                      <a
+                      <Link
                         className="btn btn-primary btn-sm pull-right"
-                        href={data.url}
-                        download
+                        to={data.url}
                       >
-                        Download
-                      </a>
+                        Accès
+                      </Link>
                     </td>
                   </tr>
                 );
@@ -97,8 +96,8 @@ const Saskatchewan = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -107,7 +106,7 @@ const Saskatchewan = () => {
                         return (
                           <tr key={`downloads5910_${index}`}>
                             <td key={`downloads5910_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5910_threat_lastUpdated_${index}`}
@@ -120,13 +119,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads5910_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -147,8 +145,8 @@ const Saskatchewan = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -157,7 +155,7 @@ const Saskatchewan = () => {
                         return (
                           <tr key={`downloads5920_${index}`}>
                             <td key={`downloads5920_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5920_threat_lastUpdated_${index}`}
@@ -170,13 +168,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads5920_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -197,8 +194,8 @@ const Saskatchewan = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -207,7 +204,7 @@ const Saskatchewan = () => {
                         return (
                           <tr key={`downloads5930_${index}`}>
                             <td key={`downloads5930_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5930_threat_lastUpdated_${index}`}
@@ -220,13 +217,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads5930_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -247,8 +243,8 @@ const Saskatchewan = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -257,7 +253,7 @@ const Saskatchewan = () => {
                         return (
                           <tr key={`downloads5940_${index}`}>
                             <td key={`downloads5940_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5940_threat_lastUpdated_${index}`}
@@ -270,13 +266,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads5940_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -297,8 +292,8 @@ const Saskatchewan = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -307,7 +302,7 @@ const Saskatchewan = () => {
                         return (
                           <tr key={`downloads5950_${index}`}>
                             <td key={`downloads5950_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5950_threat_lastUpdated_${index}`}
@@ -320,13 +315,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads5950_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -347,8 +341,8 @@ const Saskatchewan = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -357,7 +351,7 @@ const Saskatchewan = () => {
                         return (
                           <tr key={`downloads5960_${index}`}>
                             <td key={`downloads5960_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5960_threat_lastUpdated_${index}`}
@@ -370,13 +364,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads5960_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );

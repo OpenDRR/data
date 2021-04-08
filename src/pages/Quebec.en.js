@@ -120,13 +120,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2410_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -170,13 +169,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2415_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -220,13 +218,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2420_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -270,13 +267,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2425_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -320,13 +316,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2430_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -370,13 +365,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2433_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -420,13 +414,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2435_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -470,13 +463,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2440_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -488,11 +480,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="8">
                   Lanaudi (2450)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="8">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -520,13 +512,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2450_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -538,11 +529,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="9">
                   Laurentides (2455)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="9">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -570,13 +561,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2455_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -588,11 +578,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="10">
                   Outaouais (2460)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="10">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -620,13 +610,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2460_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -638,11 +627,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="11">
                   Abitibi Temiscamique (2465)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="11">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -670,13 +659,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2465_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -688,11 +676,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="12">
                   Mauricie (2470)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="12">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -720,13 +708,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2470_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -738,11 +725,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="13">
                   Saguenay Lac Saint Jean (2475)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="13">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -770,13 +757,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2475_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -788,11 +774,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="14">
                   Cote Nord (2480)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="14">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -820,13 +806,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2480_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -838,11 +823,11 @@ const Quebec = () => {
             </Card>
             <Card>
               <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
+                <Accordion.Toggle as={Button} variant="link" eventKey="15">
                   Nord Du Quebec (2490)
                 </Accordion.Toggle>
               </Card.Header>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse eventKey="15">
                 <Card.Body>
                   <table className="table table-hover">
                     <thead>
@@ -870,13 +855,12 @@ const Quebec = () => {
                               </span>
                             </td>
                             <td key={`downloads2490_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );

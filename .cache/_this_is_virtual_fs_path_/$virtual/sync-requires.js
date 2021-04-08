@@ -16,8 +16,6 @@ exports.components = {
   "component---src-pages-index-en-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/index.en.js")),
   "component---src-pages-index-fr-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/index.fr.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/index.js")),
-  "component---src-pages-indicator-modal-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/indicatorModal.js")),
-  "component---src-pages-indicators-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/indicators.js")),
   "component---src-pages-manitoba-en-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/Manitoba.en.js")),
   "component---src-pages-manitoba-fr-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/Manitoba.fr.js")),
   "component---src-pages-national-datasets-en-js": preferDefault(require("/Users/michaelchristianson/Documents/gatsby-data/src/pages/National-Datasets.en.js")),

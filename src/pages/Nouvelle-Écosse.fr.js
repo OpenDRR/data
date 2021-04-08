@@ -48,9 +48,9 @@ const NovaScotia = () => {
           >
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Date Modified</th>
-                <th>Format</th>
+              <th>Nom</th>
+              <th>Date de modification</th>
+              <th>Format</th>
               </tr>
             </thead>
             <tbody>
@@ -89,7 +89,7 @@ const NovaScotia = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Vancouver Island & Coast (5910)
+                  Cape Breton (1210)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -97,36 +97,35 @@ const NovaScotia = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5910.map((data, index) => {
+                      {YAMLData.downloads1210.map((data, index) => {
                         return (
-                          <tr key={`downloads5910_${index}`}>
-                            <td key={`downloads5910_threat_title_${index}`}>
-                              {data.title}
+                          <tr key={`downloads1210_${index}`}>
+                            <td key={`downloads1210_threat_title_${index}`}>
+                              {data.titlefr}
                             </td>
                             <td
-                              key={`downloads5910_threat_lastUpdated_${index}`}
+                              key={`downloads1210_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5910_threat_format_${index}`}>
+                            <td key={`downloads1210_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5910_threat_url_${index}`}>
-                              <a
+                            <td key={`downloads1210_threat_url_${index}`}>
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -139,7 +138,7 @@ const NovaScotia = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  Lower Mainland Southwest (5920)
+                  Cote Nord (1220)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">
@@ -147,36 +146,35 @@ const NovaScotia = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5920.map((data, index) => {
+                      {YAMLData.downloads1220.map((data, index) => {
                         return (
-                          <tr key={`downloads5920_${index}`}>
-                            <td key={`downloads5920_threat_title_${index}`}>
-                              {data.title}
+                          <tr key={`downloads1220_${index}`}>
+                            <td key={`downloads1220_threat_title_${index}`}>
+                              {data.titlefr}
                             </td>
                             <td
-                              key={`downloads5920_threat_lastUpdated_${index}`}
+                              key={`downloads1220_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5920_threat_format_${index}`}>
+                            <td key={`downloads1220_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5920_threat_url_${index}`}>
-                              <a
+                            <td key={`downloads1220_threat_url_${index}`}>
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -189,7 +187,7 @@ const NovaScotia = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  Thompson Okanagan (5930)
+                  Annapolis Valley (1230)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="2">
@@ -197,36 +195,35 @@ const NovaScotia = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5930.map((data, index) => {
+                      {YAMLData.downloads1230.map((data, index) => {
                         return (
-                          <tr key={`downloads5930_${index}`}>
-                            <td key={`downloads5930_threat_title_${index}`}>
-                              {data.title}
+                          <tr key={`downloads1230_${index}`}>
+                            <td key={`downloads1230_threat_title_${index}`}>
+                              {data.titlefr}
                             </td>
                             <td
-                              key={`downloads5930_threat_lastUpdated_${index}`}
+                              key={`downloads1230_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5930_threat_format_${index}`}>
+                            <td key={`downloads1230_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5930_threat_url_${index}`}>
-                              <a
+                            <td key={`downloads1230_threat_url_${index}`}>
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -239,7 +236,7 @@ const NovaScotia = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                  Kootenay (5940)
+                  Sud (1240)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="3">
@@ -247,36 +244,35 @@ const NovaScotia = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5940.map((data, index) => {
+                      {YAMLData.downloads1240.map((data, index) => {
                         return (
-                          <tr key={`downloads5940_${index}`}>
-                            <td key={`downloads5940_threat_title_${index}`}>
-                              {data.title}
+                          <tr key={`downloads1240_${index}`}>
+                            <td key={`downloads1240_threat_title_${index}`}>
+                              {data.titlefr}
                             </td>
                             <td
-                              key={`downloads5940_threat_lastUpdated_${index}`}
+                              key={`downloads1240_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5940_threat_format_${index}`}>
+                            <td key={`downloads1240_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5940_threat_url_${index}`}>
-                              <a
+                            <td key={`downloads1240_threat_url_${index}`}>
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -289,7 +285,7 @@ const NovaScotia = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                  Cariboo (5950)
+                  Halifax (1250)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="4">
@@ -297,186 +293,35 @@ const NovaScotia = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {YAMLData.downloads5950.map((data, index) => {
+                      {YAMLData.downloads1250.map((data, index) => {
                         return (
-                          <tr key={`downloads5950_${index}`}>
-                            <td key={`downloads5950_threat_title_${index}`}>
-                              {data.title}
+                          <tr key={`downloads1250_${index}`}>
+                            <td key={`downloads1250_threat_title_${index}`}>
+                              {data.titlefr}
                             </td>
                             <td
-                              key={`downloads5950_threat_lastUpdated_${index}`}
+                              key={`downloads1250_threat_lastUpdated_${index}`}
                             >
                               {data.lastUpdated}
                             </td>
-                            <td key={`downloads5950_threat_format_${index}`}>
+                            <td key={`downloads1250_threat_format_${index}`}>
                               <span className="label label-default">
                                 {data.format}
                               </span>
                             </td>
-                            <td key={`downloads5950_threat_url_${index}`}>
-                              <a
+                            <td key={`downloads1250_threat_url_${index}`}>
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
-            <Card>
-              <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="5">
-                  North Coast (5960)
-                </Accordion.Toggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="5">
-                <Card.Body>
-                  <table className="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
-                        <th>Format</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {YAMLData.downloads5960.map((data, index) => {
-                        return (
-                          <tr key={`downloads5960_${index}`}>
-                            <td key={`downloads5960_threat_title_${index}`}>
-                              {data.title}
-                            </td>
-                            <td
-                              key={`downloads5960_threat_lastUpdated_${index}`}
-                            >
-                              {data.lastUpdated}
-                            </td>
-                            <td key={`downloads5960_threat_format_${index}`}>
-                              <span className="label label-default">
-                                {data.format}
-                              </span>
-                            </td>
-                            <td key={`downloads5960_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
-            <Card>
-              <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="6">
-                  Nechako (5970)
-                </Accordion.Toggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="6">
-                <Card.Body>
-                  <table className="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
-                        <th>Format</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {YAMLData.downloads5970.map((data, index) => {
-                        return (
-                          <tr key={`downloads5970_${index}`}>
-                            <td key={`downloads5970_threat_title_${index}`}>
-                              {data.title}
-                            </td>
-                            <td
-                              key={`downloads5970_threat_lastUpdated_${index}`}
-                            >
-                              {data.lastUpdated}
-                            </td>
-                            <td key={`downloads5970_threat_format_${index}`}>
-                              <span className="label label-default">
-                                {data.format}
-                              </span>
-                            </td>
-                            <td key={`downloads5970_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Card>
-            <Card>
-              <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="7">
-                  Northeast (5980)
-                </Accordion.Toggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="7">
-                <Card.Body>
-                  <table className="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
-                        <th>Format</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {YAMLData.downloads5980.map((data, index) => {
-                        return (
-                          <tr key={`downloads5980_${index}`}>
-                            <td key={`downloads5980_threat_title_${index}`}>
-                              {data.title}
-                            </td>
-                            <td
-                              key={`downloads5980_threat_lastUpdated_${index}`}
-                            >
-                              {data.lastUpdated}
-                            </td>
-                            <td key={`downloads5980_threat_format_${index}`}>
-                              <span className="label label-default">
-                                {data.format}
-                              </span>
-                            </td>
-                            <td key={`downloads5980_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );

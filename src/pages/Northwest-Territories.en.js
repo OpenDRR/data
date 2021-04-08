@@ -124,13 +124,12 @@ const NorthwestTerritories = () => {
                               </span>
                             </td>
                             <td key={`downloads6110_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );

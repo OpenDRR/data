@@ -120,13 +120,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads1010_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -170,13 +169,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads1020_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -220,13 +218,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads1030_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -270,13 +267,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads1040_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );

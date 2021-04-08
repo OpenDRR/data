@@ -120,13 +120,12 @@ const Yukon = () => {
                               </span>
                             </td>
                             <td key={`downloads6010_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
+                            <Link
+                        className="btn btn-primary btn-sm pull-right"
+                        to={data.url}
+                      >
+                        Access
+                      </Link>
                             </td>
                           </tr>
                         );

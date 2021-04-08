@@ -48,9 +48,9 @@ const NewfoundlandAndLabrador = () => {
           >
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Date Modified</th>
-                <th>Format</th>
+              <th>Nom</th>
+                        <th>Date de modification</th>
+                        <th>Format</th>
               </tr>
             </thead>
             <tbody>
@@ -97,8 +97,8 @@ const NewfoundlandAndLabrador = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                      <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -120,13 +120,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads5910_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
+                            <Link
+                        className="btn btn-primary btn-sm pull-right"
+                        to={data.url}
+                      >
+                        Accès
+                      </Link>
                             </td>
                           </tr>
                         );
@@ -147,8 +146,8 @@ const NewfoundlandAndLabrador = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                      <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -170,13 +169,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads5920_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
+                            <Link
+                        className="btn btn-primary btn-sm pull-right"
+                        to={data.url}
+                      >
+                        Accès
+                      </Link>
                             </td>
                           </tr>
                         );
@@ -197,8 +195,8 @@ const NewfoundlandAndLabrador = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                      <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -220,13 +218,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads5930_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
+                            <Link
+                        className="btn btn-primary btn-sm pull-right"
+                        to={data.url}
+                      >
+                        Accès
+                      </Link>
                             </td>
                           </tr>
                         );
@@ -247,8 +244,8 @@ const NewfoundlandAndLabrador = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                      <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -270,13 +267,12 @@ const NewfoundlandAndLabrador = () => {
                               </span>
                             </td>
                             <td key={`downloads5940_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
+                            <Link
+                        className="btn btn-primary btn-sm pull-right"
+                        to={data.url}
+                      >
+                        Accès
+                      </Link>
                             </td>
                           </tr>
                         );

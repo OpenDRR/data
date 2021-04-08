@@ -646,91 +646,3924 @@
   - format: ".gpkg"
 
 
-
+# start of mass copy
 
 # 4810
+- path: "/details/4810/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators4810.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4810/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4810.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4810/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4810.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4810/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4810.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4810/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4810.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
 # 4820
+
+- path: "/details/4820/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators_s_4820.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4820/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4820.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4820/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4820.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4820/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4820.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4820/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4820.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4830
+
+- path: "/details/4830/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators_s_4830.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4830/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4830.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4830/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4830.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4830/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4830.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4830/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4830.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4840
+
+- path: "/details/4840/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators_s_4840.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4840/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4840.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4840/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4840.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4840/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4840.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4840/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4840.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4850
+
+- path: "/details/4850/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators_s_4850.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4850/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4850.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4850/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4850.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4850/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4850.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4850/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4850.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4860
+- path: "/details/4860/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators_s_4860.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4860/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4860.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4860/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4860.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4860/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4860.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4860/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4860.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4870
+
+- path: "/details/4870/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators_s_4870.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4870/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4870.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4870/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4870.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4870/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4870.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4870/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4870.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4880
 
+- path: "/details/4880/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_hazard_threat_all_indicators_s_4880.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4880/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_b_4880.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4880/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_physical_exposure_all_indicators_s_4880.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4880/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4880.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4880/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ab/nhsl_risk_dynamics_all_indicators_4880.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
 # 4610
+
+- path: "/details/4610/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4610.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4610/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4610.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4610/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4610.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4610/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4610.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4610/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4610.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4620
+
+- path: "/details/4620/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4620.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4620/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4620.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4620/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4620.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4620/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4620.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4620/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4620.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4630
+
+- path: "/details/4630/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4630.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4630/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4630.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4630/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4630.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4630/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4630.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4630/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4630.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4640
+
+- path: "/details/4640/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4640.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4640/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4640.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4640/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4640.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4640/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4640.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4640/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4640.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4650
+
+- path: "/details/4650/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4650.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4650/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4650.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4650/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4650.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4650/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4650.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4650/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4650.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4660
+
+- path: "/details/4660/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4660.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4660/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4660.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4660/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4660.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4660/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4660.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4660/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4660.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4670
+- path: "/details/4670/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4670.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4670/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4670.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4670/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4670.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4670/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4670.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4670/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4670.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 4680
+- path: "/details/4680/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_hazard_threat_all_indicators_s_4680.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4680/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_b_4680.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4680/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_physical_exposure_all_indicators_s_4680.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4680/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4680.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4680/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/mb/nhsl_risk_dynamics_all_indicators_4680.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 # 1210
+- path: "/details/1210/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_hazard_threat_all_indicators_s_1210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1210/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_b_1210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1210/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_s_1210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1210/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1210/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 1220
+- path: "/details/1220/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_hazard_threat_all_indicators_s_1220.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1220/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_b_1220.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1220/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_s_1220.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1220/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1220.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1220/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1220.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 1230
+
+- path: "/details/1230/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_hazard_threat_all_indicators_s_1230.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1230/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_b_1230.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1230/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_s_1230.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1230/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1230.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1230/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1230.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 1240
+
+- path: "/details/1240/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_hazard_threat_all_indicators_s_1240.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1240/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_b_1240.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1240/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_s_1240.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1240/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1240.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1240/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1240.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 1250
 
+- path: "/details/1250/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_hazard_threat_all_indicators_s_1250.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1250/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_b_1250.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1250/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_physical_exposure_all_indicators_s_1250.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1250/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1250.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1250/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/ns/nhsl_risk_dynamics_all_indicators_1250.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+
 # 3510
+
+- path: "/details/3510/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3510.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3510/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3510.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3510/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3510.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3510/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3510.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3510/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3510.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3515
+
+- path: "/details/3515/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3515.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3515/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3515.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3515/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3515.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3515/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3515.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3515/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3515.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3520
+
+- path: "/details/3520/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3520.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3520/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3520.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3520/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3520.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3520/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3520.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3520/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3520.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3530
+
+- path: "/details/3530/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3530.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3530/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3530.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3530/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3530.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3530/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3530.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3530/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3530.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3540
+- path: "/details/3540/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3540.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3540/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3540.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3540/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3540.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3540/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3540.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3540/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3540.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3550
-# 3550
+- path: "/details/3550/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3550.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3550/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3550.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3550/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3550.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3550/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3550.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3550/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3550.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3560
+- path: "/details/3560/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3560.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3560/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3560.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3560/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3560.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3560/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3560.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3560/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3560.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3570
+- path: "/details/3570/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3570.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3570/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3570.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3570/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3570.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3570/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3570.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3570/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3570.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3580
+- path: "/details/3580/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3580.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3580/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3580.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3580/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3580.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3580/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3580.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3580/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3580.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3590
+- path: "/details/3590/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3590.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3590/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3590.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3590/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3590.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3590/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3590.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3590/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3590.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 # 3595
+
+- path: "/details/3595/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_hazard_threat_all_indicators_s_3595.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3595/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_b_3595.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/3595/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_physical_exposure_all_indicators_s_3595.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3595/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3595.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/3595/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/on/nhsl_risk_dynamics_all_indicators_3595.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 
 # 6010
+- path: "/details/6010/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/yt/nhsl_hazard_threat_all_indicators_s_6010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6010/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/yt/nhsl_physical_exposure_all_indicators_b_6010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/6010/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/yt/nhsl_physical_exposure_all_indicators_s_6010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6010/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/yt/nhsl_risk_dynamics_all_indicators_6010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6010/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/yt/nhsl_risk_dynamics_all_indicators_6010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 
 #1310
+- path: "/details/1310/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_hazard_threat_all_indicators_s_1310.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1310/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_b_1310.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1310/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_s_1310.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1310/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1310.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1310/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1310.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #1320
+- path: "/details/1320/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_hazard_threat_all_indicators_s_1320.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1320/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_b_1320.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1320/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_s_1320.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1320/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1320.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1320/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1320.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #1330
+- path: "/details/1330/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_hazard_threat_all_indicators_s_1330.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1330/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_b_1330.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1330/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_s_1330.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1330/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1330.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1330/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1330.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #1340
+- path: "/details/1340/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_hazard_threat_all_indicators_s_1340.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1340/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_b_1340.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1340/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_s_1340.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1340/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1340.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1340/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1340.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #1350
+- path: "/details/1350/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_hazard_threat_all_indicators_s_1350.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1350/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_b_1350.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1350/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_physical_exposure_all_indicators_s_1350.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1350/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1350.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1350/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nb/nhsl_risk_dynamics_all_indicators_1350.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 #6110
+- path: "/details/6110/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nt/nhsl_hazard_threat_all_indicators_s_6110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6110/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nt/nhsl_physical_exposure_all_indicators_b_6110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/6110/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nt/nhsl_physical_exposure_all_indicators_s_6110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6110/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nt/nhsl_risk_dynamics_all_indicators_6110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6110/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nt/nhsl_risk_dynamics_all_indicators_6110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 
 #1110
+- path: "/details/1110/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/pe/nhsl_hazard_threat_all_indicators_s_1110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1110/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/pe/nhsl_physical_exposure_all_indicators_b_1110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1110/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/pe/nhsl_physical_exposure_all_indicators_s_1110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1110/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/pe/nhsl_risk_dynamics_all_indicators_1110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1110/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/pe/nhsl_risk_dynamics_all_indicators_1110.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 
 #4710
+- path: "/details/4710/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_hazard_threat_all_indicators_s_4710.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4710/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_b_4710.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4710/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_s_4710.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4710/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4710.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4710/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4710.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #4720
+- path: "/details/4720/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_hazard_threat_all_indicators_s_4720.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4720/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_b_4720.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4720/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_s_4720.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4720/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4720.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4720/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4720.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #4730
+- path: "/details/4730/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_hazard_threat_all_indicators_s_4730.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4730/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_b_4730.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4730/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_s_4730.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4730/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4730.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4730/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4730.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #4740
+- path: "/details/4740/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_hazard_threat_all_indicators_s_4740.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4740/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_b_4740.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4740/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_s_4740.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4740/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4740.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4740/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4740.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #4750
+- path: "/details/4750/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_hazard_threat_all_indicators_s_4750.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4750/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_b_4750.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4750/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_s_4750.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4750/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4750.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4750/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4750.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #4760
+- path: "/details/4760/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_hazard_threat_all_indicators_s_4760.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4760/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_b_4760.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/4760/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_physical_exposure_all_indicators_s_4760.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4760/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4760.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/4760/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/sk/nhsl_risk_dynamics_all_indicators_4760.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 
 #1010
+- path: "/details/1010/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_hazard_threat_all_indicators_s_1010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1010/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_b_1010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1010/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_s_1010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1010/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1010/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1010.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #1020
+- path: "/details/1020/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_hazard_threat_all_indicators_s_1020.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1020/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_b_1020.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1020/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_s_1020.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1020/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1020.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1020/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1020.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #1030
+- path: "/details/1030/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_hazard_threat_all_indicators_s_1030.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1030/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_b_1030.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1030/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_s_1030.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1030/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1030.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1030/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1030.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #1040
+
+- path: "/details/1040/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_hazard_threat_all_indicators_s_1040.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1040/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_b_1040.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/1040/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_physical_exposure_all_indicators_s_1040.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1040/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1040.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/1040/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nl/nhsl_risk_dynamics_all_indicators_1040.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 
 
 #6210
+- path: "/details/6210/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nu/nhsl_hazard_threat_all_indicators_s_6210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6210/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nu/nhsl_physical_exposure_all_indicators_b_6210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/6210/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nu/nhsl_physical_exposure_all_indicators_s_6210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6210/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nu/nhsl_risk_dynamics_all_indicators_6210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/6210/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/nu/nhsl_risk_dynamics_all_indicators_6210.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
 
 
 #2410
+- path: "/details/2410/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2410.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2410/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2410.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2410/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2410.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2410/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2410.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2410/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2410.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2415
+
+- path: "/details/2415/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2415.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2415/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2415.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2415/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2415.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2415/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2415.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2415/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2415.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2420
+
+- path: "/details/2420/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2420.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2420/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2420.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2420/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2420.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2420/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2420.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2420/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2420.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2425
+- path: "/details/2425/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2425.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2425/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2425.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2425/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2425.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2425/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2425.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2425/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2425.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2430
+
+- path: "/details/2430/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2430.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2430/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2430.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2430/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2430.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2430/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2430.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2430/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2430.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2433
+- path: "/details/2433/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2433.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2433/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2433.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2433/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2433.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2433/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2433.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2433/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2433.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2435
+- path: "/details/2435/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2435.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2435/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2435.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2435/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2435.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2435/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2435.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2435/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2435.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2440
+
+- path: "/details/2440/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2440.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2440/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2440.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2440/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2440.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2440/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2440.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2440/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2440.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
 #2450
+- path: "/details/2450/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2450.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2450/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2450.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2450/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2450.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2450/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2450.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2450/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2450.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
 #2455
+- path: "/details/2455/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2455.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2455/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2455.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2455/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2455.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2455/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2455.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2455/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2455.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
 #2460
+
+- path: "/details/2460/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2460.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2460/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2460.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2460/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2460.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2460/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2460.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2460/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2460.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2465
+- path: "/details/2465/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2465.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2465/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2465.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2465/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2465.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2465/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2465.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2465/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2465.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
 #2470
+- path: "/details/2470/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2470.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2470/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2470.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2470/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2470.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2470/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2470.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2470/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2470.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2475
+- path: "/details/2475/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2475.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2475/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2475.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2475/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2475.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2475/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2475.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2475/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2475.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2480
+- path: "/details/2480/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2480.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2480/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2480.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2480/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2480.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2480/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2480.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2480/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2480.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
 #2490
+- path: "/details/2490/Multi-Hazard-Threat-Census-Subdivision"
+  details:
+  - title: "Multi Hazard Threat (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_hazard_threat_all_indicators_s_2490.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2490/Physical-Exposure-Buildings"
+  details:
+  - title: "Physical Exposure (Buildings)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_b_2490.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+
+- path: "/details/2490/Physical-Exposure-Census-Subdivision"
+  details:
+  - title: "Physical Exposure (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_physical_exposure_all_indicators_s_2490.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2490/Risk-Dynamics"
+  details:
+  - title: "Risk Dynamics"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2490.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"
+
+- path: "/details/2490/Social-Fabric-Census-Subdivision"
+  details:
+  - title: "Social Fabric (Census Subdivision)"
+  - description: "Metadata to be provided..."
+  - spatial_extent: "-180, -90, 180, 90"
+  - url: "../../../assets/data/national_human_settlement_layers/qc/nhsl_risk_dynamics_all_indicators_2490.zip"
+  - lastUpdated: 2021-03-18
+  - resourceType: "Dataset"
+  - lang: "English"
+  - format: ".gpkg"

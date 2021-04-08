@@ -65,13 +65,12 @@ const Saskatchewan = () => {
                       <span className="label label-default">{data.format}</span>
                     </td>
                     <td key={`downloads_file_url_${index}`}>
-                      <a
+                      <Link
                         className="btn btn-primary btn-sm pull-right"
-                        href={data.url}
-                        download
+                        to={data.url}
                       >
-                        Download
-                      </a>
+                        Access
+                      </Link>
                     </td>
                   </tr>
                 );
@@ -120,13 +119,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads4710_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -170,13 +168,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads4720_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -220,13 +217,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads4730_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -270,13 +266,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads4740_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -320,13 +315,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads4750_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -370,13 +364,12 @@ const Saskatchewan = () => {
                               </span>
                             </td>
                             <td key={`downloads4760_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );

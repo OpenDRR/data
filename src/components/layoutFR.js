@@ -8,7 +8,9 @@ const LayoutFR = ({ children }) => {
   return (
     <>
       <HeaderFR />
+      <div className="mt-3">
       {children}
+      </div>
       <FooterFR />
     </>
   );

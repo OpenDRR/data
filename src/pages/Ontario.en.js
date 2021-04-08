@@ -10,8 +10,8 @@ const Ontario = () => {
     <Layout>
       <div className="container provincial-banner">
         <div className="breadcrumb">
-          <Link to="/en/Provinces-and-Territories">
-            Provinces and Territories
+        <Link to="/fr/Provinces-et-Territoires">
+            Provinces et Territoires
           </Link>{" "}
           / Ontario
         </div>
@@ -120,13 +120,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3510_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -170,13 +169,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3515_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -220,13 +218,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3520_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -270,13 +267,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3530_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -320,13 +316,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3540_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -370,13 +365,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3550_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -420,13 +414,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3560_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -470,13 +463,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3570_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -520,13 +512,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3580_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -570,13 +561,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3590_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -620,13 +610,12 @@ const Ontario = () => {
                               </span>
                             </td>
                             <td key={`downloads3595_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );

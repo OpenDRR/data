@@ -48,9 +48,9 @@ const NorthwestTerritories = () => {
           >
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Date Modified</th>
-                <th>Format</th>
+              <th>Nom</th>
+              <th>Date de modification</th>
+              <th>Format</th>
               </tr>
             </thead>
             <tbody>
@@ -93,7 +93,7 @@ const NorthwestTerritories = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Northwest Territories (6110)
+                Territories du Nord Ouest (6110)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -101,9 +101,9 @@ const NorthwestTerritories = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
-                        <th>Format</th>
+                      <th>Nom</th>
+                      <th>Date de modification</th>
+                      <th>Format</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -111,7 +111,7 @@ const NorthwestTerritories = () => {
                         return (
                           <tr key={`downloads6110_${index}`}>
                             <td key={`downloads6110_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads6110_threat_lastUpdated_${index}`}
@@ -124,13 +124,12 @@ const NorthwestTerritories = () => {
                               </span>
                             </td>
                             <td key={`downloads6110_threat_url_${index}`}>
-                              <a
-                                className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
-                              >
-                                Download
-                              </a>
+                            <Link
+                        className="btn btn-primary btn-sm pull-right"
+                        to={data.url}
+                      >
+                        Access
+                      </Link>
                             </td>
                           </tr>
                         );

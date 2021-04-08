@@ -120,13 +120,12 @@ const NewBrunswick = () => {
                               </span>
                             </td>
                             <td key={`downloads1310_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -170,13 +169,12 @@ const NewBrunswick = () => {
                               </span>
                             </td>
                             <td key={`downloads1320_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -220,13 +218,12 @@ const NewBrunswick = () => {
                               </span>
                             </td>
                             <td key={`downloads1330_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -270,13 +267,12 @@ const NewBrunswick = () => {
                               </span>
                             </td>
                             <td key={`downloads1340_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -320,13 +316,12 @@ const NewBrunswick = () => {
                               </span>
                             </td>
                             <td key={`downloads1350_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );

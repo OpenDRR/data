@@ -48,8 +48,8 @@ const Manitoba = () => {
           >
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Date Modified</th>
+                <th>Nom</th>
+                <th>Date de modification</th>
                 <th>Format</th>
               </tr>
             </thead>
@@ -89,7 +89,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  Southeast (4610)
+                  Sud Est (4610)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
@@ -97,8 +97,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -107,7 +107,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5910_${index}`}>
                             <td key={`downloads5910_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5910_threat_lastUpdated_${index}`}
@@ -120,13 +120,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5910_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -139,7 +138,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  South Central (4620)
+                  Centre Sud (4620)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">
@@ -147,8 +146,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -157,7 +156,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5920_${index}`}>
                             <td key={`downloads5920_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5920_threat_lastUpdated_${index}`}
@@ -170,13 +169,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5920_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -189,7 +187,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  Southwest (4630)
+                  Sud Ouest (4630)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="2">
@@ -197,8 +195,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -207,7 +205,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5930_${index}`}>
                             <td key={`downloads5930_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5930_threat_lastUpdated_${index}`}
@@ -220,13 +218,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5930_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -239,7 +236,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                  North Central (4640)
+                  Centre Nord (4640)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="3">
@@ -247,8 +244,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -257,7 +254,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5940_${index}`}>
                             <td key={`downloads5940_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5940_threat_lastUpdated_${index}`}
@@ -270,13 +267,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5940_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -297,8 +293,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -307,7 +303,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5950_${index}`}>
                             <td key={`downloads5950_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5950_threat_lastUpdated_${index}`}
@@ -320,13 +316,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5950_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -347,8 +342,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -357,7 +352,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5960_${index}`}>
                             <td key={`downloads5960_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5960_threat_lastUpdated_${index}`}
@@ -370,13 +365,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5960_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -397,8 +391,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -407,7 +401,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5970_${index}`}>
                             <td key={`downloads5970_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5970_threat_lastUpdated_${index}`}
@@ -420,13 +414,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5970_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -439,7 +432,7 @@ const Manitoba = () => {
             <Card>
               <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="7">
-                  North (4680)
+                  Nord (4680)
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="7">
@@ -447,8 +440,8 @@ const Manitoba = () => {
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>Name</th>
-                        <th>Date Modified</th>
+                        <th>Nom</th>
+                        <th>Date de modification</th>
                         <th>Format</th>
                       </tr>
                     </thead>
@@ -457,7 +450,7 @@ const Manitoba = () => {
                         return (
                           <tr key={`downloads5980_${index}`}>
                             <td key={`downloads5980_threat_title_${index}`}>
-                              {data.title}
+                              {data.titlefr}
                             </td>
                             <td
                               key={`downloads5980_threat_lastUpdated_${index}`}
@@ -470,13 +463,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads5980_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                                Download
-                              </a>
+                                Accès
+                              </Link>
                             </td>
                           </tr>
                         );

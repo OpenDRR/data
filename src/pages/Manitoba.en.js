@@ -120,13 +120,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4610_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
                                 Access
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -170,13 +169,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4620_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                               Access
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -220,13 +218,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4630_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
                                 Access
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -270,13 +267,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4640_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
                                 Access
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -320,13 +316,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4650_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                               Access
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -370,13 +365,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4660_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
-                               Access
-                              </a>
+                                Access
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -420,13 +414,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4670_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
                                 Access
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         );
@@ -470,13 +463,12 @@ const Manitoba = () => {
                               </span>
                             </td>
                             <td key={`downloads4680_threat_url_${index}`}>
-                              <a
+                            <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
                                 Access
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         );
