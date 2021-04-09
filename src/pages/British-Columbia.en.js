@@ -41,7 +41,7 @@ const BritishColumbia = () => {
         <div>
           <h2>Provincial Level Datasets</h2>
           <table
-            className="table table-hover"
+            className="table table-hover dataTables_wrapper top"
             style={{
               marginTop: "5vh",
             }}
@@ -145,7 +145,7 @@ const BritishColumbia = () => {
               </Card.Header>
               <Accordion.Collapse eventKey="1">
                 <Card.Body>
-                  <table className="table table-hover">
+                  <table className="table table-hover dataTables_wrapper top">
                     <thead>
                       <tr>
                         <th>Name</th>
