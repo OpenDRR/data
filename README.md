@@ -88,6 +88,10 @@ Using [QGIS](''https://qgis.org/en/site/) we created a generalized .shp file tha
 
 ![BC Generalized](screenshot-example.png)
 
+
+
+---
+
 # Français
 
 
@@ -154,13 +158,30 @@ En exécutant gatsby develop dans le terminal et en ouvrant une fenêtre de navi
 
 
 
+# Travailler avec des modèles de pages
 
 
 
+**`pages/Colombie-Britannique.fr.js`` :
+
+```
+import React from "react";
+import BCMapComponent from "../svg/BC-Generalized.svg";
+import YAMLData from "../../content/data/yaml/prov-terr.yaml";
+import { Link } from "gatsby";
+import { Accordion, Card, Button } from "react-bootstrap";
+import Layout from "../components/layout";
 
 
 
+````
+En utilisant [QGIS](''https://qgis.org/en/site/), nous avons créé un fichier .shp généralisé qui a ensuite été converti en un fichier .svg montrant les frontières économiques régionales de chaque province ou territoire.
 
+**`src/svg/BC-Generalized.svg`** :
+
+![BC Generalized](screenshot-example.png)
+
+---
 
 ## 🚀 Quick start
 1. ** Clone the repo **

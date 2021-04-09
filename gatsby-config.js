@@ -4,6 +4,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 module.exports = {
+  pathPrefix: "/data",
+
   siteMetadata: {
     title: `OpenDrr Data`,
     description: `lorem ipsum`,
