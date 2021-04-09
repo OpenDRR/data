@@ -41,7 +41,7 @@ const Banner = ({ slides }) => {
 
   return (
     // <div className="container">
-    <section className="hero-section">
+    <section className="hero-section carousel">
       <div className="hero-wrapper">
         {slides.map((slide, index) => {
           return (

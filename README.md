@@ -64,6 +64,30 @@ export default basicTemplate
 Running gatsby develop in the terminal and opening a browser window to http://localhost:8000/ you’ll see a page with content that was sourced from a YAML file used to generate your site.
 
 
+
+# Working with page templates
+
+
+
+**`pages/British-Columbia.en.js`**:
+
+```
+import React from "react";
+import BCMapComponent from "../svg/BC-Generalized.svg";
+import YAMLData from "../../content/data/yaml/prov-terr.yaml";
+import { Link } from "gatsby";
+import { Accordion, Card, Button } from "react-bootstrap";
+import Layout from "../components/layout";
+
+
+
+````
+Using [QGIS](''https://qgis.org/en/site/) we created a generalized .shp file that was then converted into an .svg file showing the economic regional boundaries of each province or territory.
+
+**`src/svg/BC-Generalized.svg`**:
+
+ 	![BC Generalized]('./src/images/screenshot-example.png')
+
 # Français
 
 
