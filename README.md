@@ -86,7 +86,7 @@ Using [QGIS](''https://qgis.org/en/site/) we created a generalized .shp file tha
 
 **`src/svg/BC-Generalized.svg`**:
 
- 	![BC Generalized](screenshot-example.png)
+![BC Generalized](screenshot-example.png)
 
 # Français
 
