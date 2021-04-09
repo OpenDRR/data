@@ -40,14 +40,6 @@ const EconomicRegions = props => {
       <MapboxGlMap />
       </div>
       </section>
-      {/* <Link
-        to="/indicators/"
-        state={{
-          modal: true,
-        }}
-      >
-        Indicators
-      </Link> */}
       <div className="container">
         <table className="table table-hover">
           <thead>

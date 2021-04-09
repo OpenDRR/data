@@ -39,7 +39,6 @@ exports.components = {
   "component---src-pages-yukon-en-js": () => import("./../../../src/pages/Yukon.en.js" /* webpackChunkName: "component---src-pages-yukon-en-js" */),
   "component---src-pages-yukon-fr-js": () => import("./../../../src/pages/Yukon.fr.js" /* webpackChunkName: "component---src-pages-yukon-fr-js" */),
   "component---src-templates-dataset-details-js": () => import("./../../../src/templates/datasetDetails.js" /* webpackChunkName: "component---src-templates-dataset-details-js" */),
-  "component---src-templates-economic-regions-js": () => import("./../../../src/templates/economicRegions.js" /* webpackChunkName: "component---src-templates-economic-regions-js" */),
   "component---src-templates-news-and-updates-js": () => import("./../../../src/templates/newsAndUpdates.js" /* webpackChunkName: "component---src-templates-news-and-updates-js" */)
 }
 

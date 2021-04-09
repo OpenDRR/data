@@ -138,6 +138,7 @@
         justify-content: center;
         width: 100%;
         height: 40vh;
+        font-size: 20px;
 
         @include media('<=tablet') {
             height: 20vh;
@@ -154,6 +155,7 @@
         width: 100%;
         height: 60vh;
         color: white !important;
+        font-size: 20px;
 
         @include media('<=tablet') {
             height: 35vh;

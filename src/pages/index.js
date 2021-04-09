@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => (
   <div className="background">
-    <StaticImage width={'100%'} className="splash-image" src="../images/sp-bg-2.jpg" alt="splash-image" />
+    <StaticImage className="splash-image" src="../images/sp-bg-2.jpg" alt="splash-image" />
     <div className="container landing-content">
       <h1 className="wb-inv">
         Language selection - Web Experience Toolkit /{" "}

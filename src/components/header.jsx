@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 class Header extends Component {
   render() {
     return (
-      <header style={{marginTop: '30px'}}>
+      <header className="header-styles">
         <div className="row">
         <div id="wb-bnr" className="container">
           <section id="wb-lang" className="text-right">

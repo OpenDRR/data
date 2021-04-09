@@ -1,4 +1,10 @@
 @charset "utf-8";
+@import './variables.scss';
+@import './footer/base.scss';
+@import './footer/print.scss';
+@import './footer/screen-md-min.scss';
+@import './footer/screen-sm-max.scss';
+@import './footer/screen-xxs-max.scss';
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
@@ -1320,12 +1326,12 @@ color: pink;
 	background: #0e4164;
 	color: #fff;
 	.sm {
-		.row {
-			background: transparent;
-			a {
-				color: #6e6e6e;
-			}
-		}
+		// .row {
+		// 	background: transparent;
+		// 	a {
+		// 		color: #6e6e6e;
+		// 	}
+		// }
 	}
 	#wb-sec-p {
 		display: none;
@@ -1812,11 +1818,11 @@ html {
 body {
 	margin: 0;
 	overflow-x: hidden;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $font-family-base;
 	font-size: calc(0.65em + 1vmin);
 	line-height: 1.4375;
 	color: #333333;
-	background-color: #f9f9f9;
+	// background-color: #f9f9f9;
 }
 article {
 	display: block;
@@ -1892,7 +1898,12 @@ footer {
 }
 header {
 	display: block;
+	margin-top: 30px;
+	// background-color: #fff;
 }
+// .header-styles{
+// 	background-color: #fff;
+// }
 hgroup {
 	display: block;
 }
@@ -8475,7 +8486,7 @@ tbody.collapse.in {
 .navbar-default {
 	background-color: #f8f8f8;
 	.navbar-brand {
-		color: #777;
+		// color: #777;
 		&:hover {
 			color: #5e5d5d;
 			background-color: transparent;

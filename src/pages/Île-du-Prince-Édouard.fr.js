@@ -65,13 +65,12 @@ const IleDuPrinceEdouard = () => {
                       <span className="label label-default">{data.format}</span>
                     </td>
                     <td key={`downloads_file_url_${index}`}>
-                      <a
+                      <Link
                         className="btn btn-primary btn-sm pull-right"
-                        href={data.url}
-                        download
+                        to={data.url}
                       >
                         Accès
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 );
@@ -120,13 +119,12 @@ const IleDuPrinceEdouard = () => {
                               </span>
                             </td>
                             <td key={`downloads1110_threat_url_${index}`}>
-                              <a
+                              <Link
                                 className="btn btn-primary btn-sm pull-right"
-                                href={data.url}
-                                download
+                                to={data.url}
                               >
                                 Accès
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         );

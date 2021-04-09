@@ -1,0 +1,21 @@
+license:
+  name: Open Government Licence - Canada
+  url: http://open.canada.ca/en/open-government-licence-canada/
+provider:
+  name: Government of Canada; Natural Resources Canada; Lands and Minerals Sector, Geological Survey of Canada
+  url: https://www.nrcan.gc.ca/
+contact:
+  name: Hastings, Nicky
+  position: Project Manager
+  address: 1500 - 605 Robson Street
+  city: Vancouver
+  stateorprovince: British Columbia
+  postalcode: V6B 5J3
+  country: Canada
+  phone: +01-604-666-0529
+  fax: +01-604-666-1124
+  email: nicky.hastings@canada.ca
+  url: https://www.nrcan.gc.ca/
+  hours: Mo-Fr 08:30-16:30
+  instructions: During hours of service. Off on weekends.
+  role: pointOfContact

@@ -9,7 +9,7 @@ const LayoutFR = ({ children }) => {
     <>
       <HeaderFR />
       <div className="mt-3">
-      {children}
+      <main>{children}</main>
       </div>
       <FooterFR />
     </>
