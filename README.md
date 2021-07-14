@@ -1,6 +1,6 @@
 # data
 
-All products are released under the [Open Government Licence](https://open.canada.ca/en/open-government-licence-canada) - Canada.
+All products are released under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada)
 
 Data download site for OpenDRR
 
@@ -53,7 +53,7 @@ Project Link: [https://opendrr.github.io](https://opendrr.github.io)
 
 # data
 
-Tous les produits sont publiés sous la [licence du gouvernement ouvert](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada) – Canada.
+Tous les produits sont publiés sous la [licence du gouvernement ouvert – Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada)
 
 
 Site de téléchargement de données pour OpenDRR
