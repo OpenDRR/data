@@ -139,13 +139,14 @@ crossorigin=""></script>
 <script>
 
 	var tiles = L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	});
 
 	var natural_hazards_building_exposure_model = L.esri.featureLayer({
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/7',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'E_BldgNum' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -162,7 +163,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/8',
 		simplifyFactor: 0.25,
 		precision: 5,
-    opacity: 0.5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'E_LandUse' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -179,6 +180,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/9',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'Et_PopNight___E_AreaHa' ]
   	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -195,6 +197,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/10',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'Et_AssetValue___E_AreaHa' ]
   	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -212,6 +215,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/11',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'Et_BldgNum___E_AreaHa' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {

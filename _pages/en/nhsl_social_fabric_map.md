@@ -139,13 +139,14 @@ crossorigin=""></script>
 <script>
 
 	var tiles = L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	});
 
 	var total_social_vulnerability_score = L.esri.featureLayer({
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/1',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'SVlt_Score' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -162,6 +163,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/2',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'VEt_Score' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -178,6 +180,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/3',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'VHt_Score' ]
   	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -194,6 +197,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/4',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'VFt_Score' ]
   	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
@@ -210,6 +214,7 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/5',
 		simplifyFactor: 0.25,
 		precision: 5,
+    minZoom: 10,
 		fields: [ 'OBJECTID', 'VAt_Score' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
