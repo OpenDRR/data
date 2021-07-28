@@ -47,5 +47,220 @@ breadcrumbs:
 </div>
 
 ## <mark>Coming soon</mark>
+<div>
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -127.631,
+          49.24
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 9.0",
+        "marker-color": "#ff4000",
+        "marker-size": "large",
+        "title": "SIM9p0_CSZlockedtrans"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -124.154,
+          48.495
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 7.2",
+        "marker-color": "#ff7b00",
+        "marker-size": "medium",
+        "title": "ACM7p2_LRDMF"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -123.286,
+          48.615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 7.1",
+        "marker-color": "#ff7b00",
+        "marker-size": "medium",
+        "title": "IDM7p1_Sidney"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -74.08,
+          45.79
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 7.0",
+        "marker-color": "#ff7b00",
+        "marker-size": "medium",
+        "title": "SCM7p0_MontrealNWCanSHM5"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -74.08,
+          45.79
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 7.0",
+        "marker-color": "#ff7b00",
+        "marker-size": "medium",
+        "title": "SCM7p0_MontrealNW"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -123.286,
+          48.615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 6.8",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "IDM6p8_Sidney"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -123.2,
+          49.1
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 6.8",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "IDM6p8_JdFPathways"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.3,
+          45.7
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 6.5",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "SCM6p5_Ottawa"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -124.698,
+          49.368
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 6.5",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "ACM6p5_Beaufort"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -123.286,
+          48.615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 6.0",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "IDM6p0_Sidney"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -123.286,
+          48.615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 5.6",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "IDM5p6_Sidney"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -123.286,
+          48.615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 5.2",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "IDM5p2_Sidney"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -123.286,
+          48.615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "description": "Magnitude 4.8",
+        "marker-color": "#ffea00",
+        "marker-size": "small",
+        "title": "IDM4p8_Sidney"
+      },
+      "type": "Feature"
+    },
+  ]
+}
+</div>
 
 &nbsp;
