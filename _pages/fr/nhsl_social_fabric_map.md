@@ -7,7 +7,7 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Zones de peuplement et dangers naturels au Canada
+title: Tissu social et seuils de capacité
 lang: fr
 altLangPage: ../en/nhsl_social_fabric_map
 nositesearch: true
