@@ -54,8 +54,8 @@ Welcome to the OpenDRR data download site. Here you will find the latest version
         <img src="../assets/img/dsra.png" class="img-rounded img-responsive full-width" alt="Image of Canada">
     </div>
     <div class="col-md-8">
-        <h3>Earthquake Scenarios</h3><mark>Coming soon</mark>
-        <p>Library of select earthquake scenarios for Canada.</p>
+        <h3>Earthquake Scenarios</h3>
+        <p>National Earthquake Scenario Catalogue, which presents the probable shaking, damage, loss and consequences from hypothetical earthquakes that could impact Canadians.</p>
       <a href="dsra.html" class="btn btn-primary">Explore</a>
     </div>
 </div>
