@@ -19,9 +19,6 @@ breadcrumbs:
     link: "/en"
   - title: "Earthquake Scenarios"
 ---
-<head>
-  <script src="http://www.w3schools.com/lib/w3data.js"></script>
-</head>
 
 <div class="row">
   <div class="col-md-8">
