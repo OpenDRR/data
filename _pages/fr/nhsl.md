@@ -91,7 +91,9 @@ breadcrumbs:
 
 ### Ressources de données
 
-<div id="nhsl_physical_exposure_all_indicators"></div>
+<div id="nhsl_physical_exposure_all_indicators">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_physical_exposure_all_indicators" %}
+</div>
 
 <hr>
 
@@ -117,7 +119,9 @@ breadcrumbs:
 
 <mark>Bientôt disponible</mark>
 
-<div id="nhsl_hazard_threat_all_indicators" class="hidden"></div>
+<div id="nhsl_hazard_threat_all_indicators" class="hidden">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_hazard_threat_all_indicators" %}
+</div>
 
 <hr>
 
@@ -133,7 +137,9 @@ breadcrumbs:
 
 ### Ressources de données
 
-<div id="nhsl_social_fabric_all_indicators"></div>
+<div id="nhsl_social_fabric_all_indicators">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_all_indicators" %}
+</div>
 
 <hr>
 
@@ -150,105 +156,34 @@ breadcrumbs:
 
 ### Ressources de données
 
-<div id="nhsl_risk_dynamics_all_indicators"></div>
+<div id="nhsl_risk_dynamics_all_indicators">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_risk_dynamics_all_indicators" %}
+</div>
 
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
         integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
 <script>
-$( document ).ready(function() {
-  var config = JSON.stringify({{site.data.metadata | jsonify }}),
-      metadata = JSON.parse( config ),
-      layers = [ 'nhsl_risk_dynamics_all_indicators', 'nhsl_social_fabric_all_indicators', 'nhsl_physical_exposure_all_indicators', 'nhsl_hazard_threat_all_indicators'],
-      header = '<tr> \
-          <th scope="col" class="col-sm-6">{% if page.lang == 'en' %}Resource Name{% endif %} {% if page.lang == 'fr' %}Nom de la ressource{% endif %}</th> \
-          <th scope="col" class="col-sm-2 hidden-xs">{% if page.lang == 'en' %}Resource Type{% endif %} {% if page.lang == 'fr' %}Type de ressource{% endif %}</th> \
-          <th scope="col"class="col-sm-2">Format</th> \
-          <th scope="col" class="col-sm-1">{% if page.lang == 'en' %}Links{% endif %} {% if page.lang == 'fr' %}Liens{% endif %}</th> \
-      </tr>';
+  let layers = [ 'nhsl_risk_dynamics_all_indicators', 'nhsl_social_fabric_all_indicators', 'nhsl_physical_exposure_all_indicators', 'nhsl_hazard_threat_all_indicators']
+  for ( l in layers ) {
+    $( '#select-rgn-' + layers[l] ).on( 'change', function() {
+      $( ".ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn" ).hide();
 
-    for ( l in layers ) {
+      $("select").val( $( this ).val() );
 
-      let id = layers[l];
-
-      for ( d in metadata.datasets ) {
-
-          let dataset = metadata.datasets[ d ];
-
-          if ( id.includes( dataset.id ) ) {
-
-            map_resources = dataset.resources;
-
-            let resrcs = "",
-                resrcs_prov = "";
-
-            for ( res in map_resources ) {
-
-                let r = map_resources[res];
-
-                if ( r.language.indexOf( "fr" ) === -1 ) {
-                  continue;
-                }
-
-                let lang = r.language == "en" ? "English" : "French";
-                let btntxt = "{{lang}}" == "en" ? "Access" : "Accès";
-		let download_link = r.link.indexOf( "http" ) === -1 ? '{{site.github.releases_url}}/download/{{site.github.releases[0].tag_name}}/' + r.link : r.link;
-
-                if ( r.region === 'ca' ) {
-                    resrcs += '<tr><td>' + r.name + '</td><td class="hidden-xs">' + r.type + '</td><td><span class="label ' + r.format + '">' + r.format + '</td><td><a href="' + download_link + '" class="btn btn-primary">' + btntxt + '</a></td></tr>';
-                }
-                else {
-                    resrcs_prov += '<tr class="' + r.region + '"><td>' + r.name + '</td><td class="hidden-xs">' + r.type + '</td><td><span class="label ' + r.format + '">' + r.format + '</td><td><a href="' + download_link + '" class="btn btn-primary">' + btntxt + '</a></td></tr>';
-                }
-            }
-
-            let i = id;
-
-            let select = '<div class="row"><div class="col-md-12 mrgn-bttm-lg"><form class="form-inline" role="form" method="get" action="#"><div class="form-group"><label for="select-rgn-' + id + '" class="control-label mrgn-rght-lg">{% if page.lang == 'en' %}Select region: {% endif %} {% if page.lang == 'fr' %}Sélectionner la région{% endif %}</label><select id="select-rgn-' + id + '" class="select-rgn form-control"> \
-                <option></option> \
-                <option value="ab">{% if page.lang == 'en' %}Alberta{% endif %} {% if page.lang == 'fr' %}Alberta{% endif %}</option> \
-                <option value="bc">{% if page.lang == 'en' %}British Columbia{% endif %} {% if page.lang == 'fr' %}Colombie Britannique{% endif %}</option> \
-                <option value="nl">{% if page.lang == 'en' %}Newfoundland and Labrador{% endif %} {% if page.lang == 'fr' %}Terre Neuve et Labrador{% endif %}</option> \
-                <option value="pe">{% if page.lang == 'en' %}Prince Edward Island{% endif %} {% if page.lang == 'fr' %}Île du Prince Édouard{% endif %}</option> \
-                <option value="ns">{% if page.lang == 'en' %}Nova Scotia{% endif %} {% if page.lang == 'fr' %}Nouvelle-Écosse{% endif %}</option> \
-                <option value="nb">{% if page.lang == 'en' %}New Brunswick{% endif %} {% if page.lang == 'fr' %}Nouveau Brunswick{% endif %}</option> \
-                <option value="qc">{% if page.lang == 'en' %}Quebec{% endif %} {% if page.lang == 'fr' %}Quebec{% endif %}</option> \
-                <option value="on">{% if page.lang == 'en' %}Ontario{% endif %} {% if page.lang == 'fr' %}Ontario{% endif %}</option> \
-                <option value="mb">{% if page.lang == 'en' %}Manitoba{% endif %} {% if page.lang == 'fr' %}Manitoba{% endif %}</option> \
-                <option value="sk">{% if page.lang == 'en' %}Saskatchewan{% endif %} {% if page.lang == 'fr' %}Saskatchewan{% endif %}</option> \
-                <option value="yt">{% if page.lang == 'en' %}Yukon{% endif %} {% if page.lang == 'fr' %}Yukon{% endif %}</option> \
-                <option value="nt">{% if page.lang == 'en' %}Northwest Territories{% endif %} {% if page.lang == 'fr' %}Territoires du Nord-Ouest{% endif %}</option> \
-                <option value="nu">{% if page.lang == 'en' %}Nunavut{% endif %} {% if page.lang == 'fr' %}Nunavut{% endif %}</option> \
-              </select></div></form></div></div>'
-
-            $( "#" + i ).append('<h4>{% if page.lang == 'en' %}National Scale{% endif %} {% if page.lang == 'fr' %}Échelle nationale{% endif %}</h4><table class="table table-striped table-responsive"><tbody>' + header + resrcs + '</tbody></table>' );
-
-            $( "#" + i ).append(
-              '<h4>{% if page.lang == 'en' %}Regional Scale{% endif %} {% if page.lang == 'fr' %}Échelle régionale{% endif %}</h4>' + select + '<div class="row"><div class="col-md-12"><table class="rgn table table-striped table-responsive"><tbody>' + header + resrcs_prov + '</tbody></table></div></div>' );
-
-            $( ".ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn" ).hide();
-
-            $( '#select-rgn-' + id ).on( 'change', function() {
-              $( ".ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn" ).hide();
-
-              $("select").val( $( this ).val() );
-
-              if ( $( this ).val() ) {
-                let p = '.' + $( this ).val() + ', .rgn';
-                $( p ).fadeIn();
-              }
-            });
-
-            break;
-        }
+      if ( $( this ).val() ) {
+        let p = '.' + $( this ).val() + ', .rgn';
+        $( p ).fadeIn();
       }
-    }
-
-});
+    });
+  }
 </script>
 
 <style>
+
+.ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn { display:none; }
 
 .GPKG {
   color: #083c6c;
@@ -264,5 +199,4 @@ $( document ).ready(function() {
   color: #f90;
   background-color: #f9f4d4;
 }
-
 </style>
