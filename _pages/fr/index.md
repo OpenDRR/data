@@ -54,8 +54,8 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
         <img src="../assets/img/dsra.png" class="img-rounded img-responsive full-width" alt="Image du Canada">
     </div>
     <div class="col-md-8">
-        <h3>Scénarios de tremblement de terre <mark>Bientôt disponible</mark></h3>
-        <p>Bibliothèque de scénarios de séismes sélectionnés pour le Canada.</p>
+        <h3>Scénarios de tremblement de terre</h3>
+        <p>Catalogue national de scénarios de tremblement de terre, qui présente les secousses, les dommages, les pertes et les conséquences probables de tremblements de terre hypothétiques qui pourraient frapper la population canadienne.</p>
         <a href="dsra.html" class="btn btn-primary">Explorer la collection</a>
     </div>
 </div>

@@ -32,6 +32,9 @@ breadcrumbs:
     </section>
   </div>
   <div class="col-md-4">
+    <p>
+      <a href="https://github.com/OpenDRR/earthquake-scenarios" class="btn btn-info btn-lg btn-block" role="button"><i class="fab fa-github"></i> GitHub</a>
+    </p>
     <div class="panel panel-primary mrgn-tp-sm">
       <div class="panel-heading">
         <div class="panel-title">Distribution contact</div>
@@ -49,7 +52,6 @@ breadcrumbs:
     </div>
   </div>
 </div>
-
 
 <h3>Completed Scenarios</h3>
 
@@ -125,7 +127,6 @@ breadcrumbs:
       </table>
   </div>
 {% endfor %}
-
 
 <style>
 

@@ -1,6 +1,47 @@
 {
   "datasets": [
     {
+      "id": "dsra_acm7p3_leechriverfullfault_all_indicators",
+      "collection": {
+        "en": "Earthquake Scenarios",
+        "fr": "Scénarios de tremblement de terre"
+      },
+      "title": {
+        "en": "Leach River Full Fault - Magnitude 7.3",
+        "fr": "Faille complète de la rivière Leach - Magnitude 7,3"
+      },
+      "description": {
+        "en": "Magnitude 7.3 scenario based on complete rupture of the CanSHM6 Hazard Model implementation of the Leech River Full Fault.",
+        "fr": "Scénario de magnitude 7,3 basé sur une rupture complète de la mise en œuvre du modèle de risque CanSHM6 de la faille complète de Leech River."
+      },
+      "resources": [
+        { 
+          "name": "GitHub repository",
+          "type": "Document",
+          "format": "HTML",
+          "language": "en",
+          "region": "ca",
+          "link": "https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/ACM7p3_LeechRiverFullFault.md"
+        },
+        { 
+          "name": "Leach River Full Fault - Magnitude 7.3 (Points)",
+          "type": "Dataset",
+          "format": "GPKG",
+          "language": "en-fr",
+          "region": "ca",
+          "link": "acm7p3_leechriverfullfault_all_indicators_b.gpkg.zip"
+        },
+        { 
+          "name": "Leach River Full Fault - Magnitude 7.3 (Polygons)",
+          "type": "Dataset",
+          "format": "GPKG",
+          "language": "en-fr",
+          "region": "ca",
+          "link": "acm7p3_leechriverfullfault_all_indicators_s.gpkg.zip"
+        }
+      ]
+    },
+    {
       "id": "nhsl_social_fabric_all_indicators",
       "collection": {
         "en": "Human Settlement and Natural Hazards in Canada",
