@@ -19,6 +19,7 @@ breadcrumbs:
     link: "/en"
   - title: "Earthquake Scenarios"
 ---
+
 <div class="row">
   <div class="col-md-8">
     <p><strong>The National Earthquake Scenario Catalogue, presents the probable shaking, damage, loss and consequences from hypothetical earthquakes that could impact Canadians.</strong></p>
@@ -52,75 +53,80 @@ breadcrumbs:
   </div>
 </div>
 
+<h3>Completed Scenarios</h3>
 
+<div class="row">
+  <div class="col-md-12">
+    <iframe width="100%" height="480" frameborder="0" src="https://viewscreen.githubusercontent.com/view/geojson?url=https%3a%2f%2fraw.githubusercontent.com%2fDamonU2%2fearthquake-scenarios%2fgeojson-maps%2fFINISHED%2fFinishedScenarios.geojson" title="FinishedScenarios.geojson"></iframe>
+    <table style="width:100%; font-size:14px;">
+      <tr>
+        <td><img src="../assets/img/small.png" width='20'> Magnitude less than 6.0</td>
+        <td><img src="../assets/img/medium.png" width='25'> Magnitude 6.0 to 7.9</td>
+        <td><img src="../assets/img/large.png" width='30'> Magnitude 8.0 or greater</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
-## Leach River Full Fault - Magnitude 7.3
+{% assign header = '' %}
+{% if page.lang == 'fr' %}
+    {% assign header = '<tr>
+        <th scope="col" class="col-sm-6">Nom de la ressource</th>
+        <th scope="col" class="col-sm-2 hidden-xs">Type de ressource</th>
+        <th scope="col" class="col-sm-2">Format</th>
+        <th scope="col" class="col-sm-1">Liens</th>
+    </tr>' %}
+{% else %}
+    {% assign header = '<tr>
+        <th scope="col" class="col-sm-6">Resource Name</th>
+        <th scope="col" class="col-sm-2 hidden-xs">Resource Type</th>
+        <th scope="col" class="col-sm-2">Format</th>
+        <th scope="col" class="col-sm-1">Links</th>
+    </tr>' %}
+{% endif %}
 
-<p>Magnitude 7.3 scenario based on complete rupture of the CanSHM6 Hazard Model implementation of the Leech River Full Fault.</p>
+{% if page.lang == 'en' %}{% assign btntxt = "Access" %}{% else %}{% assign btntxt = "Accès" %}{% endif %}
 
-<div id="dsra_acm7p3_leechriverfullfault_all_indicators"></div>
-
-<script src="https://code.jquery.com/jquery-1.12.2.min.js"
-        integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
-<script>
-
-  var config = JSON.stringify({{site.data.metadata | jsonify }}),
-      metadata = JSON.parse( config ),
-      layers = [ 'dsra_acm7p3_leechriverfullfault_all_indicators' ],
-      header = '<tr> \
-          <th scope="col" class="col-sm-6">{% if page.lang == 'en' %}Resource Name{% endif %} {% if page.lang == 'fr' %}Nom de la ressource{% endif %}</th> \
-          <th scope="col" class="col-sm-2 hidden-xs">{% if page.lang == 'en' %}Resource Type{% endif %} {% if page.lang == 'fr' %}Type de ressource{% endif %}</th> \
-          <th scope="col"class="col-sm-2">Format</th> \
-          <th scope="col" class="col-sm-1">{% if page.lang == 'en' %}Links{% endif %} {% if page.lang == 'fr' %}Liens{% endif %}</th> \
-      </tr>';
-
-      for ( l in layers ) {
-
-        let id = layers[l];
-
-        for ( d in metadata.datasets ) {
-
-            let dataset = metadata.datasets[ d ];
-
-            if ( id.includes( dataset.id ) ) {
-
-              map_resources = dataset.resources;
-
-              let resrcs = "",
-                  resrcs_prov = "";
-
-              for ( res in map_resources ) {
-
-                  let r = map_resources[res];
-
-                  if ( r.language.indexOf( "en" ) === -1 ) {
-                    continue;
-                  }
-
-                  let lang = r.language == "en" ? "English" : "French";
-                  let btntxt = "{{page.lang}}" == "en" ? "Access" : "Accès";
-                  let download_link = r.link.indexOf( "http" ) === -1 ? '{{site.github.releases_url}}/download{{site.github.releases[0].tag_name}}/' + r.link : r.link;
-
-                  if ( r.region === 'ca' ) {
-                      resrcs += '<tr><td>' + r.name + '</td><td class="hidden-xs">' + r.type + '</td><td><span class="label ' + r.format + '">' + r.format + '</td><td><a href="' + download_link + '" class="btn btn-primary">' + btntxt + '</a></td></tr>';
-                  }
-                  else {
-                    resrcs_prov += '<tr class="' + r.region + '"><td>' + r.name + '</td><td class="hidden-xs">' + r.type + '</td><td><span class="label ' + r.format + '">' + r.format + '</td><td><a href="' + download_link + '" class="btn btn-primary">' + btntxt + '</a></td></tr>';
-                  }
-              }
-
-              let i = id;
-
-              
-
-              $( "#" + i ).append('<table class="table table-striped table-responsive"><tbody>' + header + resrcs + '</tbody></table>' );
-
-              break;
-          }
-        }
-      }
-
-</script>
+{% for scenario in site.data.dsra.scenarios %}
+  <h4 id={{scenario.name}}>{{scenario.title}}</h4>
+  <p style="word-break: break-word;">{{scenario.description[page.lang]}}</p>
+  <div>
+      <table class="table table-striped table-responsive">
+          <tbody>
+              {{ header }}
+              <tr>
+                  <td>GitHub repository</td>
+                  <td class="hidden-xs">Document</td>
+                  <td><span class="label HTML">HTML</span></td>
+                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{scenario.name}}.md" class="btn btn-primary">{{btntxt}}</a></td>
+              </tr>
+              <tr>
+                  <td>Riskprofiler Page (Points)</td>
+                  <td class="hidden-xs">Web Service</td>
+                  <td><span class="label HTML">HTML</span></td>
+                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/dsra_{{scenario.name}}_all_indicators_b" class="btn btn-primary">{{btntxt}}</a></td>
+              </tr>
+              <tr>
+                  <td>Riskprofiler Page (Polygons)</td>
+                  <td class="hidden-xs">Web Service</td>
+                  <td><span class="label HTML">HTML</span></td>
+                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/dsra_{{scenario.name}}_all_indicators_s" class="btn btn-primary">{{btntxt}}</a></td>
+              </tr>
+              <tr>
+                  <td>{{scenario.title}} (Points)</td>
+                  <td class="hidden-xs">Dataset</td>
+                  <td><span class="label GPKG">GPKG</span></td>
+                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{scenario.name}}_all_indicators_b.gpkg.zip" class="btn btn-primary">{{btntxt}}</a></td>
+                  </tr>
+              <tr>
+                  <td>{{scenario.title}} (Polygons)</td>
+                  <td class="hidden-xs">Dataset</td><td><span class="label GPKG">GPKG</span></td>
+                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{scenario.name}}_all_indicators_s.gpkg.zip" class="btn btn-primary">{{btntxt}}</a></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+{% endfor %}
 
 <style>
 
