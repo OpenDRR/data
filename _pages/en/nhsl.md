@@ -19,12 +19,11 @@ breadcrumbs:
     link: "/en"
   - title: "Human Settlement and Natural Hazards in Canada"
 ---
-<p><strong>The National Human Settlement Layer (NHSL) is a collection of thematic datasets that describe the physical, social and economic characteristics of urban centres and rural/remote communities across Canada, and their vulnerability to natural hazards of concern.  Detailed information on land use, buildings, people and capital assets are provided at the Census Dissemination Area administrative level for more than 454,000 settled areas across Canada.</strong></p>
+<p><strong>The National Human Settlement Layer (NHSL) is a collection of thematic datasets that describe the physical, social and economic characteristics of urban centres and rural/remote communities across Canada.  Detailed information on land use, buildings, people and capital assets are provided at the Census Dissemination Area administrative level for more than 454,000 settled areas across Canada.</strong></p>
 
 <div class="row">
   <div class="col-md-8">
     <p>The <a href='#physical_exposure'>Physical Exposure Layer</a> includes a delineation of human settlement areas and related functional land use classes across Canada, and provides detailed information on construction type, occupancy and design level of more than 9.1 million buildings; population dynamics at different times of day for 35.1 million people, and; capital asset valuation of buildings and contents totaling more than 8.3 trillion CAD$.</p>
-    <p>The <a href='#hazard_threat'>Natural Hazard Threat Layer</a> utilizes available national-level information on earthquake, flood, debris flow, wildfire, and severe wind hazards to evaluate the extent to which people and critical assets are situated in harm’s way; and the potential for socioeconomic disruptions in those areas where hazard intensities exceed minimum thresholds of damage.</p>
     <p>The <a href='#social_fabric'>Social Fabric Layer</a> utilizes Census demographic data to evaluate broad spatial patterns of vulnerability, and neighbourhood-level capacities to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.</p>
     <!-- <p style="text-align:justify;">The <a href='#risk_dynamics'>Risk Dynamics Layer</a> utilizes information on population growth and land use change since 1975 to evaluate how evolving patterns of urbanization are contributing to escalating profiles of natural risk over time across Canada.</p> -->
     <p>Although developed to support quantitative risk assessments and implementation of the <a href="https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030">Sendai Framework for Disaster Risk Reduction</a> at local and regional scales in Canada, the NHSL is also suitable for use in other integrated landscape modeling applications, including climate change adaptation and sustainable land use planning.</p>
@@ -43,14 +42,8 @@ breadcrumbs:
           <a href='#physical_exposure'>Physical Exposure Layer</a>
         </li>
         <li class="list-group-item">
-          <a href='#hazard_threat'>Natural Hazard Threat Layer</a>
-        </li>
-        <li class="list-group-item">
           <a href='#social_fabric'>Social Fabric Layer</a>
         </li>
-        <!-- <li class="list-group-item">
-          <a href='#risk_dynamics'>Risk Dynamics Layer</a>
-        </li> -->
       </ul>
     </div>
     <div class="panel panel-primary">
@@ -104,34 +97,6 @@ breadcrumbs:
 
 <hr>
 
-<a name="hazard_threat"></a>
-
-## Natural Hazard Threats
-
-<p><strong>The Natural Hazard Threat component of the National Human Settlement Layer (NHSL) extends capabilities of the physical exposure model to address the question of who and what are susceptible to natural hazards of concern in Canada.</strong></p>
-
-<p>It utilizes available national-level information on earthquake, flood, debris flow, wildfire, and severe wind hazards to evaluate the extent to which people and critical assets are situated in harm’s way (hazard exposure); and the potential for socioeconomic disruptions in those areas where hazard intensities are likely to exceed minimum thresholds of damage potential (hazard susceptibility).</p>
-
-<p>Earthquake hazard threats are assessed using 1/2500-year ground shaking intensity levels developed by the Geological Survey of Canada to evaluate minimum thresholds of building damage.</p>
-
-<p>Wildfire hazard threats are assessed using mean head fire intensity (HFI) levels developed by the Canadian Forest Service to evaluate community assets at risk.</p>
-
-<p>Debris Flow threats are based on a multi-variate landslide susceptibility model developed by NASA as part of a global early warning system for weather-triggered events.</p>
-
-<p>Tsunami, riverine flood and severe wind hazard threats are based on 1/500-year inundation and cyclone models developed as part of the 2011 Global Assessment Report on Disaster Risk Reduction (GAR) to inform disaster management efforts at regional and national scales.</p>
-
-<p>Susceptibility to individual hazards is estimated based on the numbers of people and critical assets exposed at the Census Dissemination Area level. The results are aggregated into a multi-hazard threat index to help identify hotspots of concern across Canada.</p>
-
-### Data Resources
-
-<mark>Coming soon</mark>
-
-<div id="nhsl_hazard_threat_all_indicators" class="hidden">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_hazard_threat_all_indicators" %}
-</div>
-
-<hr>
-
 <a name="social_fabric"></a>
 
 ## Social Fabric and Capacity Thresholds
@@ -156,27 +121,6 @@ breadcrumbs:
 
 <div id="nhsl_social_fabric_all_indicators">
   {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_all_indicators" %}
-</div>
-
-<hr>
-
-<div style="display:none">
-<a name="risk_dynamics"></a>
-
-## Risk Dynamics
-
-<p><strong>The Risk Dynamics component of the National Human Settlement Layer (NHSL) builds on remote sensing analysis and spatial modeling carried out by the European Commission Joint Research Centre (JRC) as part of a global study of evolving human settlement patterns and their influence on disaster risk and sustainable development (GHSL).</strong></p>
-
-<p>High-resolution population grids (250m) and land use classification models at decadal intervals (1975, 1990, 2000 and 2015) provide a framework for evaluating the extent to which human settlements are changing in terms of both density and spatial patterns of urbanization. These framework datasets are combined with available national assessments of earthquake, tsunami, flood, debris flow, wildfire and cyclone hazards to help make evident how population growth and evolving patterns of land use change over the past 40 years are contributing to escalating profiles of natural hazard risk in Canada.</p>
-
-<p>Indicators of physical exposure and hazard susceptibility are reported using the 250m GHSL population grid mesh for each time epochs. Outputs of this study complement a global assessment of exposure to natural hazards carried out by the JRC as part of the 2017 Atlas of the Human Planet and provide additional insights to inform local and regional disaster resilience planning efforts across Canada.</p>
-
-### Data Resources
-
-<div id="nhsl_risk_dynamics_all_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_risk_dynamics_all_indicators" %}
-</div>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
