@@ -19,11 +19,10 @@ breadcrumbs:
     link: "/fr"
   - title: "Zones de peuplement et dangers naturels au Canada"
 ---
-<p><strong>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada, ainsi que leur vulnérabilité aux dangers naturels préoccupants. Des renseignements détaillés sur l’utilisation des terres, les bâtiments, les gens et les immobilisations sont fournis au niveau administratif des aires de diffusion du recensement pour plus de 454 000 régions habitées à travers le Canada.</strong></p>
+<p><strong>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada. Des renseignements détaillés sur l’utilisation des terres, les bâtiments, les gens et les immobilisations sont fournis au niveau administratif des aires de diffusion du recensement pour plus de 454 000 régions habitées à travers le Canada.</strong></p>
 <div class="row">
   <div class="col-md-8">
     <p>La <a href='#physical_exposure'>couche de l’exposition physique</a> inclut une délinéation des zones de peuplement humain et les catégories d’utilisation fonctionnelle des terres qui y sont associées au Canada, et fournit des renseignements détaillés sur le type de construction, l’occupation et le niveau de conception de plus de 9,1 millions de bâtiments; la dynamique de la population à diverses heures de la journée pour 35,1 millions de personnes; et une évaluation des immobilisations des bâtiments et de leur contenu totalisant plus de 8 300 milliards de dollars canadiens.</p>
-    <p>La <a href='#hazard_threat'>couche des menaces liées à des dangers naturels</a> utilise l’information disponible au niveau national sur les tremblements de terre, les inondations, les coulées des débris, les feux de forêt, et les dangers liés aux vents violents pour évaluer dans quelle mesure les gens et les biens essentiels se trouvent en danger, ainsi que le potentiel de perturbations socioéconomiques dans les zones où l’intensité des dangers dépasse les seuils minimaux de dommages.</p>
     <p>La <a href='#social_fabric'>couche du tissu social</a> utilise des données démographiques du recensement pour évaluer les profils spatiaux généraux de la vulnérabilité et les capacités au niveau des quartiers de résister à des événements catastrophiques, et à s’en rétablir, en se fondant sur les caractéristiques intrinsèques des logements, des structures familiales, de l’autonomie individuelle et des systèmes financiers.</p>
     <!-- <p>La <a href='#risk_dynamics'>couche de la dynamique des risques</a> utilise l’information disponible sur la croissance de la population et les changements à l’utilisation des terres depuis 1975 pour évaluer comment l’évolution des tendances de l’urbanisation contribuent à aggraver les profils de risques naturels au fil du temps au Canada.</p> -->
     <p>Bien qu’elle ait été mise au point pour appuyer l’évaluation quantitative des risques et la mise en œuvre du <a href="https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030">Cadre de Sendai pour la réduction des risques de catastrophe</a> aux échelles locales et régionales au Canada, la couche ZPN convient également à d’autres applications intégrées de modélisation du paysage, y compris l’adaptation aux changements climatiques et la planification de l’utilisation durable des terres.</p>
@@ -42,14 +41,8 @@ breadcrumbs:
           <a href='#physical_exposure'>Couche de l’exposition physique</a>
         </li>
         <li class="list-group-item">
-          <a href='#hazard_threat'>Couche des menaces liées à des dangers naturels</a>
-        </li>
-        <li class="list-group-item">
           <a href='#social_fabric'>Couche du tissu social</a>
         </li>
-        <!-- <li class="list-group-item">
-          <a href='#risk_dynamics'>Couche de la dynamique des risques</a>
-        </li> -->
       </ul>
     </div>
     <div class="panel panel-primary">
@@ -103,34 +96,6 @@ breadcrumbs:
 
 <hr>
 
-<a name="hazard_threat"></a>
-
-## Dangers naturels
-
-<p><strong>L’élément « menaces liées aux dangers naturels » de la couche des zones de peuplement au niveau national (couche ZPN) étend la capacité du modèle d’exposition physique à approfondir la question de savoir qui et quoi pourrait être affecté par des dangers naturels préoccupants au Canada.</strong></p>
-
-<p>Il utilise l’information disponible au niveau national sur les tremblements de terre, les inondations, les coulées de débris, les feux de forêt et les dangers liés aux vents violents pour évaluer dans quelle mesure les gens et les biens essentiels se trouvent en danger (exposition aux dangers) et pour évaluer le potentiel de perturbations socioéconomiques dans les zones où l’intensité des dangers est susceptible d’excéder les seuils minimaux de dommages potentiels (sensibilité aux dangers).</p>
-
-<p>Les menaces liées aux aléas sismiques sont évaluées au moyen des niveaux d’intensité des secousses telluriques survenant une fois tous les 2 500 ans mis au point par la Commission géologique du Canada pour évaluer les seuils minimaux des dommages aux bâtiments.</p>
-
-<p>Les menaces liées aux risques de feux de forêt sont évaluées au moyen des niveaux moyens d’intensité du front (IF) mis au point par le Service canadien des forêts pour évaluer les biens communautaires en danger.</p>
-
-<p>Les menaces liées aux coulées de débris sont basées sur un modèle de vulnérabilité aux glissements de terrain à variables multiples mis au point par la NASA dans le cadre d’un système mondial d’alerte rapide pour les événements déclenchés par les conditions météorologiques.</p>
-
-<p>Les menaces liées aux tsunamis, aux débordements de cours d’eau et aux vents violents sont basées sur les modèles de cyclone et inondations survenant 1 fois tous les 500 ans dans le cadre du Bilan mondial 2011 sur la réduction des risques de catastrophe des Nations Unies pour orienter les efforts de gestion des catastrophes à l’échelle régionale et nationale.</p>
-
-<p>La sensibilité à chacun des dangers est estimée en fonction du nombre de gens et de biens essentiels exposés au niveau des aires de diffusion du recensement. Les résultats sont regroupés dans un index des menaces liées à des dangers multiples pour aider à cerner les points chauds préoccupants dans l’ensemble du Canada.</p>
-
-### Ressources de données
-
-<mark>Bientôt disponible</mark>
-
-<div id="nhsl_hazard_threat_all_indicators" class="hidden">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_hazard_threat_all_indicators" %}
-</div>
-
-<hr>
-
 <a name="social_fabric"></a>
 
 ## Tissu social et seuils de capacité
@@ -152,27 +117,6 @@ breadcrumbs:
 
 <div id="nhsl_social_fabric_all_indicators">
   {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_all_indicators" %}
-</div>
-
-<hr>
-
-<div style="display:none;">
-<a name="risk_dynamics"></a>
-
-## Dynamique du risque
-
-<p><strong>L’élément « dynamique du risque » de la couche des zones de peuplement au niveau national (couche ZPN) s’appuie sur une analyse de données de télédétection et une modélisation spatiale entreprises par le Centre commun de recherche de la Commission européenne dans le cadre d’une étude mondiale des tendances en évolution du peuplement humain et de leur influence sur les risques liés aux catastrophes et le développement durable (couche du peuplement humain mondial).</strong></p>
-
-<p>Des grilles de population à haute résolution (250 m) et des modèles de classification des utilisations des terres à des intervalles de dix ans (1975, 1990, 2000 et 2015) fournissent un cadre pour évaluer la mesure dans laquelle les peuplements humains changent au chapitre de la densité et des profils spatiaux d’urbanisation. Ces ensembles de données du cadre sont combinées aux évaluations nationales disponibles des dangers liées aux tremblements de terre, tsunami, inondations, coulées de débris, feux de forêt et cyclones pour décerner comment la croissance de la population et les tendances en évolutions des changements aux utilisations des terres au cours des 40 dernières années contribuent aux profils toujours croissants des risques liés aux dangers naturels au Canada.</p>
-
-<p>Les indicateurs de l’exposition physique et de la sensibilité aux dangers sont déclarés au moyen du maillage de population de 250 m de la couche du peuplement humain mondial pour chaque époque temporelle. Les résultats de cette étude complètent une évaluation mondiale de l’exposition aux dangers naturels effectuée par le Centre commun de recherche dans le cadre de l’Atlas de la planète humaine de 2017 et fournissent des perspectives supplémentaires pour guider les efforts de planification locaux et régionaux sur le plan de la résilience aux catastrophes dans l’ensemble du Canada.</p>
-
-### Ressources de données
-
-<div id="nhsl_risk_dynamics_all_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_risk_dynamics_all_indicators" %}
-</div>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"

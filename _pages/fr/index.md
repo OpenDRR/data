@@ -32,8 +32,8 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
         <img src="../assets/img/nhsl.png" class="img-rounded img-responsive full-width" alt="Image du Canada">
     </div>
     <div class="col-md-8">
-        <h3>Zones de peuplement et dangers naturels au Canada</h3>
-        <p>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada, ainsi que leur vulnérabilité aux dangers naturels préoccupants.</p>
+        <h3>Zones de peuplement au Canada</h3>
+        <p>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada.</p>
         <a href="nhsl.html" class="btn btn-primary">Explorer la collection</a>
     </div>
 </div>
