@@ -39,7 +39,7 @@
         </div>
       </form>
     </div>
-  </div>     
+  </div>
 {% endcapture %}
 
 {% assign resrcs = "" %}
@@ -52,7 +52,7 @@
                 {% assign download_link = resource.link %}
             {% else %}
                 {% capture download_link %}
-                {{site.github.releases_url}}/download{{site.github.releases[0].tag_name}}/{{resource.link}}
+                {{site.github.releases_url}}/download/{{site.github.releases[0].tag_name}}/{{resource.link}}
                 {% endcapture %}
             {% endif %}
             {% if resource.region == 'ca' and resource.language contains include.lang %}
