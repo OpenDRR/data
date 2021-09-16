@@ -32,8 +32,8 @@ Welcome to the OpenDRR data download site. Here you will find the latest version
         <img src="../assets/img/nhsl.png" class="img-rounded img-responsive full-width" alt="Image of Canada">
     </div>
     <div class="col-md-8">
-        <h3>Human Settlement and Natural Hazards in Canada</h3>
-        <p>The National Human Settlement Layer (NHSL) is a collection of thematic datasets that describe the physical, social and economic characteristics of urban centres and rural/remote communities across Canada, and their vulnerability to natural hazards of concern.</p>
+        <h3>Human Settlement in Canada</h3>
+        <p>The National Human Settlement Layer (NHSL) is a collection of thematic datasets that describe the physical, social and economic characteristics of urban centres and rural/remote communities across Canada.</p>
         <a href="nhsl.html" class="btn btn-primary">Explore</a>
     </div>
 </div>
@@ -54,8 +54,8 @@ Welcome to the OpenDRR data download site. Here you will find the latest version
         <img src="../assets/img/dsra.png" class="img-rounded img-responsive full-width" alt="Image of Canada">
     </div>
     <div class="col-md-8">
-        <h3>Earthquake Scenarios</h3><mark>Coming soon</mark>
-        <p>Library of select earthquake scenarios for Canada.</p>
+        <h3>Earthquake Scenarios</h3>
+        <p>National Earthquake Scenario Catalogue, which presents the probable shaking, damage, loss and consequences from hypothetical earthquakes that could impact Canadians.</p>
       <a href="dsra.html" class="btn btn-primary">Explore</a>
     </div>
 </div>

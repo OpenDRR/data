@@ -32,8 +32,8 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
         <img src="../assets/img/nhsl.png" class="img-rounded img-responsive full-width" alt="Image du Canada">
     </div>
     <div class="col-md-8">
-        <h3>Zones de peuplement et dangers naturels au Canada</h3>
-        <p>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada, ainsi que leur vulnérabilité aux dangers naturels préoccupants.</p>
+        <h3>Zones de peuplement au Canada</h3>
+        <p>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada.</p>
         <a href="nhsl.html" class="btn btn-primary">Explorer la collection</a>
     </div>
 </div>
@@ -54,8 +54,8 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
         <img src="../assets/img/dsra.png" class="img-rounded img-responsive full-width" alt="Image du Canada">
     </div>
     <div class="col-md-8">
-        <h3>Scénarios de tremblement de terre <mark>Bientôt disponible</mark></h3>
-        <p>Bibliothèque de scénarios de séismes sélectionnés pour le Canada.</p>
+        <h3>Scénarios de tremblement de terre</h3>
+        <p>Catalogue national de scénarios de tremblement de terre, qui présente les secousses, les dommages, les pertes et les conséquences probables de tremblements de terre hypothétiques qui pourraient frapper la population canadienne.</p>
         <a href="dsra.html" class="btn btn-primary">Explorer la collection</a>
     </div>
 </div>
