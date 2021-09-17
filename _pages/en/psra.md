@@ -19,6 +19,9 @@ breadcrumbs:
     link: "/en"
   - title: "The National Seismic Risk model for Canada"
 ---
+
+<link href='../assets/css/app.css' rel='stylesheet'/>
+
 <div class="row">
   <div class="col-md-8">
     <p><strong>The National Seismic Risk model for Canada introduces a structured framework of indicators that profile the physical, social and economic dimensions of earthquake risk at the neighborhood scale.</strong></p>

@@ -19,6 +19,9 @@ breadcrumbs:
     link: "/fr"
   - title: "Zones de peuplement et dangers naturels au Canada"
 ---
+
+<link href='../assets/css/app.css' rel='stylesheet'/>
+
 <p><strong>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada, ainsi que leur vulnérabilité aux dangers naturels préoccupants. Des renseignements détaillés sur l’utilisation des terres, les bâtiments, les gens et les immobilisations sont fournis au niveau administratif des aires de diffusion du recensement pour plus de 454 000 régions habitées à travers le Canada.</strong></p>
 <div class="row">
   <div class="col-md-8">
@@ -165,38 +168,4 @@ breadcrumbs:
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
         integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 
-<script>
-  let layers = [ 'nhsl_risk_dynamics_all_indicators', 'nhsl_social_fabric_all_indicators', 'nhsl_physical_exposure_all_indicators', 'nhsl_hazard_threat_all_indicators']
-  for ( l in layers ) {
-    $( '#select-rgn-' + layers[l] ).on( 'change', function() {
-      $( ".ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn" ).hide();
-
-      $("select").val( $( this ).val() );
-
-      if ( $( this ).val() ) {
-        let p = '.' + $( this ).val() + ', .rgn';
-        $( p ).fadeIn();
-      }
-    });
-  }
-</script>
-
-<style>
-
-.ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn { display:none; }
-
-.GPKG {
-  color: #083c6c;
-  background-color: #e8f2f4;
-}
-
-.ESRI.REST {
-  color: #278400;
-  background-color: #d8eeca;
-}
-
-.EXCEL {
-  color: #f90;
-  background-color: #f9f4d4;
-}
-</style>
+<script src="../assets/script.js"></script>

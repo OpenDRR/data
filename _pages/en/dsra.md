@@ -20,6 +20,8 @@ breadcrumbs:
   - title: "Earthquake Scenarios"
 ---
 
+<link href='../assets/css/app.css' rel='stylesheet'/>
+
 <div class="row">
   <div class="col-md-8">
     <p><strong>The National Earthquake Scenario Catalogue, presents the probable shaking, damage, loss and consequences from hypothetical earthquakes that could impact Canadians.</strong></p>
@@ -125,28 +127,3 @@ breadcrumbs:
       </table>
   </div>
 {% endfor %}
-
-
-<style>
-
-.GPKG {
-  color: #083c6c;
-  background-color: #e8f2f4;
-}
-
-.ESRI.REST {
-  color: #278400;
-  background-color: #d8eeca;
-}
-
-.EXCEL {
-  color: #f90;
-  background-color: #f9f4d4;
-}
-
-.HTML {
-  color: #FF0000;
-  background-color: #FFCCCC;
-}
-
-</style>

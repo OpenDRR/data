@@ -20,6 +20,9 @@ breadcrumbs:
     link: "/fr"
   - title: "Scénarios de séismes"
 ---
+
+<link href='../assets/css/app.css' rel='stylesheet'/>
+
 <div class="row">
   <div class="col-md-8">
     <p>Bibliothèque de scénarios de séismes sélectionnés pour le Canada.</p>
@@ -47,16 +50,16 @@ breadcrumbs:
   </div>
 </div>
 
-<h3>Completed Scenarios</h3>
+<h3>Scénarios Sélectionnés</h3>
 
 <div class="row">
   <div class="col-md-12">
-    <iframe width="100%" height="480" frameborder="0" src="https://viewscreen.githubusercontent.com/view/geojson?url=https%3a%2f%2fraw.githubusercontent.com%2fDamonU2%2fearthquake-scenarios%2fgeojson-maps%2fFINISHED%2fFinishedScenarios.geojson" title="FinishedScenarios.geojson"></iframe>
+    <iframe width="100%" height="480" frameborder="0" src="https://viewscreen.githubusercontent.com/view/geojson?url=https%3a%2f%2fraw.githubusercontent.com%2fDamonU2%2fearthquake-scenarios%2fauto-updates-for-pages%2fFINISHED%2fFinishedScenariosFr.geojson" title="FinishedScenariosFr.geojson"></iframe>
     <table style="width:100%; font-size:14px;">
       <tr>
-        <td><img src="../assets/img/small.png" width='20'> Magnitude less than 6.0</td>
-        <td><img src="../assets/img/medium.png" width='25'> Magnitude 6.0 to 7.9</td>
-        <td><img src="../assets/img/large.png" width='30'> Magnitude 8.0 or greater</td>
+        <td><img src="../assets/img/small.png" width='20'> Magnitude < 6.0</td>
+        <td><img src="../assets/img/medium.png" width='25'> Magnitude 6.0 - 7.9</td>
+        <td><img src="../assets/img/large.png" width='30'> Magnitude 8.0+</td>
       </tr>
     </table>
   </div>
@@ -121,29 +124,3 @@ breadcrumbs:
       </table>
   </div>
 {% endfor %}
-
-
-<style>
-
-.GPKG {
-  color: #083c6c;
-  background-color: #e8f2f4;
-}
-
-.ESRI.REST {
-  color: #278400;
-  background-color: #d8eeca;
-}
-
-.EXCEL {
-  color: #f90;
-  background-color: #f9f4d4;
-}
-
-.HTML {
-  color: #FF0000;
-  background-color: #FFCCCC;
-}
-
-</style>
-
