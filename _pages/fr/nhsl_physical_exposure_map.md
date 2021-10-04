@@ -7,21 +7,22 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Physical Exposure
-lang: en
-altLangPage: ../fr/nhsl_physical_exposure_map
+title: Exposition physique
+lang: fr
+altLangPage: ../en/nhsl_physical_exposure_map
 nositesearch: true
 nomenu: true
 nofooter: true
+sitesearch: false
 breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
-  - title: "OpenDRR Downloads"
-    link: "/en"
-  - title: "Human Settlement and Natural Hazards in Canada"
-    link: "/en/nhsl"
-  - title: "Physical Exposure"
-    link: "/en/nhsl#physical_exposure"
+  - title: "Téléchargements de OpenDRR"
+    link: "/fr"
+  - title: "Zones de peuplement et dangers naturels au Canada"
+    link: "/fr/nhsl"
+  - title: "Exposition physique"
+    link: "/fr/nhsl#physical_exposure"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -69,7 +70,7 @@ crossorigin=""></script>
 	});
 
 	var natural_hazards_building_exposure_model = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/7',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/7',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -83,7 +84,7 @@ crossorigin=""></script>
 	}).on( 'loading', function ( e ) {
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Number of buildings: <strong>{E_BldgNum}</strong></p>', layer.feature.properties );
+    	return L.Util.template( '<p>Nombre de bâtiments: <strong>{E_BldgNum}</strong></p>', layer.feature.properties );
   }).on('add', function ( e ) {
     if ( oldId && oldLayer) {
 		  $( '#sidebar' ).html( '' );
@@ -94,7 +95,7 @@ crossorigin=""></script>
   });
 
 	var landuse = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/8',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/8',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -107,7 +108,7 @@ crossorigin=""></script>
 	}).on( 'loading', function ( e ) {
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Landuse: <strong>{E_LandUse}</strong></p>', layer.feature.properties );
+    	return L.Util.template( '<p>Utilisation des terres: <strong>{E_LandUse}</strong></p>', layer.feature.properties );
   }).on('add', function ( e ) {
     if ( oldId && oldLayer) {
 		  $( '#sidebar' ).html( '' );
@@ -118,7 +119,7 @@ crossorigin=""></script>
   });
 
   var population_density = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/9',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/9',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -131,7 +132,7 @@ crossorigin=""></script>
 	}).on( 'loading', function ( e ) {
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Population density: <strong>{Et_PopNight___E_AreaHa}</strong></p>', layer.feature.properties );
+    	return L.Util.template( '<p>Densité de population: <strong>{Et_PopNight___E_AreaHa}</strong></p>', layer.feature.properties );
   }).on('add', function ( e ) {
     if ( oldId && oldLayer) {
 		  $( '#sidebar' ).html( '' );
@@ -142,7 +143,7 @@ crossorigin=""></script>
   });
 
   var building_assets_per_hectare = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/10',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/10',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -156,7 +157,7 @@ crossorigin=""></script>
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
     	var assetval =  L.Util.template( '{Et_AssetValue___E_AreaHa}', layer.feature.properties );
-      return '<p>Building assets per hectare: <strong>' + formatter.format(assetval) + '</strong></p>';
+      return '<p>Patrimoine immobilier par hectare: <strong>' + formatter.format(assetval) + '</strong></p>';
   }).on('add', function ( e ) {
     if ( oldId && oldLayer) {
 		  $( '#sidebar' ).html( '' );
@@ -167,7 +168,7 @@ crossorigin=""></script>
   });
 
 	var building_density = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/11',
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/11',
 		simplifyFactor: 0.25,
 		precision: 5,
     minZoom: 10,
@@ -180,7 +181,7 @@ crossorigin=""></script>
 	}).on( 'loading', function ( e ) {
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
-    return L.Util.template( '<p>Building density: <strong>{Et_BldgNum___E_AreaHa}</strong></p>', layer.feature.properties );
+    return L.Util.template( '<p>Densité de construction: <strong>{Et_BldgNum___E_AreaHa}</strong></p>', layer.feature.properties );
   }).on('add', function ( e ) {
     if ( oldId && oldLayer) {
 		  $( '#sidebar' ).html( '' );
@@ -207,11 +208,11 @@ crossorigin=""></script>
   });
 
   var overlays = {
-    'Landuse': landuse,
-    'Population Density': population_density,
-    'Building Assets per Hectare': building_assets_per_hectare,
-    'Building Density': building_density,
-    // 'Natural Hazards Building Exposure Model': natural_hazards_building_exposure_model
+    'Utilisation des terres': landuse,
+    'Densité de Population': population_density,
+    'Actifs de construction par hectare': building_assets_per_hectare,
+    'Densité de construction': building_density,
+    // 'Modèle d\'exposition des bâtiments aux risques naturels': natural_hazards_building_exposure_model
   };
 
   L.control.layers( overlays, null, { collapsed: false } ).addTo( map );
@@ -296,7 +297,7 @@ crossorigin=""></script>
             counter += 1;
           }
         string += '</tr></table>';
-        $( '#sidebar' ).html( '<h3>Properties of Selected Feature</h3>' + string );
+        $( '#sidebar' ).html( '<h3>Propriétés de la Zone Sélectionnée</h3>' + string );
 
       });
   }

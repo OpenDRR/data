@@ -7,21 +7,21 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Physical Exposure
-lang: en
-altLangPage: ../fr/nhsl_physical_exposure_map
+title: Tissu social et seuils de capacité
+lang: fr
+altLangPage: ../en/nhsl_social_fabric_map
 nositesearch: true
 nomenu: true
 nofooter: true
 breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
-  - title: "OpenDRR Downloads"
-    link: "/en"
-  - title: "Human Settlement and Natural Hazards in Canada"
-    link: "/en/nhsl"
-  - title: "Physical Exposure"
-    link: "/en/nhsl#physical_exposure"
+  - title: "Téléchargements de OpenDRR"
+    link: "/fr"
+  - title: "Zones de peuplement et dangers naturels au Canada"
+    link: "/fr/nhsl"
+  - title: "Tissu social et seuils de capacité"
+    link: "/fr/nhsl#social_fabric"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -41,7 +41,7 @@ crossorigin=""></script>
 <script src="https://unpkg.com/esri-leaflet-renderers@2.1.2" crossorigin=""></script>
 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet'/>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
@@ -51,7 +51,7 @@ crossorigin=""></script>
 <div id="sidebar"></div>
 
 {% assign variables = '' %}
-{% for attribute in site.data.nhsl_physical_exposure_attributes.attributes %}
+{% for attribute in site.data.nhsl_social_fabric_attributes.attributes %}
   {% capture variable %}
   window['{{attribute.name}}' + 'Desc'] = '{{attribute.description[page.lang]}}';
   window['{{attribute.name}}' + 'Detail'] = '{{attribute.detailed[page.lang]}}';
@@ -62,43 +62,18 @@ crossorigin=""></script>
 
 <script>
 
-  {{variables}}
+	{{variables}}
 
 	var tiles = L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	});
 
-	var natural_hazards_building_exposure_model = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/7',
+	var total_social_vulnerability_score = L.esri.featureLayer({
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/1',
 		simplifyFactor: 0.25,
 		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'E_BldgNum' ]
-	}).on( 'load', function ( e ) {
-    $( '#sidebar' ).html( '' );
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Number of buildings: <strong>{E_BldgNum}</strong></p>', layer.feature.properties );
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, natural_hazards_building_exposure_model );
-  });
-
-	var landuse = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/8',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'E_LandUse' ]
+    	minZoom: 10,
+		fields: [ 'OBJECTID', 'SVlt_Score' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
 			buildLegend( metadata );
@@ -107,71 +82,22 @@ crossorigin=""></script>
 	}).on( 'loading', function ( e ) {
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Landuse: <strong>{E_LandUse}</strong></p>', layer.feature.properties );
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
+    	return L.Util.template( '<p>Score Total de Vulnérabilité Sociale: <strong>{SVlt_Score}</strong></p>', layer.feature.properties );
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
 		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, landuse );
-  });
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, total_social_vulnerability_score );
+  	});
 
-  var population_density = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/9',
+	var financial_agency_score = L.esri.featureLayer({
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/2',
 		simplifyFactor: 0.25,
 		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'Et_PopNight___E_AreaHa' ]
-  }).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	return L.Util.template( '<p>Population density: <strong>{Et_PopNight___E_AreaHa}</strong></p>', layer.feature.properties );
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, population_density );
-  });
-
-  var building_assets_per_hectare = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/10',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'Et_AssetValue___E_AreaHa' ]
-  }).on( 'load', function ( e ) {
-		this.metadata( function ( error, metadata ) {
-			buildLegend( metadata );
-		});
-		$( '#modal' ).remove();
-	}).on( 'loading', function ( e ) {
-		$( '#map' ).before( '<div id="modal"></div>' );
-	}).bindPopup( function ( layer ) {
-    	var assetval =  L.Util.template( '{Et_AssetValue___E_AreaHa}', layer.feature.properties );
-      return '<p>Building assets per hectare: <strong>' + formatter.format(assetval) + '</strong></p>';
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
-		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, building_assets_per_hectare );
-  });
-
-	var building_density = L.esri.featureLayer({
-		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_en/MapServer/11',
-		simplifyFactor: 0.25,
-		precision: 5,
-    minZoom: 10,
-		fields: [ 'OBJECTID', 'Et_BldgNum___E_AreaHa' ]
+    	minZoom: 10,
+		fields: [ 'OBJECTID', 'VEt_Score' ]
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
 			buildLegend( metadata );
@@ -180,15 +106,87 @@ crossorigin=""></script>
 	}).on( 'loading', function ( e ) {
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
-    return L.Util.template( '<p>Building density: <strong>{Et_BldgNum___E_AreaHa}</strong></p>', layer.feature.properties );
-  }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
+    	return L.Util.template( '<p>Note de l\'Agence Financière: <strong>{VEt_Score}</strong></p>', layer.feature.properties );
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
 		  $( '#sidebar' ).html( '' );
-      oldLayer.resetFeatureStyle( oldId );
-    }
-  }).on('click', function ( e ) {
-		showAttributes( e, building_density );
-  });
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, financial_agency_score );
+  	});
+
+    var housing_condition_score = L.esri.featureLayer({
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/3',
+		simplifyFactor: 0.25,
+		precision: 5,
+    	minZoom: 10,
+		fields: [ 'OBJECTID', 'VHt_Score' ]
+  	}).on( 'load', function ( e ) {
+		this.metadata( function ( error, metadata ) {
+			buildLegend( metadata );
+		});
+		$( '#modal' ).remove();
+	}).on( 'loading', function ( e ) {
+		$( '#map' ).before( '<div id="modal"></div>' );
+	}).bindPopup( function ( layer ) {
+    	return L.Util.template( '<p>Note de l\'état du logement: <strong>{VHt_Score}</strong></p>', layer.feature.properties );
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, housing_condition_score );
+  	});
+
+    var social_connectivity_score = L.esri.featureLayer({
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/4',
+		simplifyFactor: 0.25,
+		precision: 5,
+    	minZoom: 10,
+		fields: [ 'OBJECTID', 'VFt_Score' ]
+  	}).on( 'load', function ( e ) {
+		this.metadata( function ( error, metadata ) {
+			buildLegend( metadata );
+		});
+		$( '#modal' ).remove();
+	}).on( 'loading', function ( e ) {
+		$( '#map' ).before( '<div id="modal"></div>' );
+	}).bindPopup( function ( layer ) {
+    	return L.Util.template( '<p>Note de Connectivité Sociale: <strong>{VFt_Score}</strong></p>', layer.feature.properties );
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, social_connectivity_score );
+  	});
+
+	var individual_autonomy_score = L.esri.featureLayer({
+		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/5',
+		simplifyFactor: 0.25,
+		precision: 5,
+    	minZoom: 10,
+		fields: [ 'OBJECTID', 'VAt_Score' ]
+	}).on( 'load', function ( e ) {
+		this.metadata( function ( error, metadata ) {
+			buildLegend( metadata );
+		});
+		$( '#modal' ).remove();
+	}).on( 'loading', function ( e ) {
+		$( '#map' ).before( '<div id="modal"></div>' );
+	}).bindPopup( function ( layer ) {
+    	return L.Util.template( '<p>Note d\'Autonomie Individuelle: <strong>{VAt_Score}</strong></p>', layer.feature.properties );
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, individual_autonomy_score );
+  	});
 
   var map = L.map( 'map', {
     fullscreenControl: true,
@@ -207,27 +205,16 @@ crossorigin=""></script>
   });
 
   var overlays = {
-    'Landuse': landuse,
-    'Population Density': population_density,
-    'Building Assets per Hectare': building_assets_per_hectare,
-    'Building Density': building_density,
-    // 'Natural Hazards Building Exposure Model': natural_hazards_building_exposure_model
+    'Score Total de Vulnérabilité Sociale': total_social_vulnerability_score,
+    'Note de l\'Agence Financière': financial_agency_score,
+    'Note de l\'état du logement': housing_condition_score,
+    'Note de Connectivité Sociale': social_connectivity_score,
+    'Note d\'Autonomie Individuelle': individual_autonomy_score
   };
 
   L.control.layers( overlays, null, { collapsed: false } ).addTo( map );
 
-  landuse.addTo( map );
-
-  var formatter = new Intl.NumberFormat( 'en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0
-
-    // These options are needed to round to whole numbers if that's what you want.
-    //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
-    //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
-    //Usage: formatter.format(2500); $2,500.00
-  });
+  total_social_vulnerability_score.addTo( map );
 
   var oldId;
   var oldLayer;  
@@ -283,7 +270,7 @@ crossorigin=""></script>
               }
 
               string +=
-              '<td class="attr"><span class="prop" title="' + detail + '">' + desc + '</span><span class="val">' + value + '</span></td>';
+              '<td class="attr"><span class="prop" title="' + detail + '">' + desc + ' - ' + key + '</span><span class="val">' + value + '</span></td>';
             }
             else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' ) {}
             else {
@@ -296,36 +283,36 @@ crossorigin=""></script>
             counter += 1;
           }
         string += '</tr></table>';
-        $( '#sidebar' ).html( '<h3>Properties of Selected Feature</h3>' + string );
+        $( '#sidebar' ).html( '<h3>Propriétés de la Zone Sélectionnée</h3>' + string );
 
       });
   }
 
   function buildLegend( metadata ) {
 
-	  map.removeControl(legend);
+	map.removeControl(legend);
 	
-    var renderers = metadata.drawingInfo.renderer.classBreakInfos ? metadata.drawingInfo.renderer.classBreakInfos : metadata.drawingInfo.renderer.uniqueValueInfos;
+	var renderers = metadata.drawingInfo.renderer.classBreakInfos ? metadata.drawingInfo.renderer.classBreakInfos : metadata.drawingInfo.renderer.uniqueValueInfos;
 
-    legend.onAdd = function ( map ) {
+	legend.onAdd = function ( map ) {
 
-      var div = L.DomUtil.create( 'div', 'info legend' );
+		var div = L.DomUtil.create( 'div', 'info legend' );
 
-      if ( renderers.length === 0 ) { 
-        return L.DomUtil.create( 'div' ); 
-      }
+		if ( renderers.length === 0 ) { 
+			return L.DomUtil.create( 'div' ); 
+		}
 
-      div.innerHTML += '<center><strong>' + metadata.name + '</strong></center>';
+		div.innerHTML += '<center><strong>' + metadata.name + '</strong></center>';
 
-      for ( var i = 0; i < renderers.length; i++ ) {
-        div.innerHTML +=
-        '<div style="white-space: nowrap;margin-top: 2px;"><i style="background:rgb( ' + renderers[i][ 'symbol' ].color[0] + ',' + renderers[i][ 'symbol' ].color[1] + ',' + renderers[i][ 'symbol' ].color[2] + ',' + renderers[i][ 'symbol' ].color[3] + ' );border-color:rgb( ' + renderers[i][ 'symbol' ][ 'outline' ].color[0] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[1] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[2]+ ',' + renderers[i][ 'symbol' ][ 'outline' ].color[3] + ' );border-width:' + renderers[i][ 'symbol' ][ 'outline' ].width + 'px;"></i> ' +
-        renderers[i][ 'label' ] + '</div>';
-      }
+		for ( var i = 0; i < renderers.length; i++ ) {
+			div.innerHTML +=
+			'<div style="white-space: nowrap;margin-top: 2px;"><i style="background:rgb( ' + renderers[i][ 'symbol' ].color[0] + ',' + renderers[i][ 'symbol' ].color[1] + ',' + renderers[i][ 'symbol' ].color[2] + ',' + renderers[i][ 'symbol' ].color[3] + ' );border-color:rgb( ' + renderers[i][ 'symbol' ][ 'outline' ].color[0] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[1] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[2]+ ',' + renderers[i][ 'symbol' ][ 'outline' ].color[3] + ' );border-width:' + renderers[i][ 'symbol' ][ 'outline' ].width + 'px;"></i> ' +
+			renderers[i][ 'label' ] + '</div>';
+		}
 
-      return div;
+		return div;
 
-    };
+	};
 
     legend.addTo( map );
   }

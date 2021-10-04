@@ -89,7 +89,18 @@ breadcrumbs:
 
 {% for scenario in site.data.dsra.scenarios %}
   <h4 id={{scenario.name}}>{{scenario.title}}</h4>
-  <p style="word-break: break-word;">{{scenario.description[page.lang]}}</p>
+  <p style="word-break: break-word;">
+    <div class="card" style="float:left;margin:10px 20px 0px 0px;">
+      <img src="https://github.com/OpenDRR/earthquake-scenarios/raw/master/FINISHED/{{scenario.name}}.png" width="350" class="img-rounded img-responsive"/>
+      <div class="card-body">
+        <a href="dsra_map.html?scenario={{scenario.name}}" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button">
+         {% if page.lang == 'en' %} View on Map {% else %} Voir sur la carte {% endif %}
+        </a>
+      </div>
+      <br>
+    </div>
+    {{scenario.description[page.lang]}}
+  </p>
   <div>
       <table class="table table-striped table-responsive">
           <tbody>

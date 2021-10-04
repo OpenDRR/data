@@ -6,7 +6,7 @@ attributes:
     en: Population Density
     fr: Densité de Population
   name: Et_PopNight___E_AreaHa
-  format: Two
+  format: 2
 - description:
     en: Building Assets per Hectare
     fr: Actifs de construction par hectare
@@ -14,7 +14,7 @@ attributes:
     en: Building Assets per Hectare
     fr: Actifs de construction par hectare
   name: Et_AssetValue___E_AreaHa
-  format: $
+  format: 444
 - description:
     en: Building Density
     fr: Densité de construction
@@ -22,7 +22,7 @@ attributes:
     en: Building Density
     fr: Densité de construction
   name: Et_BldgNum___E_AreaHa
-  format: Two
+  format: 2
 - description:
     en: Settled Area ID
     fr: Identification de la zone habitée
@@ -53,21 +53,21 @@ attributes:
   format: 
 - description:
     en: Settled Area (km2)
-    fr: zone habitée (en km2)
+    fr: Zone Habitée (en km2)
   detailed:
     en: Land area in square kilometres represented by Settled Area (SAUID) polygon.
     fr: Superficie terrestre en kilomètres carrés représentée par le polygone de la
       zone habitée (SAUID)
   name: E_AreaKm2
-  format: Two
+  format: 2
 - description:
     en: Settled Area (hectares)
-    fr: zone habitée (en hectares)
+    fr: Zone Habitée (en hectares)
   detailed:
     en: Land area in hectares represented by Settled Area (SAUID) polygon.
     fr: Superficie en hectares représentée par le polygone de la zone habitée (SAUID)
   name: E_AreaHa
-  format: Two
+  format: 2
 - description:
     en: Statistical Area Classification
     fr: Classification des secteurs statistiques
@@ -106,7 +106,7 @@ attributes:
     fr: Estimation de la superficie en pieds carrés de toutes les structures du stock
       du répertoire immobilier (Et_BldgArea)
   name: Et_BldgArea
-  format: 
+  format: 111
 - description:
     en: Residential Building Area
     fr: Superficie des immeubles résidentiels
@@ -116,7 +116,7 @@ attributes:
     fr: Estimation de la superficie en pieds carrés des structures résidentielles
       du stock du répertoire immobilier (Et_BldgNum)
   name: Et_BldgAreaRes
-  format: 
+  format: 111
 - description:
     en: Commercial Building Area
     fr: Superficie des immeubles commerciaux
@@ -126,7 +126,7 @@ attributes:
     fr: Estimation de la superficie en pieds carrés des structures commerciales du
       stock du répertoire immobilier (Et_BldgNum)
   name: Et_BldgAreaComm
-  format: 
+  format: 111
 - description:
     en: Industrial Building Area
     fr: Superficie des immeubles industriels
@@ -136,7 +136,7 @@ attributes:
     fr: Estimation de la superficie en pieds carrés des structures industrielles du
       stock du répertoire immobilier (Et_BldgNum)
   name: Et_BldgAreaInd
-  format: 
+  format: 111
 - description:
     en: Civic Building Area
     fr: Superficie des immeubles municipaux
@@ -146,7 +146,7 @@ attributes:
     fr: Estimation de la superficie en pieds carrés des structures municipales du
       stock du répertoire immobilier (Et_BldgNum)
   name: Et_BldgAreaCivic
-  format: 
+  format: 111
 - description:
     en: Agricultural Building Area
     fr: Superficie des immeubles agricoles
@@ -156,7 +156,7 @@ attributes:
     fr: Estimation de la superficie en pieds carrés des structures agricoles du stock
       du répertoire immobilier (Et_BldgNum)
   name: Et_BldgAreaAgr
-  format: 
+  format: 111
 - description:
     en: Building Inventory Total
     fr: Total du répertoire immobilier
@@ -207,7 +207,7 @@ attributes:
     en: Estimated average number of nighttime residents per square kilometre (Et_PopNight/E_AreaKm2)
     fr: Estimation du nombre moyen de résidents nocturnes par kilomètre carré (Et_PopNight/E_AreaKm2)
   name: Et_Pop_Km2
-  format: Two
+  format: 2
 - description:
     en: People per hectare
     fr: Personnes par hectare
@@ -215,7 +215,7 @@ attributes:
     en: Estimated average number of nighttime residents per hectare (Et_PopNight/E_AreaHa)
     fr: Estimation du nombre moyen de résidents nocturnes par hectare (Et_PopNight/E_AreaHa)
   name: Et_PPH
-  format: Two
+  format: 2
 - description:
     en: Buildings per square kilometre
     fr: Immeubles par kilomètre carré
@@ -223,7 +223,7 @@ attributes:
     en: Average number of buidings per square kilometre (Et_BldgNum/E_AreaKm2)
     fr: Nombre moyen d’immeubles par kilomètre carré (Et_BldgNum/E_AreaKm2)
   name: Et_Bldg_Km2
-  format: Two
+  format: 2
 - description:
     en: Asset Value per square kilometre
     fr: Valeur des biens par kilomètre carré
@@ -231,7 +231,7 @@ attributes:
     en: Average value of captial assets per square kilometre (Et_AssetValue/E_AreaKm2)
     fr: Valeur moyenne des biens immobilisés par kilomètre carré (Et_AssetValue/E_AreaKm2)
   name: Et_Value_Km2
-  format: $
+  format: 444
 - description:
     en: Low Density Residential Buildings
     fr: Immeubles résidentiels à faible densité
@@ -303,7 +303,7 @@ attributes:
     fr: Estimation du nombre d’immeubles résidentiels unifamiliaux dans une zone habitée
       (SAUID)
   name: Et_SFHshld
-  format: Two
+  format: 2
 - description:
     en: Multi-Family Households
     fr: Ménages multifamiliaux
@@ -313,7 +313,7 @@ attributes:
     fr: Estimation du nombre d’immeubles résidentiels multifamiliaux dans une zone
       habitée (SAUID)
   name: ET_MFHshld
-  format: Two
+  format: 2
 - description:
     en: Wood
     fr: Bois
@@ -361,7 +361,7 @@ attributes:
     fr: Acier
   detailed:
     en: Estimated number of steel buildings within a Settled Area (SAUID)
-    fr: Estimation du nombre d’immeubles à ossature d'acier dans une zone habitée
+    fr: Estimation du nombre d\u0027immeubles à ossature d\u0027acier dans une zone habitée
       (SAUID)
   name: Et_Steel
   format: 
@@ -421,7 +421,7 @@ attributes:
     fr: Estimation de la population occupant des immeubles pendant les heures normales
       de travail (de 9 h à 17 h)
   name: Et_PopDay
-  format: Round
+  format: 111
 - description:
     en: Nighttime Building Occupancy
     fr: Occupation nocturne des immeubles
@@ -430,7 +430,7 @@ attributes:
     fr: Estimation de la population occupant des immeubles pendant les heures de nuit
       (de 20 h à 6 h)
   name: Et_PopNight
-  format: Round
+  format: 111
 - description:
     en: In Transit Building Occupancy
     fr: Occupation des immeubles pendant le navettage
@@ -440,7 +440,7 @@ attributes:
     fr: Estimation de la population occupant des immeubles pendant les heures de navettage
       du matin et du soir (de 6 h à 9 h et de 17 h à 20 h)
   name: Et_PopTransit
-  format: Round
+  format: 111
 - description:
     en: Capital Asset Value
     fr: Valeur des biens immobilisés
@@ -450,7 +450,7 @@ attributes:
     fr: Estimation de la valeur des immeubles et de leur contenu en fonction des coûts
       de remplacement correspondant aux normes de l’industrie
   name: Et_AssetValue
-  format: $
+  format: 444
 - description:
     en: Building Replacement Value
     fr: Valeur de remplacement des immeubles
@@ -460,7 +460,7 @@ attributes:
     fr: Estimation du coût de remplacement standard total des éléments structurels
       et non structurels des immeubles
   name: Et_BldgValue
-  format: $
+  format: 444
 - description:
     en: Structural Component Value
     fr: Valeur des éléments structurels
@@ -469,7 +469,7 @@ attributes:
     fr: Estimation du coût de remplacement standard total des éléments structurels
       des immeubles
   name: Et_StrValue
-  format: $
+  format: 444
 - description:
     en: Nonstructural Component Value
     fr: Valeur des éléments non structurels
@@ -478,7 +478,7 @@ attributes:
     fr: Estimation du coût de remplacement standard total des éléments non structurels
       des immeubles
   name: Et_NStrValue
-  format: $
+  format: 444
 - description:
     en: Content Component Value
     fr: Valeur des éléments du contenu
@@ -486,7 +486,7 @@ attributes:
     en: Estimated total standard replacement cost for building contents
     fr: Estimation du coût de remplacement standard total du contenu des immeubles
   name: Et_ContValue
-  format: $
+  format: 444
 - description:
     en: Province or Territory ID
     fr: ID de la province ou du territoire
