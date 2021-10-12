@@ -69,15 +69,32 @@ crossorigin=""></script>
     center: [ 57, -100 ],
     zoom: 4}),
     params = new URLSearchParams(window.location.search),
-    scenario = params.get( 'scenario' ).toLowerCase(),
+    eqScenario = params.get( 'scenario' ),
+    scenario = eqScenario.toLowerCase(),
+    featureProperties = "Sauid",
     limit = 500,
     geojsonUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_all_indicators_s/items?lang=en_US&f=json&limit=" + limit,
-    geoJSON,
+    featureUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_all_indicators_s/items/",
     selection;
 
   L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo( map );
+
+  end = eqScenario.split('_')[1];
+  title = '';
+  for ( let char of end ) {
+    if ( char == char.toUpperCase() ) {
+      title += ' ' + char;
+    }
+    else {
+      title += char;
+    }
+  }
+  mag = eqScenario[3] + '.' + eqScenario[5];
+  full_name = title + ' - Magnitude ' + mag;
+
+  $( '#wb-cont' ).html( full_name + ' Scenario Map' );
 
   const geojsonLayer = L.geoJSON([], {
       style: featureStyle,
@@ -85,7 +102,7 @@ crossorigin=""></script>
     }).addTo( map );
 
   $( '#map' ).before( '<div id="modal"></div>' );
-  getData( geojsonUrl );
+  getData( geojsonUrl + "&properties=" + featureProperties );
   
   function getData( url ) {
     
@@ -107,6 +124,7 @@ crossorigin=""></script>
       if ( nxt_lnk ) {
         getData( nxt_lnk );
       } else {
+        // set map bounds to frame loaded features
         map.fitBounds(geojsonLayer.getBounds());
         // done with paging so remove progress
         $( '#modal' ).remove();
@@ -124,73 +142,97 @@ crossorigin=""></script>
     }).on({
       click: function( e ) {
         if ( selection ) {
+          // reset style of previously selected feature
           selection.setStyle(featureStyle());
         }
         selection = e.target;
         selection.setStyle(selectedStyle());
 
-        let props = selection.feature.properties;
-        string = '<table class="table table-striped table-responsive"><tr>';
+        $.ajax({
+          method: "GET",
+          tryCount : 0,
+          retryLimit : 3,
+          crossDomain: true,
+          url: featureUrl +  selection.feature.id,
+          headers: { "content-type": "application/json" }
+        })
 
-        counter = 1;
-        for ( const key in props ) {
+        .done( function ( resp ) {
+          let props = resp.properties,
+             string = '<table class="table table-striped table-responsive"><tr>';
 
-          mod_key = key;
-          mod = '';
-          if ( key.slice( -3 ) === '_b0' ) {
-            mod_key = key.slice( 0, -3 );
-            mod = ' (Baseline)';
-          }
-          else if ( key.slice( -3 ) === '_r1' ) {
-            mod_key = key.slice( 0, -3 );
-            mod = ' (Retrofit)';
-          }
-          else if ( key.slice( -3 ) === '_le' ) {
-            mod_key = key.slice( 0, -3 );
-            mod = ' (Seismic Upgrade)';
-          }
+          counter = 1;
+          for ( const key in props ) {
 
-          desc = window[ mod_key + 'Desc' ];
-          detail = window[ mod_key + 'Detail' ];
-          format = window[ mod_key + 'Format' ];
-          value = props[ key ];
+            mod_key = key;
+            mod = '';
+            if ( key.slice( -3 ) === '_b0' ) {
+              mod_key = key.slice( 0, -3 );
+              mod = ' (Baseline)';
+            }
+            else if ( key.slice( -3 ) === '_r1' ) {
+              mod_key = key.slice( 0, -3 );
+              mod = ' (Retrofit)';
+            }
+            else if ( key.slice( -3 ) === '_le' ) {
+              mod_key = key.slice( 0, -3 );
+              mod = ' (Seismic Upgrade)';
+            }
 
-          if ( desc ) {
-              if ( format === 444 ) {
-                value = value.toLocaleString( undefined, {style:'currency', currency:'USD'});
-              }
-              else if ( format === 111 ) {
-                value = value.toLocaleString( undefined, { maximumFractionDigits: 0 })
-              }
-              else if ( format === 555 ) {
-                value *= 100
-                value = value.toLocaleString( undefined, { maximumFractionDigits: 2 });
-                value += '%';
-              }
-              else if ( format < 0 ) {
-                mult = Math.abs(format);
-                rounded = Math.round( value / ( 10 ** mult )) * 10 ** mult;
-                value = rounded.toLocaleString( undefined);
-              }
-              else if ( format > 0 ) {
-                value = value.toLocaleString( undefined, { maximumFractionDigits: format });
-              }
+            desc = window[ mod_key + 'Desc' ];
+            detail = window[ mod_key + 'Detail' ];
+            format = window[ mod_key + 'Format' ];
+            value = props[ key ];
 
+            if ( desc ) {
+                if ( format === 444 ) {
+                  value = value.toLocaleString( undefined, {style:'currency', currency:'USD'});
+                }
+                else if ( format === 111 ) {
+                  value = value.toLocaleString( undefined, { maximumFractionDigits: 0 })
+                }
+                else if ( format === 555 ) {
+                  value *= 100
+                  value = value.toLocaleString( undefined, { maximumFractionDigits: 2 });
+                  value += '%';
+                }
+                else if ( format < 0 ) {
+                  mult = Math.abs(format);
+                  rounded = Math.round( value / ( 10 ** mult )) * 10 ** mult;
+                  value = rounded.toLocaleString( undefined);
+                }
+                else if ( format > 0 ) {
+                  value = value.toLocaleString( undefined, { maximumFractionDigits: format });
+                }
+
+                string +=
+                '<td class="attr"><span class="prop" title="' + detail + '">' + desc + mod + '</span><span class="val">' + value + '</span></td>';
+              }
+              else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' || key === 'geom_poly' ) {}
+            else {
               string +=
-              '<td class="attr"><span class="prop" title="' + detail + '">' + desc + mod + ' - ' + key + '</span><span class="val">' + value + '</span></td>';
+                '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';
             }
-            else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' || key === 'geom_poly' ) {}
-          else {
-            string +=
-              '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';
+            if ( counter % 3 === 0 ) {
+                string += '</tr><tr>';
+              }
+            counter++;
           }
-          if ( counter % 3 === 0 ) {
-              string += '</tr><tr>';
-            }
-          counter += 1;
-        }
-        string += '</tr></table>';
-        $( '#sidebar' ).html( '<h3>Properties of Selected Feature</h3>' + string );
+          string += '</tr></table>';
+          $( '#sidebar' ).html( '<h3>Properties of Selected Feature</h3>' + string );
+        })
+
+        .fail( function ( error ) {
+        this.tryCount++;
+        if ( this.tryCount <= this.retryLimit ) {
+            //try again
+            $.ajax( this );
+            return;
+        }   
+        console.log( "D'oh! " + error )    
+        return;
+        
+        });
       }
     });
   };
