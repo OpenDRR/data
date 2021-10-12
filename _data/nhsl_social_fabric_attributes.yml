@@ -53,7 +53,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VH_PopHa normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VHn_PopHa
 - description:
     en: Population Density (threshold)
@@ -85,7 +85,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VH_Pre1975 normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 2
+  format: 3
   name: VHn_Pre1975
 - description:
     en: Pre-1975 Buildings (threshold)
@@ -117,7 +117,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VH_NSuit normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VHn_NSuit
 - description:
     en: Non-Suitable Housing (threshold)
@@ -151,7 +151,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VH_MntnAge normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VHn_MntnAge
 - description:
     en: Limited Household Maintenance Capacity (threshold)
@@ -183,7 +183,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VH_Mntn1 normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VHn_Mntn1
 - description:
     en: Households with Only 1 Maintainer (threshold)
@@ -216,7 +216,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VH_Renter normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VHn_Renter
 - description:
     en: Tenant Households (threshold)
@@ -249,7 +249,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VH_NonResHa normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VHn_NonResHa
 - description:
     en: Non-Residential Buildings (threshold)
@@ -289,7 +289,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VF_LivAlone normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VFn_LivAlone
 - description:
     en: People Living Alone (threshold)
@@ -321,7 +321,7 @@ attributes:
       archetype (SAC) using Min_Max transformation
     fr: Valeur VF_LonPar3Kids normalisée à une fourchette de 0-1 pour l’archétype
       de communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VFn_LonPar3Kids
 - description:
     en: Lone Parent Families with 3 Children (threshold)
@@ -353,7 +353,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VF_FamGT5 normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VFn_FamGT5
 - description:
     en: Families with more than 5 Members (threshold)
@@ -385,7 +385,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VF_MovedLT1 normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VFn_MovedLT1
 - description:
     en: Population Moved Within Last Year (threshold)
@@ -417,7 +417,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VF_ImmLt5 normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VFn_Imm_LT5
 - description:
     en: Population Immigrated Within Last 5 Years (threshold)
@@ -449,7 +449,7 @@ attributes:
       archetype (SAC) using Min_Max transformation
     fr: Valeur VF_NoWrkPlace normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VFn_NoWrkPlace
 - description:
     en: People with No Fixed Workplace (threshold)
@@ -492,7 +492,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VA_NoEngFr normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_NoEngFr
 - description:
     en: No Knowledge of English/French (threshold)
@@ -524,7 +524,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VA_NoSecEd normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_NoSecED
 - description:
     en: No Secondary School Education (threshold)
@@ -555,7 +555,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VA_AgeGT65 normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_AgeGT65
 - description:
     en: Older than 65 Years (threshold)
@@ -586,7 +586,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VA_AgeLT6 normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_AgeLT6
 - description:
     en: Younger than 6 Years (threshold)
@@ -620,7 +620,7 @@ attributes:
       archetype (SAC) using Min_Max transformation
     fr: Valeur VA_Indigenous normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_Indigenous
 - description:
     en: Indigenous Heritage (threshold)
@@ -656,7 +656,7 @@ attributes:
       archetype (SAC) using Min_Max transformation
     fr: Valeur VA_VisMinority normalisée à une fourchette de 0-1 pour l’archétype
       de communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_VisMinority
 - description:
     en: Visible Minority (threshold)
@@ -686,7 +686,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VA_AgeMedian normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_AgeMedian
 - description:
     en: Median Age (threshold)
@@ -718,7 +718,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VA_Health normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_Health
 - description:
     en: Health Care Workers (threshold)
@@ -750,7 +750,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VA_PubTrans normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VAn_PubTrans
 - description:
     en: Public Transit (threshold)
@@ -794,7 +794,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_ShltGT30 normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_ShltrGT30
 - description:
     en: Shelter Costs Exceed 30% of Income (threshold)
@@ -828,7 +828,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_LowIncDec normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_LowIncDec
 - description:
     en: Lower Income Decile (threshold)
@@ -860,7 +860,7 @@ attributes:
       archetype (SAC) using Min_Max transformation
     fr: Valeur VE_Unemployed normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_Unemployed
 - description:
     en: Unemployed Labour Force (threshold)
@@ -897,7 +897,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_IncEmploy normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_IncEmploy
 - description:
     en: Receives Employment Income (threshold)
@@ -929,7 +929,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_Indivinc normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_IndivInc
 - description:
     en: Average Individual Income (threshold)
@@ -959,7 +959,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_HshldInc normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_HshldInc
 - description:
     en: Average Household Income (threshold)
@@ -991,7 +991,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_Retail normalisée à une fourchette de 0-1 pour l’archétype de communauté
       respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_Retail
 - description:
     en: Retail Workers (threshold)
@@ -1023,7 +1023,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_WorkNone normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_WorkNone
 - description:
     en: No Work (threshold)
@@ -1055,7 +1055,7 @@ attributes:
       (SAC) using Min_Max transformation
     fr: Valeur VE_WorkPart normalisée à une fourchette de 0-1 pour l’archétype de
       communauté respectif (CSS) en utilisant la transformation Min_Max.
-  format: 
+  format: 3
   name: VEn_WorkPart
 - description:
     en: Part Time (threshold)

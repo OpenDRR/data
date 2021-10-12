@@ -7,9 +7,9 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Earthquake Scenarios Map
+title: Earthquake Scenario Map
 lang: en
-altLangPage: ../fr/dsra_map.html?scenario={{request.params.scenario}}
+altLangPage: ../fr/dsra_map.html
 nositesearch: true
 nomenu: true
 nofooter: true
@@ -50,134 +50,168 @@ crossorigin=""></script>
 <div id="map"></div>
 <div id="sidebar"></div>
 
+{% assign variables = '' %}
+{% for attribute in site.data.dsra_attributes.attributes %}
+  {% capture variable %}
+  window['{{attribute.name}}' + 'Desc'] = '{{attribute.description[page.lang]}}';
+  window['{{attribute.name}}' + 'Detail'] = '{{attribute.detailed[page.lang]}}';
+  window['{{attribute.name}}' + 'Format'] = Number('{{attribute.format}}');
+  {% endcapture %}
+  {% assign variables = variables | append: variable %}
+{% endfor %}
+
 <script>
 
-  var params = new URLSearchParams(window.location.search);
-  var scenario = params.get('scenario').toLowerCase();
-
-  var tiles = L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	});
+  {{variables}}
 
   var map = L.map( 'map', {
     fullscreenControl: true,
-    center: [ 49.1367, -122.9064 ],
-    zoom: 12,
-    layers: [ tiles ]
-  });
+    center: [ 57, -100 ],
+    zoom: 4}),
+    params = new URLSearchParams(window.location.search),
+    scenario = params.get( 'scenario' ).toLowerCase(),
+    limit = 500,
+    geojsonUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_all_indicators_s/items?lang=en_US&f=json&limit=" + limit,
+    geoJSON,
+    selection;
 
-  var geojsonUrl = "https://geo-api.stage.riskprofiler.ca/collections/dsra_" + scenario + "_all_indicators_s/items?f=json";
-  $.getJSON(geojsonUrl, function (data) {
-    L.geoJson(data).addTo(map);
-  });
+  L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo( map );
 
-  map.on( 'overlayadd', function() {
-    $( '#map' ).before( '<div id="modal"></div>' );
-  });
+  const geojsonLayer = L.geoJSON([], {
+      style: featureStyle,
+      onEachFeature: geoJsonOnEachFeature
+    }).addTo( map );
+
+  $( '#map' ).before( '<div id="modal"></div>' );
+  getData( geojsonUrl );
+  
+  function getData( url ) {
+    
+    var nxt_lnk;
+
+    $.getJSON( url, function ( data ) {
+      
+      geojsonLayer.addData( data );
+
+      for ( var l in data.links ) {
+        lnk = data.links[ l ];
+        if ( lnk.rel == "next" ) {
+          nxt_lnk = lnk.href;
+          break;
+        }
+      }
+      
+      // if next link continue loading data
+      if ( nxt_lnk ) {
+        getData( nxt_lnk );
+      } else {
+        map.fitBounds(geojsonLayer.getBounds());
+        // done with paging so remove progress
+        $( '#modal' ).remove();
+      }
+    });
+  }
 
   map.on( 'fullscreenchange', function () {
     map.invalidateSize();
   });
 
-  var formatter = new Intl.NumberFormat( 'en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0
+  function geoJsonOnEachFeature( feature, layer ){
+    layer.bindPopup( function ( e ) {
+      return L.Util.template( '<p>ID: <strong>{Sauid}</strong></p>', e.feature.properties );
+    }).on({
+      click: function( e ) {
+        if ( selection ) {
+          selection.setStyle(featureStyle());
+        }
+        selection = e.target;
+        selection.setStyle(selectedStyle());
 
-    // These options are needed to round to whole numbers if that's what you want.
-    //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
-    //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
-    //Usage: formatter.format(2500); $2,500.00
-  });
+        let props = selection.feature.properties;
+        string = '<table class="table table-striped table-responsive"><tr>';
 
-  var oldId;
-  var oldLayer;  
+        counter = 1;
+        for ( const key in props ) {
 
-  function showAttributes( e, current_layer ) {
-
-    current_layer.resetFeatureStyle( oldId );
-
-    oldId = e.layer.feature.id;
-    oldLayer = current_layer;
-
-    current_layer.setFeatureStyle(e.layer.feature.id, {
-      fillColor: 'red',
-      color: 'red',
-      weight: 3,
-      fillOpacity: 0.5
-    });
-      
-    current_layer.query()
-      .where("OBJECTID = " + e.layer.feature.id )
-      .run( function( error, resp ) {
-
-        let props = resp.features[0].properties,
-          string = '<table class="table table-striped table-responsive"><tr>';
-
-          counter = 1;
-          for ( const key in props ) {
-
-            desc = window[key + 'Desc'];
-            detail = window[key + 'Detail']
-            format = window[key + 'Format']
-            value = props[key]
-
-            if ( desc ) {
-              if ( format === 'Two' ) {
-                value = value.toLocaleString(undefined, { maximumFractionDigits: 2 })
-              }
-              else if ( format === '$' ) {
-                value = value.toLocaleString(undefined, {style:'currency', currency:'USD'})
-              }
-              else if ( format === 'Round' ) {
-                value = Math.round(value)
-              }
-
-              string +=
-              '<td class="attr"><span class="prop" title="' + detail + '">' + desc + '</span><span class="val">' + value + '</span></td>';
-            }
-            else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' ) {}
-            else {
-              string +=
-              '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';
-            }
-            if ( counter % 3 === 0) {
-                string += '</tr><tr>';
-              }
-            counter += 1;
+          mod_key = key;
+          mod = '';
+          if ( key.slice( -3 ) === '_b0' ) {
+            mod_key = key.slice( 0, -3 );
+            mod = ' (Baseline)';
           }
+          else if ( key.slice( -3 ) === '_r1' ) {
+            mod_key = key.slice( 0, -3 );
+            mod = ' (Retrofit)';
+          }
+          else if ( key.slice( -3 ) === '_le' ) {
+            mod_key = key.slice( 0, -3 );
+            mod = ' (Seismic Upgrade)';
+          }
+
+          desc = window[ mod_key + 'Desc' ];
+          detail = window[ mod_key + 'Detail' ];
+          format = window[ mod_key + 'Format' ];
+          value = props[ key ];
+
+          if ( desc ) {
+              if ( format === 444 ) {
+                value = value.toLocaleString( undefined, {style:'currency', currency:'USD'});
+              }
+              else if ( format === 111 ) {
+                value = value.toLocaleString( undefined, { maximumFractionDigits: 0 })
+              }
+              else if ( format === 555 ) {
+                value *= 100
+                value = value.toLocaleString( undefined, { maximumFractionDigits: 2 });
+                value += '%';
+              }
+              else if ( format < 0 ) {
+                mult = Math.abs(format);
+                rounded = Math.round( value / ( 10 ** mult )) * 10 ** mult;
+                value = rounded.toLocaleString( undefined);
+              }
+              else if ( format > 0 ) {
+                value = value.toLocaleString( undefined, { maximumFractionDigits: format });
+              }
+
+              string +=
+              '<td class="attr"><span class="prop" title="' + detail + '">' + desc + mod + ' - ' + key + '</span><span class="val">' + value + '</span></td>';
+            }
+            else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' || key === 'geom_poly' ) {}
+          else {
+            string +=
+              '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';
+          }
+          if ( counter % 3 === 0 ) {
+              string += '</tr><tr>';
+            }
+          counter += 1;
+        }
         string += '</tr></table>';
         $( '#sidebar' ).html( '<h3>Properties of Selected Feature</h3>' + string );
-
-      });
-  }
-
-  function buildLegend( metadata ) {
-
-	  map.removeControl(legend);
-	
-    var renderers = metadata.drawingInfo.renderer.classBreakInfos ? metadata.drawingInfo.renderer.classBreakInfos : metadata.drawingInfo.renderer.uniqueValueInfos;
-
-    legend.onAdd = function ( map ) {
-
-      var div = L.DomUtil.create( 'div', 'info legend' );
-
-      if ( renderers.length === 0 ) { 
-        return L.DomUtil.create( 'div' ); 
       }
+    });
+  };
 
-      div.innerHTML += '<center><strong>' + metadata.name + '</strong></center>';
+  function featureStyle( feature ) {
+            return {
+               fillColor: 'grey',
+               weight: 0.2,
+               fillOpacity: 0.5,
+               color: 'black',
+               opacity: 1
+            };
+          }
 
-      for ( var i = 0; i < renderers.length; i++ ) {
-        div.innerHTML +=
-        '<div style="white-space: nowrap;margin-top: 2px;"><i style="background:rgb( ' + renderers[i][ 'symbol' ].color[0] + ',' + renderers[i][ 'symbol' ].color[1] + ',' + renderers[i][ 'symbol' ].color[2] + ',' + renderers[i][ 'symbol' ].color[3] + ' );border-color:rgb( ' + renderers[i][ 'symbol' ][ 'outline' ].color[0] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[1] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[2]+ ',' + renderers[i][ 'symbol' ][ 'outline' ].color[3] + ' );border-width:' + renderers[i][ 'symbol' ][ 'outline' ].width + 'px;"></i> ' +
-        renderers[i][ 'label' ] + '</div>';
-      }
+  function selectedStyle( feature ) {
+             return {
+               fillColor: 'red',
+               color: 'red',
+               weight: 1,
+               fillOpacity: 0.5
+            };
+          }
 
-      return div;
-
-    };
-
-    legend.addTo( map );
-  }
 </script>

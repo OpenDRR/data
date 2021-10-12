@@ -85,7 +85,7 @@ crossorigin=""></script>
 	}).bindPopup( function ( layer ) {
     	return L.Util.template( '<p>Number of buildings: <strong>{E_BldgNum}</strong></p>', layer.feature.properties );
   }).on('add', function ( e ) {
-    if ( oldId && oldLayer) {
+    if ( oldId && oldLayer ) {
 		  $( '#sidebar' ).html( '' );
       oldLayer.resetFeatureStyle( oldId );
     }
@@ -257,9 +257,9 @@ crossorigin=""></script>
           for ( const key in props ) {
 
             desc = window[key + 'Desc'];
-            detail = window[key + 'Detail']
-            format = window[key + 'Format']
-            value = props[key]
+            detail = window[key + 'Detail'];
+            format = window[key + 'Format'];
+            value = props[key];
 
             if ( desc ) {
               if ( format === 444 ) {
