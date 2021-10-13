@@ -262,7 +262,7 @@ crossorigin=""></script>
             format = window[key + 'Format']
             value = props[key]
 
-            if ( desc ) {
+            if ( format && value ) {
               if ( format === 444 ) {
                 value = value.toLocaleString(undefined, {style:'currency', currency:'USD'});
               }
@@ -287,6 +287,10 @@ crossorigin=""></script>
               '<td class="attr"><span class="prop" title="' + detail + '">' + desc + '</span><span class="val">' + value + '</span></td>';
             }
             else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' ) {}
+            else if ( desc ) {
+              string +=
+                '<td class="attr"><span class="prop" title="' + detail + '">' + desc + '</span><span class="val">' + value + '</span></td>';
+            }
             else {
               string +=
               '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';

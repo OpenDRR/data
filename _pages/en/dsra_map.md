@@ -68,10 +68,12 @@ crossorigin=""></script>
     fullscreenControl: true,
     center: [ 57, -100 ],
     zoom: 4}),
+    legend = L.control( { position: 'bottomright' } ),
     params = new URLSearchParams(window.location.search),
     eqScenario = params.get( 'scenario' ),
     scenario = eqScenario.toLowerCase(),
-    featureProperties = "Sauid",
+    featureProperties = "Sauid,sCt_Res90_b0",
+    scenarioProp = "sCt_Res90_b0",
     limit = 500,
     geojsonUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_all_indicators_s/items?lang=en_US&f=json&limit=" + limit,
     featureUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_all_indicators_s/items/",
@@ -81,7 +83,7 @@ crossorigin=""></script>
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo( map );
 
-  end = eqScenario.split('_')[1];
+  end = eqScenario.split( '_' )[ 1 ];
   title = '';
   for ( let char of end ) {
     if ( char == char.toUpperCase() ) {
@@ -91,7 +93,7 @@ crossorigin=""></script>
       title += char;
     }
   }
-  mag = eqScenario[3] + '.' + eqScenario[5];
+  mag = eqScenario[ 3 ] + '.' + eqScenario[ 5 ];
   full_name = title + ' - Magnitude ' + mag;
 
   $( '#wb-cont' ).html( full_name + ' Scenario Map' );
@@ -103,6 +105,10 @@ crossorigin=""></script>
 
   $( '#map' ).before( '<div id="modal"></div>' );
   getData( geojsonUrl + "&properties=" + featureProperties );
+
+  map.on( 'fullscreenchange', function () {
+    map.invalidateSize();
+  });
   
   function getData( url ) {
     
@@ -128,22 +134,19 @@ crossorigin=""></script>
         map.fitBounds(geojsonLayer.getBounds());
         // done with paging so remove progress
         $( '#modal' ).remove();
+        legend.addTo( map );
       }
     });
   }
 
-  map.on( 'fullscreenchange', function () {
-    map.invalidateSize();
-  });
-
   function geoJsonOnEachFeature( feature, layer ){
     layer.bindPopup( function ( e ) {
-      return L.Util.template( '<p>ID: <strong>{Sauid}</strong></p>', e.feature.properties );
+      return L.Util.template( '<p>Residents displaced after 90 days: <strong>{sCt_Res90_b0}</strong></p>', e.feature.properties );
     }).on({
       click: function( e ) {
         if ( selection ) {
           // reset style of previously selected feature
-          selection.setStyle(featureStyle());
+          selection.setStyle(featureStyle(selection.feature));
         }
         selection = e.target;
         selection.setStyle(selectedStyle());
@@ -184,7 +187,7 @@ crossorigin=""></script>
             format = window[ mod_key + 'Format' ];
             value = props[ key ];
 
-            if ( desc ) {
+            if ( format && value ) {
                 if ( format === 444 ) {
                   value = value.toLocaleString( undefined, {style:'currency', currency:'USD'});
                 }
@@ -209,6 +212,10 @@ crossorigin=""></script>
                 '<td class="attr"><span class="prop" title="' + detail + '">' + desc + mod + '</span><span class="val">' + value + '</span></td>';
               }
               else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' || key === 'geom_poly' ) {}
+            else if ( desc ) {
+              string +=
+                '<td class="attr"><span class="prop" title="' + detail + '">' + desc + mod + '</span><span class="val">' + value + '</span></td>';
+            }
             else {
               string +=
                 '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';
@@ -237,23 +244,49 @@ crossorigin=""></script>
     });
   };
 
+  function getColor( d ) {
+      return d > 300  ? '#ff3b00' :
+          d > 100   ? '#ff6500' :
+          d > 50   ? '#ff9000' :
+          d > 10   ? '#ffba00' :
+                      '#fff176';
+  }
+
+  legend.onAdd = function ( map ) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [10, 50, 100, 300],
+        labels = [' People Displaced', ' People Displaced', ' People Displaced', ' People Displaced'];
+
+    div.innerHTML = "<div style=\"padding: 3px;\"><b>People displaced after 90 days</b></div>";
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++ ) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i]) + '"></i> ' +
+            grades[i] + ( grades[i + 1] ? '&ndash;' + grades[i + 1] + labels[i] + '<br>' : '+' + labels[i]);
+    }
+
+    return div;
+  };
+
   function featureStyle( feature ) {
-            return {
-               fillColor: 'grey',
-               weight: 0.2,
-               fillOpacity: 0.5,
-               color: 'black',
-               opacity: 1
-            };
-          }
+    return {
+        fillColor: getColor( feature.properties[ scenarioProp ] ),
+        weight: 0.6,
+        fillOpacity: 0.7,
+        color: '#4b4d4d',
+        opacity: 1
+    };
+  }
 
   function selectedStyle( feature ) {
-             return {
-               fillColor: 'red',
-               color: 'red',
-               weight: 1,
-               fillOpacity: 0.5
-            };
-          }
+      return {
+        fillColor: 'blue',
+        color: 'black',
+        weight: 1,
+        fillOpacity: 0.5
+    };
+  }
 
 </script>
