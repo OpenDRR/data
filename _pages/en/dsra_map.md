@@ -141,7 +141,7 @@ crossorigin=""></script>
 
   function geoJsonOnEachFeature( feature, layer ){
     layer.bindPopup( function ( e ) {
-      return L.Util.template( '<p>Residents displaced after 90 days: <strong>{sCt_Res90_b0}</strong></p>', e.feature.properties );
+      return L.Util.template( '<p>Residents displaced after 90 days: <strong>' + e.feature.properties.sCt_Res90_b0.toLocaleString( undefined, { maximumFractionDigits: 0 }) + '</strong></p>' );
     }).on({
       click: function( e ) {
         if ( selection ) {
@@ -209,16 +209,16 @@ crossorigin=""></script>
                 }
 
                 string +=
-                '<td class="attr"><span class="prop" title="' + detail + '">' + desc + mod + '</span><span class="val">' + value + '</span></td>';
+                '<td class="attr"><div class="prop" title="' + detail + '">' + desc + mod + '</div><div class="val">' + value + '</div></td>';
               }
               else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' || key === 'geom_poly' ) {}
             else if ( desc ) {
               string +=
-                '<td class="attr"><span class="prop" title="' + detail + '">' + desc + mod + '</span><span class="val">' + value + '</span></td>';
+                '<td class="attr"><div class="prop" title="' + detail + '">' + desc + mod + '</div><div class="val">' + value + '</div></td>';
             }
             else {
               string +=
-                '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';
+                '<td class="attr"><div class="prop">' + key + '</div><div class="val">' + value + '</div></td>';
             }
             if ( counter % 3 === 0 ) {
                 string += '</tr><tr>';
