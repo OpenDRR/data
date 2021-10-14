@@ -20,8 +20,8 @@ breadcrumbs:
     link: "/en"
   - title: "Earthquake Scenarios"
     link: "/en/dsra"
-  - title: "Earthquake Scenarios"
-    link: "/en/nhsl#physical_exposure"
+  - title: "Earthquake Scenario Map"
+    link: "/en/dsra_map"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -49,6 +49,14 @@ crossorigin=""></script>
 
 <div id="map"></div>
 <div id="sidebar"></div>
+<div id="scenarios">
+  <h5>Available scenarios:</h5>
+  <ul>
+    {% for scenario in site.data.dsra.scenarios %}
+      <li><a href="{{ context.environments.first["page"]["url"] }}?scenario={{scenario.name}}"><small>{{ scenario.title }}</small></a></li>
+    {% endfor %}
+  </ul>
+</div>
 
 {% assign variables = '' %}
 {% for attribute in site.data.dsra_attributes.attributes %}
@@ -62,54 +70,67 @@ crossorigin=""></script>
 
 <script>
 
-  {{variables}}
+  {{ variables }}
 
   var map = L.map( 'map', {
     fullscreenControl: true,
     center: [ 57, -100 ],
     zoom: 4}),
     legend = L.control( { position: 'bottomright' } ),
-    params = new URLSearchParams(window.location.search),
-    eqScenario = params.get( 'scenario' ),
-    scenario = eqScenario.toLowerCase(),
-    featureProperties = "Sauid,sCt_Res90_b0",
-    scenarioProp = "sCt_Res90_b0",
+    params = new URLSearchParams(window.location.search), // Get query paramaters
+    eqScenario = params.get( 'scenario' ), // Scenario name
+    featureProperties = 'Sauid,sCt_Res90_b0', // Limit fetched properties for performance
+    scenarioProp = 'sCt_Res90_b0', // Property for popup and feature colour
     limit = 500,
-    geojsonUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_all_indicators_s/items?lang=en_US&f=json&limit=" + limit,
-    featureUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_all_indicators_s/items/",
     selection;
+    
 
   L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo( map );
 
-  end = eqScenario.split( '_' )[ 1 ];
-  title = '';
-  for ( let char of end ) {
-    if ( char == char.toUpperCase() ) {
-      title += ' ' + char;
-    }
-    else {
-      title += char;
-    }
-  }
-  mag = eqScenario[ 3 ] + '.' + eqScenario[ 5 ];
-  full_name = title + ' - Magnitude ' + mag;
-
-  $( '#wb-cont' ).html( full_name + ' Scenario Map' );
-
   const geojsonLayer = L.geoJSON([], {
-      style: featureStyle,
-      onEachFeature: geoJsonOnEachFeature
-    }).addTo( map );
+        style: featureStyle,
+        onEachFeature: geoJsonOnEachFeature
+      }).addTo( map );
 
-  $( '#map' ).before( '<div id="modal"></div>' );
-  getData( geojsonUrl + "&properties=" + featureProperties );
+  if ( eqScenario ) {
 
-  map.on( 'fullscreenchange', function () {
-    map.invalidateSize();
-  });
+    $("#scenarios").hide();
+
+    var scenario = eqScenario.toLowerCase(); // API uses lowercase
+      geojsonUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_indicators_s/items?lang=en_US&f=json&limit=" + limit,
+      featureUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_indicators_s/items/";
+
+    // Turn scenario name into a title
+    end = eqScenario.split( '_' )[ 1 ];
+    title = '';
+    for ( let char of end ) {
+      // Add space before uppercase letters
+      if ( char == char.toUpperCase() ) {
+        title += ' ' + char;
+      }
+      // Leave lowercase as is
+      else {
+        title += char;
+      }
+    }
+    mag = eqScenario[ 3 ] + '.' + eqScenario[ 5 ];
+    full_name = title + ' - Magnitude ' + mag;
+
+    // Replace generic title with scenario name
+    $( '#wb-cont' ).html( full_name + ' Scenario Map' );
+
+    // Add progress modal to map before fetching geoJSON
+    $( '#map' ).before( '<div id="modal"></div>' );
+    getData( geojsonUrl + '&properties=' + featureProperties );
+
+    map.on( 'fullscreenchange', function () {
+      map.invalidateSize();
+    });
+  }
   
+  // Get all geoJSON for scenario
   function getData( url ) {
     
     var nxt_lnk;
@@ -120,7 +141,7 @@ crossorigin=""></script>
 
       for ( var l in data.links ) {
         lnk = data.links[ l ];
-        if ( lnk.rel == "next" ) {
+        if ( lnk.rel == 'next' ) {
           nxt_lnk = lnk.href;
           break;
         }
@@ -134,11 +155,18 @@ crossorigin=""></script>
         map.fitBounds(geojsonLayer.getBounds());
         // done with paging so remove progress
         $( '#modal' ).remove();
+        // Add legend
         legend.addTo( map );
       }
+    })
+    .fail( function ( jqXHR, error ) {
+      alert( 'Unable to load scenario - ' + error );
+      $( '#modal' ).remove();
+      $( '#scenarios' ).show();
     });
   }
 
+  // Handles events for each feature
   function geoJsonOnEachFeature( feature, layer ){
     layer.bindPopup( function ( e ) {
       return L.Util.template( '<p>Residents displaced after 90 days: <strong>' + e.feature.properties.sCt_Res90_b0.toLocaleString( undefined, { maximumFractionDigits: 0 }) + '</strong></p>' );
@@ -151,6 +179,7 @@ crossorigin=""></script>
         selection = e.target;
         selection.setStyle(selectedStyle());
 
+        // Get geoJSON of selected feature
         $.ajax({
           method: "GET",
           tryCount : 0,
@@ -160,15 +189,19 @@ crossorigin=""></script>
           headers: { "content-type": "application/json" }
         })
 
+        // Displays properties of selection in a table
         .done( function ( resp ) {
+
           let props = resp.properties,
              string = '<table class="table table-striped table-responsive"><tr>';
 
-          counter = 1;
+          counter = 1; // Counts number of cells in table row
+
           for ( const key in props ) {
 
-            mod_key = key;
+            mod_key = key; // Key with _b0, _r1, _le ending must be modified
             mod = '';
+
             if ( key.slice( -3 ) === '_b0' ) {
               mod_key = key.slice( 0, -3 );
               mod = ' (Baseline)';
@@ -187,7 +220,7 @@ crossorigin=""></script>
             format = window[ mod_key + 'Format' ];
             value = props[ key ];
 
-            if ( format && value ) {
+            if ( format && value ) { // Format values with set formatting
                 if ( format === 444 ) {
                   value = value.toLocaleString( undefined, {style:'currency', currency:'USD'});
                 }
@@ -211,12 +244,14 @@ crossorigin=""></script>
                 string +=
                 '<td class="attr"><div class="prop" title="' + detail + '">' + desc + mod + '</div><div class="val">' + value + '</div></td>';
               }
-              else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' || key === 'geom_poly' ) {}
-            else if ( desc ) {
+            // Leaflet info not displayed
+            else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' || key === 'geom_poly' ) {
+            }
+            else if ( desc ) { // For properties with descriptions but null values
               string +=
                 '<td class="attr"><div class="prop" title="' + detail + '">' + desc + mod + '</div><div class="val">' + value + '</div></td>';
             }
-            else {
+            else { // Properties with no descriptions
               string +=
                 '<td class="attr"><div class="prop">' + key + '</div><div class="val">' + value + '</div></td>';
             }
@@ -226,6 +261,7 @@ crossorigin=""></script>
             counter++;
           }
           string += '</tr></table>';
+          // Add table to sidebar div
           $( '#sidebar' ).html( '<h3>Properties of Selected Feature</h3>' + string );
         })
 
@@ -236,7 +272,7 @@ crossorigin=""></script>
             $.ajax( this );
             return;
         }   
-        console.log( "D'oh! " + error )    
+        console.log( "Doh! " + error )    
         return;
         
         });
