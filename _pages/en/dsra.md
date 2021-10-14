@@ -93,7 +93,7 @@ breadcrumbs:
     <div class="card" style="float:left;margin:10px 20px 0px 0px;">
       <img src="https://github.com/OpenDRR/earthquake-scenarios/raw/master/FINISHED/{{scenario.name}}.png" width="350" class="img-rounded img-responsive"/>
       <div class="card-body">
-        <a href="dsra_map.html?scenario={{scenario.name}}" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button">
+        <a href="dsra_scenario_map.html?scenario={{scenario.name}}" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button">
          {% if page.lang == 'en' %} View on Map {% else %} Voir sur la carte {% endif %}
         </a>
       </div>

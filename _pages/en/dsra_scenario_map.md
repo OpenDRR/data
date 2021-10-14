@@ -21,7 +21,7 @@ breadcrumbs:
   - title: "Earthquake Scenarios"
     link: "/en/dsra"
   - title: "Earthquake Scenario Map"
-    link: "/en/dsra_map"
+    link: "/en/dsra_scenario_map"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
