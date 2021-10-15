@@ -1,7 +1,7 @@
 ---
 authorName: Natural Resources Canada
 authorUrl:
-dateModified: 2021-05-07
+dateModified: 2021-07-26
 pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
@@ -19,7 +19,6 @@ breadcrumbs:
     link: "/fr"
   - title: "Zones de peuplement et dangers naturels au Canada"
 ---
-
 <link href='../assets/css/app.css' rel='stylesheet'/>
 
 <p><strong>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada, ainsi que leur vulnérabilité aux dangers naturels préoccupants. Des renseignements détaillés sur l’utilisation des terres, les bâtiments, les gens et les immobilisations sont fournis au niveau administratif des aires de diffusion du recensement pour plus de 454 000 régions habitées à travers le Canada.</strong></p>
@@ -70,7 +69,6 @@ breadcrumbs:
         </li>
       </ul>
     </div>
-    <a href="nhsl_map.html" class="btn btn-primary mrgn-tp-xl btn-block btn-lg" role="button">Voir sur la carte</a>
   </div>
 </div>
 
@@ -80,17 +78,22 @@ breadcrumbs:
 
 ## Exposition physique
 
-<p><strong>L’élément « exposition physique » de la couche des zones de peuplement au niveau national (couche ZPN) comprend une délinéation des aires bâties et des catégories d’utilisation fonctionnelle des terres pour les aires de diffusion du recensement dans les centres urbains et les collectivités rurales et éloignées du Canada.</strong></p>
+<p>
+  <div class="card" style="float:left;margin:10px 20px 0px 0px;">
+    <img src="../assets/img/nhsl_physical_exposure.png" width="350" class="img-rounded img-responsive"/>
+    <div class="card-body">
+      <a href="nhsl_physical_exposure_map.html" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button"> Voir sur la carte </a>
+    </div>
+  </div>
+  <strong>L’élément « Exposition physique » de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).</strong></p>
 
-<p>Il fournit des renseignements détaillés sur le type de construction, l’occupation et le niveau de conception de plus de 9,1 millions de bâtiments; la dynamique de la population à diverses heures de la journée pour 35,1 millions de personnes; et une évaluation des immobilisations des bâtiments et de leur contenu totalisant plus de 8300 milliards de dollars canadiens.</p>
+<p>Ce modèle comprend un inventaire de plus de 9,1 millions de bâtiments au Canada, la dynamique de la population à divers moments de la journée pour 35,1 millions de personnes et la valeur en capital de biens immobiliers totalisant plus de 8,3 billions de dollars canadiens.</p>
 
-<p>Le portefeuille des bâtiments est divisé en catégories selon une combinaison de 36 taxonomies de construction qui comprennent différents types de structures en bois, béton, maçonnerie ou acier et structures préfabriquées, et de 33 catégories d’occupation qui comprennent un mélange d’utilisations fonctionnelles résidentielles, civiques, commerciales et industrielles. Des modèles de cartographie propres au contexte pour chaque combinaison d’utilisation des terres, de type de construction et de catégorie d’occupation sont utilisés pour attribuer une distribution de catégories de bâtiments qui représente la forme structurelle et la fonction globales d’un quartier donné.</p>
+<p>Les bâtiments sont classés en fonction du type de construction, de l’occupation et de l’âge. Ces classes sont basées sur la taxonomie normalisée HAZUS des bâtiments de l’Amérique du Nord. On compte 38 classes de construction représentant différents types de bois, de béton, de maçonnerie, d’acier et de structures préfabriquées; 33 classes d’occupation représentant une variété d’utilisations résidentielles, civiques, commerciales et industrielles; et 4 classes d’âge représentant le niveau présumé de conception du bâtiment. La distribution des « archétypes de bâtiments » obtenus est attribuée à des régions habitées en fonction de l’utilisation du sol et des caractéristiques du recensement.</p>
 
-<p>Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les heures de travail normales lorsque les gens sont dans les bureaux, les écoles ou d’autres installations de groupes (9 h à 17 h); pour les heures du matin et du soir lorsqu’ils se déplacent entre domicile et travail (7 h à 9 h et 17 h à 19 h); et pour les heures en soirée lorsque la majorité des gens sont chez eux (19 h à 7 h).</p>
+<p>Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).</p>
 
-<p>L’évaluation des immobilisations est basée sur les coûts de remplacement pour l’industrie des archétypes de bâtiments des régions représentatives du Canada.</p>
-
-<p>L’inventaire des bâtiments cadre avec les normes internationales pour les évaluations des risques pour des dangers multiples et peut être utilisé dans d’autres applications d’évaluation de l’utilisation des terres qui pourraient nécessiter de l’information propre à la forme ou à la fonction de l’environnement bâti.</p>
+<p>La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada.</p>
 
 ### Ressources de données
 
@@ -100,69 +103,25 @@ breadcrumbs:
 
 <hr>
 
-<a name="hazard_threat"></a>
-
-## Dangers naturels
-
-<p><strong>L’élément « menaces liées aux dangers naturels » de la couche des zones de peuplement au niveau national (couche ZPN) étend la capacité du modèle d’exposition physique à approfondir la question de savoir qui et quoi pourrait être affecté par des dangers naturels préoccupants au Canada.</strong></p>
-
-<p>Il utilise l’information disponible au niveau national sur les tremblements de terre, les inondations, les coulées de débris, les feux de forêt et les dangers liés aux vents violents pour évaluer dans quelle mesure les gens et les biens essentiels se trouvent en danger (exposition aux dangers) et pour évaluer le potentiel de perturbations socioéconomiques dans les zones où l’intensité des dangers est susceptible d’excéder les seuils minimaux de dommages potentiels (sensibilité aux dangers).</p>
-
-<p>Les menaces liées aux aléas sismiques sont évaluées au moyen des niveaux d’intensité des secousses telluriques survenant une fois tous les 2 500 ans mis au point par la Commission géologique du Canada pour évaluer les seuils minimaux des dommages aux bâtiments.</p>
-
-<p>Les menaces liées aux risques de feux de forêt sont évaluées au moyen des niveaux moyens d’intensité du front (IF) mis au point par le Service canadien des forêts pour évaluer les biens communautaires en danger.</p>
-
-<p>Les menaces liées aux coulées de débris sont basées sur un modèle de vulnérabilité aux glissements de terrain à variables multiples mis au point par la NASA dans le cadre d’un système mondial d’alerte rapide pour les événements déclenchés par les conditions météorologiques.</p>
-
-<p>Les menaces liées aux tsunamis, aux débordements de cours d’eau et aux vents violents sont basées sur les modèles de cyclone et inondations survenant 1 fois tous les 500 ans dans le cadre du Bilan mondial 2011 sur la réduction des risques de catastrophe des Nations Unies pour orienter les efforts de gestion des catastrophes à l’échelle régionale et nationale.</p>
-
-<p>La sensibilité à chacun des dangers est estimée en fonction du nombre de gens et de biens essentiels exposés au niveau des aires de diffusion du recensement. Les résultats sont regroupés dans un index des menaces liées à des dangers multiples pour aider à cerner les points chauds préoccupants dans l’ensemble du Canada.</p>
-
-### Ressources de données
-
-<mark>Bientôt disponible</mark>
-
-<div id="nhsl_hazard_threat_all_indicators" class="hidden">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_hazard_threat_all_indicators" %}
-</div>
-
-<hr>
-
 <a name="social_fabric"></a>
 
 ## Tissu social et seuils de capacité
 
-<p><strong>L’élément « tissu social » de la couche des zones de peuplement au niveau national (couche ZPN) utilise les données démographiques de recensement disponibles pour évaluer les profils spatiaux généraux de la sensibilité ainsi que la capacité des quartiers à résister aux événements catastrophiques, et à s’en rétablir, en fonction des caractéristiques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.</strong></p>
+<p>
+  <div class="card" style="float:left;margin:10px 20px 0px 0px;">
+    <img src="../assets/img/nhsl_social_fabric.png" width="350" class="img-rounded img-responsive"/>
+    <div class="card-body">
+      <a href="nhsl_social_fabric_map.html" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button"> Voir sur la carte </a>
+    </div>
+  </div>
+  <strong>L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.</strong></p>
 
-<p>Des indicateurs de la vulnérabilité et du seuil de capacité aident à cerner les tendances sous-jacentes de l’inégalité sociale qui pourrait exister au sein d’une collectivité ou d’une région donnée, et de trouver qui est le plus susceptible d’avoir à assumer le plus grand fardeau de risque après un événement catastrophique. Les niveaux de vulnérabilité de chaque élément de l’indice de vulnérabilité sociale sont évalués au moyen de méthodes analytiques adaptées du « modèle des dangers des lieux » de Cutter pour filtrer et classer des variables démographiques en fonction de leur capacité à expliquer les profils spatiaux pour un large éventail d’archétypes communautaires, y compris les centres urbains à forte densité, les régions suburbaines et rurbaines avoisinantes, et les peuplements ruraux et éloignés plus distants.</p>
-
-<p>Des indicateurs composites décrivant les caractéristiques des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers permettent de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et d’identifier les quartiers dans lesquels la capacité de résister à des événements catastrophiques, et de s’en rétablir, peut être restreinte. Les indicateurs sont déclarés au niveau des aires de diffusion du recensement et peuvent être utilisés en conjonction avec des renseignements sur des menaces précises liées aux dangers pour identifier les points chauds préoccupants potentiels au sein d’une collectivité ou d’une région, et les zones dans lesquelles des investissements proactifs dans la planification et le développement des capacités pourraient efficacement contribuer à générer une résilience aux catastrophes et une durabilité à plus long terme.</p>
+<p>Les indicateurs de la vulnérabilité sociale et du seuil de capacité permettent de cerner les tendances sous-jacentes en matière de vulnérabilité sociale au sein d’une collectivité donnée. Le modèle comprend six indicateurs composites qui décrivent la vulnérabilité sociale totale estimée, ainsi que le niveau de vulnérabilité qui pourrait découler des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. Le modèle permet donc de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et de déterminer les quartiers dans lesquels la capacité de résister aux catastrophes, et de s’en rétablir, peut être restreinte.</p>
 
 ### Ressources de données
 
 <div id="nhsl_social_fabric_all_indicators">
   {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_all_indicators" %}
-</div>
-
-<hr>
-
-<div style="display:none;">
-<a name="risk_dynamics"></a>
-
-## Dynamique du risque
-
-<p><strong>L’élément « dynamique du risque » de la couche des zones de peuplement au niveau national (couche ZPN) s’appuie sur une analyse de données de télédétection et une modélisation spatiale entreprises par le Centre commun de recherche de la Commission européenne dans le cadre d’une étude mondiale des tendances en évolution du peuplement humain et de leur influence sur les risques liés aux catastrophes et le développement durable (couche du peuplement humain mondial).</strong></p>
-
-<p>Des grilles de population à haute résolution (250 m) et des modèles de classification des utilisations des terres à des intervalles de dix ans (1975, 1990, 2000 et 2015) fournissent un cadre pour évaluer la mesure dans laquelle les peuplements humains changent au chapitre de la densité et des profils spatiaux d’urbanisation. Ces ensembles de données du cadre sont combinées aux évaluations nationales disponibles des dangers liées aux tremblements de terre, tsunami, inondations, coulées de débris, feux de forêt et cyclones pour décerner comment la croissance de la population et les tendances en évolutions des changements aux utilisations des terres au cours des 40 dernières années contribuent aux profils toujours croissants des risques liés aux dangers naturels au Canada.</p>
-
-<p>Les indicateurs de l’exposition physique et de la sensibilité aux dangers sont déclarés au moyen du maillage de population de 250 m de la couche du peuplement humain mondial pour chaque époque temporelle. Les résultats de cette étude complètent une évaluation mondiale de l’exposition aux dangers naturels effectuée par le Centre commun de recherche dans le cadre de l’Atlas de la planète humaine de 2017 et fournissent des perspectives supplémentaires pour guider les efforts de planification locaux et régionaux sur le plan de la résilience aux catastrophes dans l’ensemble du Canada.</p>
-
-### Ressources de données
-
-<div id="nhsl_risk_dynamics_all_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_risk_dynamics_all_indicators" %}
-</div>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
