@@ -78,6 +78,7 @@ crossorigin=""></script>
     zoom: 4}),
     legend = L.control( { position: 'bottomright' } ),
     params = new URLSearchParams(window.location.search), // Get query paramaters
+    baseUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_",
     eqScenario = params.get( 'scenario' ), // Scenario name
     featureProperties = 'Sauid,sCt_Res90_b0', // Limit fetched properties for performance
     scenarioProp = 'sCt_Res90_b0', // Property for popup and feature colour
@@ -99,8 +100,8 @@ crossorigin=""></script>
     $("#scenarios").hide();
 
     var scenario = eqScenario.toLowerCase(); // API uses lowercase
-      geojsonUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_indicators_s/items?lang=en_US&f=json&limit=" + limit,
-      featureUrl = "https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_" + scenario + "_indicators_s/items/";
+      geojsonUrl = baseUrl + scenario + "_indicators_s/items?lang=en_US&f=json&limit=" + limit  + '&properties=' + featureProperties,
+      featureUrl = baseUrl + scenario + "_indicators_s/items/";
 
     // Turn scenario name into a title
     end = eqScenario.split( '_' )[ 1 ];
@@ -123,7 +124,7 @@ crossorigin=""></script>
 
     // Add progress modal to map before fetching geoJSON
     $( '#map' ).before( '<div id="modal"></div>' );
-    getData( geojsonUrl + '&properties=' + featureProperties );
+    getData( geojsonUrl );
 
     map.on( 'fullscreenchange', function () {
       map.invalidateSize();

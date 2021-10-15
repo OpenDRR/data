@@ -319,7 +319,7 @@ attributes:
     en: Expected number of collapsed buildings for the earthquake scenario
     fr: null
   format: 111
-  name: sD_Collapse
+  name: sDt_Collapse
 - description:
     en: Collapse Ratio Probability
     fr: null
@@ -835,3 +835,17 @@ attributes:
       recensement ou des territoires
   format: 
   name: sactype
+- description:
+    en: Land Use Class
+    fr: Catégorie d’utilisation des terres
+  detailed:
+    en: Assigned land use for the Settled Area (SAUID) based on population density,
+      census housing characteristics and NAICS industry codes. One of residential-high,
+      -medium, or -low density; mixed use; commercial industrial; or rural.
+    fr: 'Utilisation des terres attribuées de la zone habitée (SAUID) en fonction
+      de la densité de population, des caractéristiques des logements du recensement
+      et des codes industriels du SCIAN. L’une des catégories suivantes : résidentielle
+      à densité élevée, moyenne ou faible; utilisation mixte; commerciale et industrielle;
+      ou rurale'
+  name: landuse
+  format: 
