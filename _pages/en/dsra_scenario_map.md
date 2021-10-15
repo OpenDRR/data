@@ -9,7 +9,7 @@ subject:
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
 title: Earthquake Scenario Map
 lang: en
-altLangPage: ../fr/dsra_map.html
+altLangPage: ../fr/dsra_scenario_map.html
 nositesearch: true
 nomenu: true
 nofooter: true
@@ -49,6 +49,8 @@ crossorigin=""></script>
 
 <div id="map"></div>
 <div id="sidebar"></div>
+
+<div id="alert">Unable to load scenario</div>
 <div id="scenarios">
   <h5>Available scenarios:</h5>
   <ul>
@@ -161,7 +163,7 @@ crossorigin=""></script>
       }
     })
     .fail( function ( jqXHR, error ) {
-      alert( 'Unable to load scenario - ' + error );
+      $( '#alert' ).show();
       $( '#modal' ).remove();
       $( '#scenarios' ).show();
     });
@@ -327,3 +329,12 @@ crossorigin=""></script>
   }
 
 </script>
+
+<style>
+  #alert {
+    display: none;
+    background: rgb(220, 20, 20);
+    color: white;
+    padding: 5px;
+  }
+</style>
