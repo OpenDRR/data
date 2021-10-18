@@ -3,59 +3,30 @@ datasets:
     en: Human Settlement and Natural Hazards in Canada
     fr: Zones de peuplement et dangers naturels au Canada
   description:
-    en: "The Social Fabric component of the National Human Settlement Layer (NHSL)\
-      \ utilizes available Census demographic data to evaluate broad spatial patterns\
-      \ of vulnerability, and neighbourhood-level capacities to withstand and recover\
-      \ from disaster events based on characteristics of housing, family structure,\
-      \ individual autonomy and financial agency. Vulnerability and capacity threshold\
-      \ indicators help to identify underlying patterns of social inequity that may\
-      \ exist within a given community or region, and to address the question of who\
-      \ is likely to bear the greatest burden of risk following a disaster event.\
-      \ \nLevels of vulnerability for each component of the social vulnerability index\
-      \ are assessed using analytic methods adapted from the Cutter 'Hazards of Place\
-      \ Model' to screen and rank demographic variables based on their capacity to\
-      \ explain spatial patterns across a broad range of community archetypes including\
-      \ dense urban centres, surrounding suburban/exurban regions, and more distant\
-      \ rural and remote settlements. Composite indicators describing characteristics\
-      \ of housing conditions, family structure, individual autonomy and financial\
-      \ agency provide a means of comparing relative levels of vulnerability from\
-      \ one region to another across Canada and help identify specific neighbourhoods\
-      \ within which capacities to withstand and recover from disaster events may\
-      \ be strained. \nIndicators are reported at the Census Dissemination Area level\
-      \ and can be used in conjunction with information on specific hazard threats\
-      \ to identify both potential hotspots of concern within a community or region,\
-      \ and areas in which proactive investments in planning and capacity development\
-      \ may be effective in building disaster resilience and longer-term sustainability."
-    fr: L’élément « tissu social » de la couche des zones de peuplement
-      au niveau national (couche ZPN) utilise les données démographiques de recensement
-      disponibles pour évaluer les profils spatiaux généraux de la sensibilité
-      ainsi que la capacité des quartiers à résister aux événements catastrophiques,
-      et à s’en rétablir, en fonction des caractéristiques du logement, de la
-      structure familiale, de l’autonomie individuelle et des systèmes financiers.
-      Des indicateurs de la vulnérabilité et du seuil de capacité aident à cerner
-      les tendances sous-jacentes de l’inégalité sociale qui pourrait exister
-      au sein d’une collectivité ou d’une région donnée, et de trouver qui
-      est le plus susceptible d’avoir à assumer le plus grand fardeau de risque
-      après un événement catastrophique. Les niveaux de vulnérabilité de chaque
-      élément de l’indice de vulnérabilité sociale sont évalués au moyen de
-      méthodes analytiques adaptées du « modèle des dangers des lieux » de
-      Cutter pour filtrer et classer des variables démographiques en fonction de
-      leur capacité à expliquer les profils spatiaux pour un large éventail d’archétypes
-      communautaires, y compris les centres urbains à forte densité, les régions
-      suburbaines et rurbaines avoisinantes, et les peuplements ruraux et éloignés
-      plus distants. Des indicateurs composites décrivant les caractéristiques des
-      conditions de logement, de la structure familiale, de l’autonomie individuelle
-      et des systèmes financiers permettent de comparer les niveaux relatifs de vulnérabilité
-      d’une région à l’autre dans l’ensemble du Canada et d’identifier les
-      quartiers dans lesquels la capacité de résister à des événements catastrophiques,
-      et de s’en rétablir, peut être restreinte. Les indicateurs sont déclarés
-      au niveau des aires de diffusion du recensement et peuvent être utilisés en
-      conjonction avec des renseignements sur des menaces précises liées aux dangers
-      pour identifier les points chauds préoccupants potentiels au sein d’une collectivité
-      ou d’une région, et les zones dans lesquelles des investissements proactifs
-      dans la planification et le développement des capacités pourraient efficacement
-      contribuer à générer une résilience aux catastrophes et une durabilité
-      à plus long terme.
+    en: |
+        The National Human Settlement Layer (NHSL) is a collection of datasets that describe the physical and social characteristics of communities across Canada in the context of their vulnerability to natural hazards. Detailed information on land use, buildings, building asset values, people and community social vulnerability are provided at the approximate scale of neighbourhoods.\n
+        The Physical Exposure Layer component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
+        The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
+        These datasets have been developed to provide information about physical exposure and social vulnerability across Canada that can be used for quantitative risk assessment of natural hazards. The purpose is to support implementation of the Sendai Framework for Disaster Risk Reduction at the local, regional, and national scales. The information is not intended for use in site-specific studies.
+    fr: |
+        La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données qui décrivent les caractéristiques physiques et sociales des collectivités de l’ensemble du Canada en fonction de leur vulnérabilité aux dangers naturels. Des renseignements détaillés sur l’utilisation du sol, les bâtiments, la valeur des biens immobiliers, la population et la vulnérabilité sociale des collectivités sont fournis à l’échelle approximative des quartiers.\n
+        L’élément Exposition physique de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
+        L’élément Vulnérabilité sociale de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
+        Ces ensembles de données ont été élaborés pour fournir des renseignements sur l’exposition physique et la vulnérabilité sociale à travers le Canada qui peuvent être utilisés pour l’évaluation quantitative des risques naturels. L’objectif de ces ensembles de données consiste à appuyer la mise en œuvre du Cadre de Sendai pour la réduction des risques de catastrophe à l’échelle locale, régionale et nationale. L’information n’est pas destinée à être utilisée dans le cadre d’études propres à des sites.
+  id: nhsl
+  title:
+    en: Human Settlement and Natural Hazards in Canada
+    fr: Zones de peuplement et dangers naturels au Canada
+- collection:
+    en: Human Settlement and Natural Hazards in Canada
+    fr: Zones de peuplement et dangers naturels au Canada
+  description:
+    en: |
+        The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
+        The social vulnerability index and capacity threshold indicators help to identify underlying patterns of social vulnerability within a given community. The model includes six composite indicators that describe the estimated total social vulnerability, and vulnerability level that might arise due to housing conditions, family structure, individual autonomy and financial agency. The model provide a means of comparing relative levels of vulnerability from one region to another across Canada and help identify specific neighbourhoods within which capacities to withstand and recover from disaster events may be strained.
+    fr: |
+        L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
+        Les indicateurs de la vulnérabilité sociale et du seuil de capacité permettent de cerner les tendances sous-jacentes en matière de vulnérabilité sociale au sein d’une collectivité donnée. Le modèle comprend six indicateurs composites qui décrivent la vulnérabilité sociale totale estimée, ainsi que le niveau de vulnérabilité qui pourrait découler des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. Le modèle permet donc de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et de déterminer les quartiers dans lesquels la capacité de résister aux catastrophes, et de s’en rétablir, peut être restreinte.
   id: nhsl_social_fabric_indicators
   map_layer: '4'
   map_type: esri_rest
@@ -437,51 +408,18 @@ datasets:
     en: Human Settlement and Natural Hazards in Canada
     fr: Zones de peuplement et dangers naturels au Canada
   description:
-    en: "The Physical Exposure component of the National Human Settlement Layer (NHSL)\
-      \ includes a delineation of built-up areas and related functional land use classes\
-      \ for Census Dissemination Areas in urban centres and rural/remote communities\
-      \ across Canada. It provides detailed information on construction type, occupancy\
-      \ and design level for more than 9.1 million buildings; population dynamics\
-      \ at different times of day for 35.1 million people, and; capital asset valuation\
-      \ of buildings and contents totalling more than 8.3 trillion CAD$. \nThe building\
-      \ portfolio is classified using a combination of 36 construction taxonomies\
-      \ that include different types of wood, concrete, masonry, steel and prefabricated\
-      \ structures; and 33 occupancy classes that include a mix of residential, civic,\
-      \ commercial and industrial functional uses. Context-specific mapping schemes\
-      \ for each combination of land use, construction type and occupancy class are\
-      \ used to allocate a distribution of building classes that reflect the overall\
-      \ structural form and function of a given neighbourhood. Building populations\
-      \ at different times of day are estimated for standard workday hours when people\
-      \ are in offices, schools or other group facilities (9am-5pm); for morning and\
-      \ evening commute hours when people are in transit (7am-9am; 5pm-7pm), and;\
-      \ for evening hours when the majority of people are at home (7pm-7am). Capital\
-      \ asset valuation is based on industry replacement costs of building archetypes\
-      \ for representative regions across Canada. \nThe building inventory is aligned\
-      \ with international standards for multi-hazard risk assessment and is suitable\
-      \ for use in other land use assessment applications that may require specific\
-      \ information on the form and/or function of the built environment."
-    fr: "Le portefeuille des bâtiments est divisé en catégories selon une combinaison\
-      \ de 36 taxonomies de construction qui comprennent différents types de structures\
-      \ en bois, béton, maçonnerie ou acier et structures préfabriquées, et de\
-      \ 33 catégories d’occupation qui comprennent un mélange d’utilisations\
-      \ fonctionnelles résidentielles, civiques, commerciales et industrielles. \n\
-      Des modèles de cartographie propres au contexte pour chaque combinaison d’utilisation\
-      \ des terres, de type de construction et de catégorie d’occupation sont utilisés\
-      \ pour attribuer une distribution de catégories de bâtiments qui représente\
-      \ la forme structurelle et la fonction globales d’un quartier donné. Le nombre\
-      \ d’occupants des bâtiments à différents moments de la journée est estimé\
-      \ pour les heures de travail normales lorsque les gens sont dans les bureaux,\
-      \ les écoles ou d’autres installations de groupes (9 h à 17 h); pour les\
-      \ heures du matin et du soir lorsqu’ils se déplacent entre domicile et travail\
-      \ (7 h à 9 h et 17 h à 19 h); et pour les heures en soirée lorsque la majorité\
-      \ des gens sont chez eux (19 h à 7 h). L’évaluation des immobilisations\
-      \ est basée sur les coûts de remplacement pour l’industrie des archétypes\
-      \ de bâtiments des régions représentatives du Canada. \nL’inventaire des\
-      \ bâtiments cadre avec les normes internationales pour les évaluations des\
-      \ risques pour des dangers multiples et peut être utilisé dans d’autres\
-      \ applications d’évaluation de l’utilisation des terres qui pourraient\
-      \ nécessiter de l’information propre à la forme ou à la fonction de l’environnement\
-      \ bâti."
+    en: | 
+          The Physical Exposure component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
+          This model represents an inventory of more than 9.1 million buildings in Canada; population dynamics at different times of day for 35.1 million people, and; the capital value of building assets totalling more than 8.3 trillion CAD$.\n
+          Buildings are classified according to their construction type, occupancy, and age. These classes are derived from the standard North American  HAZUS  building  taxonomy and include 38 construction classes representing different types of wood, concrete, masonry, steel and prefabricated structures; 33 occupancy classes representing a mix of residential, civic, commercial and industrial land uses; and 4 age classes representing the assumed level of building design. The distribution of resulting ‘building archetypes’ are assigned to settled areas based on associated land-use and census characteristics.\n
+          Building populations at different times of day are estimated for standard daytime hours (9am-5pm); for morning and evening commute hours when people are in transit (7am-9am; 5pm-7pm), and; for nighttime hours when the majority of people are at home (7pm-7am).\n
+          The capital value of buildings assets is provided for structural and non-structural components of the building, as well as the potential building contents. Asset values are estimated based on industry replacement costs for representative regions across Canada.
+    fr: |
+          L’élément « Exposition physique » de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
+          Ce modèle comprend un inventaire de plus de 9,1 millions de bâtiments au Canada, la dynamique de la population à divers moments de la journée pour 35,1 millions de personnes et la valeur en capital de biens immobiliers totalisant plus de 8,3 billions de dollars canadiens.\n
+          Les bâtiments sont classés en fonction du type de construction, de l’occupation et de l’âge. Ces classes sont basées sur la taxonomie normalisée HAZUS des bâtiments de l’Amérique du Nord. On compte 38 classes de construction représentant différents types de bois, de béton, de maçonnerie, d’acier et de structures préfabriquées; 33 classes d’occupation représentant une variété d’utilisations résidentielles, civiques, commerciales et industrielles; et 4 classes d’âge représentant le niveau présumé de conception du bâtiment. La distribution des « archétypes de bâtiments » obtenus est attribuée à des régions habitées en fonction de l’utilisation du sol et des caractéristiques du recensement.\n
+          Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).\n
+          La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
   id: nhsl_physical_exposure_indicators
   map_layer: '5'
   map_type: esri_rest
