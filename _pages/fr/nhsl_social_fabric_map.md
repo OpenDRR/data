@@ -13,6 +13,7 @@ altLangPage: ../en/nhsl_social_fabric_map
 nositesearch: true
 nomenu: true
 nofooter: true
+sitesearch: false
 breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
@@ -72,8 +73,8 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/1',
 		simplifyFactor: 0.25,
 		precision: 5,
-    	minZoom: 10,
-		fields: [ 'OBJECTID', 'SVlt_Score' ]
+    minZoom: 10,
+		fields: ['OBJECTID', 'SVlt_Score']
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
 			buildLegend( metadata );
@@ -96,8 +97,8 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/2',
 		simplifyFactor: 0.25,
 		precision: 5,
-    	minZoom: 10,
-		fields: [ 'OBJECTID', 'VEt_Score' ]
+    minZoom: 10,
+		fields: ['OBJECTID', 'VEt_Score']
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
 			buildLegend( metadata );
@@ -120,8 +121,8 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/3',
 		simplifyFactor: 0.25,
 		precision: 5,
-    	minZoom: 10,
-		fields: [ 'OBJECTID', 'VHt_Score' ]
+    minZoom: 10,
+		fields: ['OBJECTID', 'VHt_Score']
   	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
 			buildLegend( metadata );
@@ -144,8 +145,8 @@ crossorigin=""></script>
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/4',
 		simplifyFactor: 0.25,
 		precision: 5,
-    	minZoom: 10,
-		fields: [ 'OBJECTID', 'VFt_Score' ]
+    minZoom: 10,
+		fields: ['OBJECTID', 'VFt_Score']
   	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
 			buildLegend( metadata );
@@ -163,13 +164,12 @@ crossorigin=""></script>
   	}).on('click', function ( e ) {
 		showAttributes( e, social_connectivity_score );
   	});
-
 	var individual_autonomy_score = L.esri.featureLayer({
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/5',
 		simplifyFactor: 0.25,
 		precision: 5,
-    	minZoom: 10,
-		fields: [ 'OBJECTID', 'VAt_Score' ]
+    minZoom: 10,
+		fields: ['OBJECTID', 'VAt_Score']
 	}).on( 'load', function ( e ) {
 		this.metadata( function ( error, metadata ) {
 			buildLegend( metadata );
