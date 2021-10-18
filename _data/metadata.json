@@ -1,7 +1,7 @@
 {
   "datasets": [
     {
-      "id": "dsra_acm7p3_leechriverfullfault_all_indicators",
+      "id": "dsra_acm7p3_leechriverfullfault_indicators",
       "collection": {
         "en": "Earthquake Scenarios",
         "fr": "Scénarios de tremblement de terre"
@@ -29,7 +29,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ca",
-          "link": "acm7p3_leechriverfullfault_all_indicators_b.gpkg.zip"
+          "link": "acm7p3_leechriverfullfault_indicators_b.gpkg.zip"
         },
         { 
           "name": "Leach River Full Fault - Magnitude 7.3 (Polygons)",
@@ -37,12 +37,12 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ca",
-          "link": "acm7p3_leechriverfullfault_all_indicators_s.gpkg.zip"
+          "link": "acm7p3_leechriverfullfault_indicators_s.gpkg.zip"
         }
       ]
     },
     {
-      "id": "nhsl_social_fabric_all_indicators",
+      "id": "nhsl_social_fabric_indicators",
       "collection": {
         "en": "Human Settlement and Natural Hazards in Canada",
         "fr": "Zones de peuplement et dangers naturels au Canada"
@@ -84,7 +84,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ca",
-          "link": "nhsl_social_fabric_all_indicators_s.zip"
+          "link": "nhsl_social_fabric_indicators_s.zip"
         },
         { 
           "name": "Data dictionary",
@@ -108,7 +108,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ab",
-          "link": "nhsl_social_fabric_all_indicators_s_ab.zip"
+          "link": "nhsl_social_fabric_indicators_s_ab.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (BC)",
@@ -116,7 +116,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "bc",
-          "link": "nhsl_social_fabric_all_indicators_s_bc.zip"
+          "link": "nhsl_social_fabric_indicators_s_bc.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (MB)",
@@ -124,7 +124,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "mb",
-          "link": "nhsl_social_fabric_all_indicators_s_mb.zip"
+          "link": "nhsl_social_fabric_indicators_s_mb.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (NB)",
@@ -132,7 +132,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nb",
-          "link": "nhsl_social_fabric_all_indicators_s_nb.zip"
+          "link": "nhsl_social_fabric_indicators_s_nb.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (NL)",
@@ -140,7 +140,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nl",
-          "link": "nhsl_social_fabric_all_indicators_s_nl.zip"
+          "link": "nhsl_social_fabric_indicators_s_nl.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (NS)",
@@ -148,7 +148,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ns",
-          "link": "nhsl_social_fabric_all_indicators_s_ns.zip"
+          "link": "nhsl_social_fabric_indicators_s_ns.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (NT)",
@@ -156,7 +156,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nt",
-          "link": "nhsl_social_fabric_all_indicators_s_nt.zip"
+          "link": "nhsl_social_fabric_indicators_s_nt.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (NU)",
@@ -164,7 +164,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nu",
-          "link": "nhsl_social_fabric_all_indicators_s_nu.zip"
+          "link": "nhsl_social_fabric_indicators_s_nu.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (ON)",
@@ -172,7 +172,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "on",
-          "link": "nhsl_social_fabric_all_indicators_s_on.zip"
+          "link": "nhsl_social_fabric_indicators_s_on.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (PE)",
@@ -180,7 +180,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "pe",
-          "link": "nhsl_social_fabric_all_indicators_s_pe.zip"
+          "link": "nhsl_social_fabric_indicators_s_pe.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (QC)",
@@ -188,7 +188,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "qc",
-          "link": "nhsl_social_fabric_all_indicators_s_qc.zip"
+          "link": "nhsl_social_fabric_indicators_s_qc.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (SK)",
@@ -196,7 +196,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "sk",
-          "link": "nhsl_social_fabric_all_indicators_s_sk.zip"
+          "link": "nhsl_social_fabric_indicators_s_sk.zip"
         },
         { 
           "name": "Social Fabric and Capacity Thresholds (YT)",
@@ -204,12 +204,12 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "yt",
-          "link": "nhsl_social_fabric_all_indicators_s_yt.zip"
+          "link": "nhsl_social_fabric_indicators_s_yt.zip"
         }
       ]
     },
     {
-      "id": "nhsl_hazard_threat_all_indicators",
+      "id": "nhsl_hazard_threat_indicators",
       "collection": {
         "en": "Human Settlement and Natural Hazards in Canada",
         "fr": "Zones de peuplement et dangers naturels au Canada"
@@ -267,7 +267,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ca",
-          "link": "nhsl_hazard_threat_all_indicators_s.zip"
+          "link": "nhsl_hazard_threat_indicators_s.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (Canada)",
@@ -275,7 +275,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ca",
-          "link": "nhsl_hazard_threat_all_indicators_b.zip"
+          "link": "nhsl_hazard_threat_indicators_b.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (AB)",
@@ -283,7 +283,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ab",
-          "link": "nhsl_hazard_threat_all_indicators_s_ab.zip"
+          "link": "nhsl_hazard_threat_indicators_s_ab.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (AB)",
@@ -291,7 +291,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ab",
-          "link": "nhsl_hazard_threat_all_indicators_b_ab.zip"
+          "link": "nhsl_hazard_threat_indicators_b_ab.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (BC)",
@@ -299,7 +299,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "bc",
-          "link": "nhsl_hazard_threat_all_indicators_s_bc.zip"
+          "link": "nhsl_hazard_threat_indicators_s_bc.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (BC)",
@@ -307,7 +307,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "bc",
-          "link": "nhsl_hazard_threat_all_indicators_b_bc.zip"
+          "link": "nhsl_hazard_threat_indicators_b_bc.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (MB)",
@@ -315,7 +315,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "mb",
-          "link": "nhsl_hazard_threat_all_indicators_s_mb.zip"
+          "link": "nhsl_hazard_threat_indicators_s_mb.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (MB)",
@@ -323,7 +323,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "mb",
-          "link": "nhsl_hazard_threat_all_indicators_b_mb.zip"
+          "link": "nhsl_hazard_threat_indicators_b_mb.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (NB)",
@@ -331,7 +331,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nb",
-          "link": "nhsl_hazard_threat_all_indicators_s_nb.zip"
+          "link": "nhsl_hazard_threat_indicators_s_nb.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (NB)",
@@ -339,7 +339,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nb",
-          "link": "nhsl_hazard_threat_all_indicators_b_nb.zip"
+          "link": "nhsl_hazard_threat_indicators_b_nb.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (NL)",
@@ -347,7 +347,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nl",
-          "link": "nhsl_hazard_threat_all_indicators_s_nl.zip"
+          "link": "nhsl_hazard_threat_indicators_s_nl.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (NL)",
@@ -355,7 +355,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nl",
-          "link": "nhsl_hazard_threat_all_indicators_b_nl.zip"
+          "link": "nhsl_hazard_threat_indicators_b_nl.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (NS)",
@@ -363,7 +363,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ns",
-          "link": "nhsl_hazard_threat_all_indicators_s_ns.zip"
+          "link": "nhsl_hazard_threat_indicators_s_ns.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (NS)",
@@ -371,7 +371,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ns",
-          "link": "nhsl_hazard_threat_all_indicators_b_ns.zip"
+          "link": "nhsl_hazard_threat_indicators_b_ns.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (NT)",
@@ -379,7 +379,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nt",
-          "link": "nhsl_hazard_threat_all_indicators_s_nt.zip"
+          "link": "nhsl_hazard_threat_indicators_s_nt.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (NT)",
@@ -387,7 +387,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nt",
-          "link": "nhsl_hazard_threat_all_indicators_b_nt.zip"
+          "link": "nhsl_hazard_threat_indicators_b_nt.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (NU)",
@@ -395,7 +395,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nu",
-          "link": "nhsl_hazard_threat_all_indicators_s_nu.zip"
+          "link": "nhsl_hazard_threat_indicators_s_nu.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (NU)",
@@ -403,7 +403,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nu",
-          "link": "nhsl_hazard_threat_all_indicators_b_nu.zip"
+          "link": "nhsl_hazard_threat_indicators_b_nu.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (ON)",
@@ -411,7 +411,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "on",
-          "link": "nhsl_hazard_threat_all_indicators_s_on.zip"
+          "link": "nhsl_hazard_threat_indicators_s_on.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (ON)",
@@ -419,7 +419,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "on",
-          "link": "nhsl_hazard_threat_all_indicators_b_on.zip"
+          "link": "nhsl_hazard_threat_indicators_b_on.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (PE)",
@@ -427,7 +427,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "pe",
-          "link": "nhsl_hazard_threat_all_indicators_s_pe.zip"
+          "link": "nhsl_hazard_threat_indicators_s_pe.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (PE)",
@@ -435,7 +435,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "pe",
-          "link": "nhsl_hazard_threat_all_indicators_b_pe.zip"
+          "link": "nhsl_hazard_threat_indicators_b_pe.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (QC)",
@@ -443,7 +443,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "qc",
-          "link": "nhsl_hazard_threat_all_indicators_s_qc.zip"
+          "link": "nhsl_hazard_threat_indicators_s_qc.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (QC)",
@@ -451,7 +451,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "qc",
-          "link": "nhsl_hazard_threat_all_indicators_b_qc.zip"
+          "link": "nhsl_hazard_threat_indicators_b_qc.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (SK)",
@@ -459,7 +459,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "sk",
-          "link": "nhsl_hazard_threat_all_indicators_s_sk.zip"
+          "link": "nhsl_hazard_threat_indicators_s_sk.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (SK)",
@@ -467,7 +467,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "sk",
-          "link": "nhsl_hazard_threat_all_indicators_b_sk.zip"
+          "link": "nhsl_hazard_threat_indicators_b_sk.zip"
         },
         { 
           "name": "Natural Hazard Threats polygon geometry (YT)",
@@ -475,7 +475,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "yt",
-          "link": "nhsl_hazard_threat_all_indicators_s_yt.zip"
+          "link": "nhsl_hazard_threat_indicators_s_yt.zip"
         },
         { 
           "name": "Natural Hazard Threats point geometry (YT)",
@@ -483,12 +483,12 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "yt",
-          "link": "nhsl_hazard_threat_all_indicators_b_yt.zip"
+          "link": "nhsl_hazard_threat_indicators_b_yt.zip"
         }
       ]
     },
     {
-      "id": "nhsl_physical_exposure_all_indicators",
+      "id": "nhsl_physical_exposure_indicators",
       "collection": {
         "en": "Human Settlement and Natural Hazards in Canada",
         "fr": "Zones de peuplement et dangers naturels au Canada"
@@ -530,7 +530,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ca",
-          "link": "nhsl_physical_exposure_all_indicators_s.zip"
+          "link": "nhsl_physical_exposure_indicators_s.zip"
         },
         { 
           "name": "Physical Exposure point geometry (Canada)",
@@ -538,7 +538,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ca",
-          "link": "nhsl_physical_exposure_all_indicators_b.zip"
+          "link": "nhsl_physical_exposure_indicators_b.zip"
         },
         { 
           "name": "Data dictionary",
@@ -562,7 +562,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ab",
-          "link": "nhsl_physical_exposure_all_indicators_s_ab.zip"
+          "link": "nhsl_physical_exposure_indicators_s_ab.zip"
         },
         { 
           "name": "Physical Exposure point geometry (AB)",
@@ -570,7 +570,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ab",
-          "link": "nhsl_physical_exposure_all_indicators_b_ab.zip"
+          "link": "nhsl_physical_exposure_indicators_b_ab.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (BC)",
@@ -578,7 +578,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "bc",
-          "link": "nhsl_physical_exposure_all_indicators_s_bc.zip"
+          "link": "nhsl_physical_exposure_indicators_s_bc.zip"
         },
         { 
           "name": "Physical Exposure point geometry (BC)",
@@ -586,7 +586,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "bc",
-          "link": "nhsl_physical_exposure_all_indicators_b_bc.zip"
+          "link": "nhsl_physical_exposure_indicators_b_bc.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (MB)",
@@ -594,7 +594,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "mb",
-          "link": "nhsl_physical_exposure_all_indicators_s_mb.zip"
+          "link": "nhsl_physical_exposure_indicators_s_mb.zip"
         },
         { 
           "name": "Physical Exposure point geometry (MB)",
@@ -602,7 +602,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "mb",
-          "link": "nhsl_physical_exposure_all_indicators_b_mb.zip"
+          "link": "nhsl_physical_exposure_indicators_b_mb.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (NB)",
@@ -610,7 +610,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nb",
-          "link": "nhsl_physical_exposure_all_indicators_s_nb.zip"
+          "link": "nhsl_physical_exposure_indicators_s_nb.zip"
         },
         { 
           "name": "Physical Exposure point geometry (NB)",
@@ -618,7 +618,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nb",
-          "link": "nhsl_physical_exposure_all_indicators_b_nb.zip"
+          "link": "nhsl_physical_exposure_indicators_b_nb.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (NL)",
@@ -626,7 +626,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nl",
-          "link": "nhsl_physical_exposure_all_indicators_s_nl.zip"
+          "link": "nhsl_physical_exposure_indicators_s_nl.zip"
         },
         { 
           "name": "Physical Exposure point geometry (NL)",
@@ -634,7 +634,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nl",
-          "link": "nhsl_physical_exposure_all_indicators_b_nl.zip"
+          "link": "nhsl_physical_exposure_indicators_b_nl.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (NS)",
@@ -642,7 +642,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ns",
-          "link": "nhsl_physical_exposure_all_indicators_s_ns.zip"
+          "link": "nhsl_physical_exposure_indicators_s_ns.zip"
         },
         { 
           "name": "Physical Exposure point geometry (NS)",
@@ -650,7 +650,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "ns",
-          "link": "nhsl_physical_exposure_all_indicators_b_ns.zip"
+          "link": "nhsl_physical_exposure_indicators_b_ns.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (NT)",
@@ -658,7 +658,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nt",
-          "link": "nhsl_physical_exposure_all_indicators_s_nt.zip"
+          "link": "nhsl_physical_exposure_indicators_s_nt.zip"
         },
         { 
           "name": "Physical Exposure point geometry (NT)",
@@ -666,7 +666,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nt",
-          "link": "nhsl_physical_exposure_all_indicators_b_nt.zip"
+          "link": "nhsl_physical_exposure_indicators_b_nt.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (NU)",
@@ -674,7 +674,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nu",
-          "link": "nhsl_physical_exposure_all_indicators_s_nu.zip"
+          "link": "nhsl_physical_exposure_indicators_s_nu.zip"
         },
         { 
           "name": "Physical Exposure point geometry (NU)",
@@ -682,7 +682,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "nu",
-          "link": "nhsl_physical_exposure_all_indicators_b_nu.zip"
+          "link": "nhsl_physical_exposure_indicators_b_nu.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (ON)",
@@ -690,7 +690,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "on",
-          "link": "nhsl_physical_exposure_all_indicators_s_on.zip"
+          "link": "nhsl_physical_exposure_indicators_s_on.zip"
         },
         { 
           "name": "Physical Exposure point geometry (ON)",
@@ -698,7 +698,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "on",
-          "link": "nhsl_physical_exposure_all_indicators_b_on.zip"
+          "link": "nhsl_physical_exposure_indicators_b_on.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (PE)",
@@ -706,7 +706,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "pe",
-          "link": "nhsl_physical_exposure_all_indicators_s_pe.zip"
+          "link": "nhsl_physical_exposure_indicators_s_pe.zip"
         },
         { 
           "name": "Physical Exposure point geometry (PE)",
@@ -714,7 +714,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "pe",
-          "link": "nhsl_physical_exposure_all_indicators_b_pe.zip"
+          "link": "nhsl_physical_exposure_indicators_b_pe.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (QC)",
@@ -722,7 +722,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "qc",
-          "link": "nhsl_physical_exposure_all_indicators_s_qc.zip"
+          "link": "nhsl_physical_exposure_indicators_s_qc.zip"
         },
         { 
           "name": "Physical Exposure point geometry (QC)",
@@ -730,7 +730,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "qc",
-          "link": "nhsl_physical_exposure_all_indicators_b_qc.zip"
+          "link": "nhsl_physical_exposure_indicators_b_qc.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (SK)",
@@ -738,7 +738,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "sk",
-          "link": "nhsl_physical_exposure_all_indicators_s_sk.zip"
+          "link": "nhsl_physical_exposure_indicators_s_sk.zip"
         },
         { 
           "name": "Physical Exposure point geometry (SK)",
@@ -746,7 +746,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "sk",
-          "link": "nhsl_physical_exposure_all_indicators_b_sk.zip"
+          "link": "nhsl_physical_exposure_indicators_b_sk.zip"
         },
         { 
           "name": "Physical Exposure polygon geometry (YT)",
@@ -754,7 +754,7 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "yt",
-          "link": "nhsl_physical_exposure_all_indicators_s_yt.zip"
+          "link": "nhsl_physical_exposure_indicators_s_yt.zip"
         },
         { 
           "name": "Physical Exposure point geometry (YT)",
@@ -762,12 +762,12 @@
           "format": "GPKG",
           "language": "en-fr",
           "region": "yt",
-          "link": "nhsl_physical_exposure_all_indicators_b_yt.zip"
+          "link": "nhsl_physical_exposure_indicators_b_yt.zip"
         }
       ]
     },
     {
-      "id": "psra_bc_all_indicators",
+      "id": "psra_bc_indicators",
       "collection": {
         "en": "National Seismic Risk Model",
         "fr": "Modèle national de risque sismique"
@@ -779,7 +779,7 @@
     }
     ,
     {
-      "id": "psra_bc_all_indicators",
+      "id": "psra_bc_indicators",
       "collection": {
         "en": "Earthquake Scenarios",
         "fr": "Scénarios de séismes"

@@ -73,7 +73,7 @@ breadcrumbs:
 
 ## Exposition physique
 
-{% assign phys_ex_set = site.data.nhsl.datasets | where: "id", "nhsl_physical_exposure_all_indicators" %}
+{% assign phys_ex_set = site.data.nhsl.datasets | where: "id", "nhsl_physical_exposure_indicators" %}
 {% assign phys_ex_text = phys_ex_set[0].description[page.lang] | split: '\n' %}
 {% assign para_text = phys_ex_text | slice: 1, phys_ex_text.size %}
 
@@ -92,8 +92,8 @@ breadcrumbs:
 
 ### Ressources de données
 
-<div id="nhsl_physical_exposure_all_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_physical_exposure_all_indicators" %}
+<div id="nhsl_physical_exposure_indicators">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_physical_exposure_indicators" %}
 </div>
 
 <hr>
@@ -102,7 +102,7 @@ breadcrumbs:
 
 ## Tissu social et seuils de capacité
 
-{% assign soc_fab_set = site.data.nhsl.datasets | where: "id", "nhsl_social_fabric_all_indicators" %}
+{% assign soc_fab_set = site.data.nhsl.datasets | where: "id", "nhsl_social_fabric_indicators" %}
 {% assign soc_fab_text = soc_fab_set[0].description[page.lang] | split: '\n' %}
 {% assign para_text = soc_fab_text | slice: 1, soc_fab_text.size %}
 
@@ -121,15 +121,15 @@ breadcrumbs:
 
 ### Ressources de données
 
-<div id="nhsl_social_fabric_all_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_all_indicators" %}
+<div id="nhsl_social_fabric_indicators">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_indicators" %}
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
         integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 
 <script>
-  let layers = [ 'nhsl_risk_dynamics_all_indicators', 'nhsl_social_fabric_all_indicators', 'nhsl_physical_exposure_all_indicators', 'nhsl_hazard_threat_all_indicators']
+  let layers = [ 'nhsl_risk_dynamics_indicators', 'nhsl_social_fabric_indicators', 'nhsl_physical_exposure_indicators', 'nhsl_hazard_threat_indicators']
   for ( l in layers ) {
     $( '#select-rgn-' + layers[l] ).on( 'change', function() {
       $( ".ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn" ).hide();
