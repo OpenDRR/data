@@ -91,8 +91,8 @@ breadcrumbs:
 
 ### Data Resources
 
-<div id="nhsl_physical_exposure_all_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_physical_exposure_all_indicators" %}
+<div id="nhsl_physical_exposure_indicators">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_physical_exposure_indicators" %}
 </div>
 
 <hr>
@@ -115,8 +115,8 @@ breadcrumbs:
 
 ### Data Resources
 
-<div id="nhsl_social_fabric_all_indicators">
-  {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_all_indicators" %}
+<div id="nhsl_social_fabric_indicators">
+  {% include nhsl-resources.html lang = page.lang layer = "nhsl_social_fabric_indicators" %}
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
