@@ -3,9 +3,31 @@ datasets:
     en: Human Settlement and Natural Hazards in Canada
     fr: Zones de peuplement et dangers naturels au Canada
   description:
-    en: "The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency. \nThe  social  vulnerability  index  and  capacity  threshold  indicators   help  to identify  underlying patterns of social vulnerability within a given community. The model includes six composite indicators that describe the estimated total social vulnerability, and vulnerability level that might arise due to housing conditions, family structure, individual autonomy and financial agency. The model provide a means of comparing relative levels of vulnerability from one region to another across Canada and help identify specific neighbourhoods within which capacities to withstand and recover from disaster events may be strained."
-    fr: "L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. \nLes indicateurs de la vulnérabilité sociale et du seuil de capacité permettent de cerner les tendances sous-jacentes en matière de vulnérabilité sociale au sein d’une collectivité donnée. Le modèle comprend six indicateurs composites qui décrivent la vulnérabilité sociale totale estimée, ainsi que le niveau de vulnérabilité qui pourrait découler des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. Le modèle permet donc de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et de déterminer les quartiers dans lesquels la capacité de résister aux catastrophes, et de s’en rétablir, peut être restreinte."
-  id: nhsl_social_fabric_all_indicators
+    en: |
+        The National Human Settlement Layer (NHSL) is a collection of datasets that describe the physical and social characteristics of communities across Canada in the context of their vulnerability to natural hazards. Detailed information on land use, buildings, building asset values, people and community social vulnerability are provided at the approximate scale of neighbourhoods.\n
+        The Physical Exposure Layer component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
+        The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
+        These datasets have been developed to provide information about physical exposure and social vulnerability across Canada that can be used for quantitative risk assessment of natural hazards. The purpose is to support implementation of the Sendai Framework for Disaster Risk Reduction at the local, regional, and national scales. The information is not intended for use in site-specific studies.
+    fr: |
+        La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données qui décrivent les caractéristiques physiques et sociales des collectivités de l’ensemble du Canada en fonction de leur vulnérabilité aux dangers naturels. Des renseignements détaillés sur l’utilisation du sol, les bâtiments, la valeur des biens immobiliers, la population et la vulnérabilité sociale des collectivités sont fournis à l’échelle approximative des quartiers.\n
+        L’élément Exposition physique de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
+        L’élément Vulnérabilité sociale de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
+        Ces ensembles de données ont été élaborés pour fournir des renseignements sur l’exposition physique et la vulnérabilité sociale à travers le Canada qui peuvent être utilisés pour l’évaluation quantitative des risques naturels. L’objectif de ces ensembles de données consiste à appuyer la mise en œuvre du Cadre de Sendai pour la réduction des risques de catastrophe à l’échelle locale, régionale et nationale. L’information n’est pas destinée à être utilisée dans le cadre d’études propres à des sites.
+  id: nhsl
+  title:
+    en: Human Settlement and Natural Hazards in Canada
+    fr: Zones de peuplement et dangers naturels au Canada
+- collection:
+    en: Human Settlement and Natural Hazards in Canada
+    fr: Zones de peuplement et dangers naturels au Canada
+  description:
+    en: |
+        The Social Vulnerability component of the National Human Settlement Layer (NHSL) includes information about broad spatial patterns of social vulnerability at the neighbourhood scale, and indicators about the capacities for a community to withstand and recover from disaster events based on intrinsic characteristics of housing, family structure, individual autonomy and financial agency.\n
+        The social vulnerability index and capacity threshold indicators help to identify underlying patterns of social vulnerability within a given community. The model includes six composite indicators that describe the estimated total social vulnerability, and vulnerability level that might arise due to housing conditions, family structure, individual autonomy and financial agency. The model provide a means of comparing relative levels of vulnerability from one region to another across Canada and help identify specific neighbourhoods within which capacities to withstand and recover from disaster events may be strained.
+    fr: |
+        L’élément « Vulnérabilité sociale » de la couche ZPN comprend des renseignements sur les grandes tendances spatiales en matière de vulnérabilité sociale à l’échelle du quartier, ainsi que des indicateurs sur la capacité d’une collectivité à résister aux catastrophes, et à s’en rétablir, en fonction des caractéristiques intrinsèques du logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers.\n
+        Les indicateurs de la vulnérabilité sociale et du seuil de capacité permettent de cerner les tendances sous-jacentes en matière de vulnérabilité sociale au sein d’une collectivité donnée. Le modèle comprend six indicateurs composites qui décrivent la vulnérabilité sociale totale estimée, ainsi que le niveau de vulnérabilité qui pourrait découler des conditions de logement, de la structure familiale, de l’autonomie individuelle et des systèmes financiers. Le modèle permet donc de comparer les niveaux relatifs de vulnérabilité d’une région à l’autre dans l’ensemble du Canada et de déterminer les quartiers dans lesquels la capacité de résister aux catastrophes, et de s’en rétablir, peut être restreinte.
+  id: nhsl_social_fabric_indicators
   map_layer: '4'
   map_type: esri_rest
   map_url:
@@ -26,7 +48,7 @@ datasets:
     type: Web Service
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s.zip
+    link: nhsl_social_fabric_indicators_s.zip
     name: Social Fabric and Capacity Thresholds (Canada)
     region: ca
     type: Dataset
@@ -44,79 +66,79 @@ datasets:
     type: Document
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_ab.zip
+    link: nhsl_social_fabric_indicators_s_ab.zip
     name: Social Fabric and Capacity Thresholds (AB)
     region: ab
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_bc.zip
+    link: nhsl_social_fabric_indicators_s_bc.zip
     name: Social Fabric and Capacity Thresholds (BC)
     region: bc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_mb.zip
+    link: nhsl_social_fabric_indicators_s_mb.zip
     name: Social Fabric and Capacity Thresholds (MB)
     region: mb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_nb.zip
+    link: nhsl_social_fabric_indicators_s_nb.zip
     name: Social Fabric and Capacity Thresholds (NB)
     region: nb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_nl.zip
+    link: nhsl_social_fabric_indicators_s_nl.zip
     name: Social Fabric and Capacity Thresholds (NL)
     region: nl
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_ns.zip
+    link: nhsl_social_fabric_indicators_s_ns.zip
     name: Social Fabric and Capacity Thresholds (NS)
     region: ns
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_nt.zip
+    link: nhsl_social_fabric_indicators_s_nt.zip
     name: Social Fabric and Capacity Thresholds (NT)
     region: nt
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_nu.zip
+    link: nhsl_social_fabric_indicators_s_nu.zip
     name: Social Fabric and Capacity Thresholds (NU)
     region: nu
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_on.zip
+    link: nhsl_social_fabric_indicators_s_on.zip
     name: Social Fabric and Capacity Thresholds (ON)
     region: 'on'
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_pe.zip
+    link: nhsl_social_fabric_indicators_s_pe.zip
     name: Social Fabric and Capacity Thresholds (PE)
     region: pe
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_qc.zip
+    link: nhsl_social_fabric_indicators_s_qc.zip
     name: Social Fabric and Capacity Thresholds (QC)
     region: qc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_sk.zip
+    link: nhsl_social_fabric_indicators_s_sk.zip
     name: Social Fabric and Capacity Thresholds (SK)
     region: sk
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_social_fabric_all_indicators_s_yt.zip
+    link: nhsl_social_fabric_indicators_s_yt.zip
     name: Social Fabric and Capacity Thresholds (YT)
     region: yt
     type: Dataset
@@ -180,7 +202,7 @@ datasets:
       \ résultats sont regroupés dans un index des menaces liées à des dangers\
       \ multiples pour aider à cerner les points chauds préoccupants dans l’ensemble\
       \ du Canada."
-  id: nhsl_hazard_threat_all_indicators
+  id: nhsl_hazard_threat_indicators
   map_layer: '6'
   map_type: esri_rest
   map_url:
@@ -213,169 +235,169 @@ datasets:
     type: Web Service
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s.zip
+    link: nhsl_hazard_threat_indicators_s.zip
     name: Natural Hazard Threats polygon geometry (Canada)
     region: ca
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b.zip
+    link: nhsl_hazard_threat_indicators_b.zip
     name: Natural Hazard Threats point geometry (Canada)
     region: ca
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_ab.zip
+    link: nhsl_hazard_threat_indicators_s_ab.zip
     name: Natural Hazard Threats polygon geometry (AB)
     region: ab
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_ab.zip
+    link: nhsl_hazard_threat_indicators_b_ab.zip
     name: Natural Hazard Threats point geometry (AB)
     region: ab
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_bc.zip
+    link: nhsl_hazard_threat_indicators_s_bc.zip
     name: Natural Hazard Threats polygon geometry (BC)
     region: bc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_bc.zip
+    link: nhsl_hazard_threat_indicators_b_bc.zip
     name: Natural Hazard Threats point geometry (BC)
     region: bc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_mb.zip
+    link: nhsl_hazard_threat_indicators_s_mb.zip
     name: Natural Hazard Threats polygon geometry (MB)
     region: mb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_mb.zip
+    link: nhsl_hazard_threat_indicators_b_mb.zip
     name: Natural Hazard Threats point geometry (MB)
     region: mb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_nb.zip
+    link: nhsl_hazard_threat_indicators_s_nb.zip
     name: Natural Hazard Threats polygon geometry (NB)
     region: nb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_nb.zip
+    link: nhsl_hazard_threat_indicators_b_nb.zip
     name: Natural Hazard Threats point geometry (NB)
     region: nb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_nl.zip
+    link: nhsl_hazard_threat_indicators_s_nl.zip
     name: Natural Hazard Threats polygon geometry (NL)
     region: nl
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_nl.zip
+    link: nhsl_hazard_threat_indicators_b_nl.zip
     name: Natural Hazard Threats point geometry (NL)
     region: nl
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_ns.zip
+    link: nhsl_hazard_threat_indicators_s_ns.zip
     name: Natural Hazard Threats polygon geometry (NS)
     region: ns
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_ns.zip
+    link: nhsl_hazard_threat_indicators_b_ns.zip
     name: Natural Hazard Threats point geometry (NS)
     region: ns
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_nt.zip
+    link: nhsl_hazard_threat_indicators_s_nt.zip
     name: Natural Hazard Threats polygon geometry (NT)
     region: nt
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_nt.zip
+    link: nhsl_hazard_threat_indicators_b_nt.zip
     name: Natural Hazard Threats point geometry (NT)
     region: nt
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_nu.zip
+    link: nhsl_hazard_threat_indicators_s_nu.zip
     name: Natural Hazard Threats polygon geometry (NU)
     region: nu
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_nu.zip
+    link: nhsl_hazard_threat_indicators_b_nu.zip
     name: Natural Hazard Threats point geometry (NU)
     region: nu
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_on.zip
+    link: nhsl_hazard_threat_indicators_s_on.zip
     name: Natural Hazard Threats polygon geometry (ON)
     region: 'on'
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_on.zip
+    link: nhsl_hazard_threat_indicators_b_on.zip
     name: Natural Hazard Threats point geometry (ON)
     region: 'on'
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_pe.zip
+    link: nhsl_hazard_threat_indicators_s_pe.zip
     name: Natural Hazard Threats polygon geometry (PE)
     region: pe
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_pe.zip
+    link: nhsl_hazard_threat_indicators_b_pe.zip
     name: Natural Hazard Threats point geometry (PE)
     region: pe
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_qc.zip
+    link: nhsl_hazard_threat_indicators_s_qc.zip
     name: Natural Hazard Threats polygon geometry (QC)
     region: qc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_qc.zip
+    link: nhsl_hazard_threat_indicators_b_qc.zip
     name: Natural Hazard Threats point geometry (QC)
     region: qc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_sk.zip
+    link: nhsl_hazard_threat_indicators_s_sk.zip
     name: Natural Hazard Threats polygon geometry (SK)
     region: sk
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_sk.zip
+    link: nhsl_hazard_threat_indicators_b_sk.zip
     name: Natural Hazard Threats point geometry (SK)
     region: sk
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_s_yt.zip
+    link: nhsl_hazard_threat_indicators_s_yt.zip
     name: Natural Hazard Threats polygon geometry (YT)
     region: yt
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_hazard_threat_all_indicators_b_yt.zip
+    link: nhsl_hazard_threat_indicators_b_yt.zip
     name: Natural Hazard Threats point geometry (YT)
     region: yt
     type: Dataset
@@ -386,9 +408,19 @@ datasets:
     en: Human Settlement and Natural Hazards in Canada
     fr: Zones de peuplement et dangers naturels au Canada
   description:
-    en: "The Physical Exposure component of the National Human settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas. \nThis model represents an inventory of more than 9.1 million buildings in Canada; population dynamics at different times of day for 35.1 million people, and; the capital value of building assets totalling more than 8.3 trillion CAD$. \nBuildings are classified according to their construction type, occupancy, and age. These classes are derived from the standard North American  HAZUS  building  taxonomy and include  38 construction   classes representing different types of wood, concrete, masonry, steel and prefabricated structures; 33 occupancy classes representing a mix of residential, civic, commercial and industrial land uses; and 4 age classes representing the assumed level of building design. The distribution of resulting ‘building archetypes’ are assigned to settled areas based on associated land-use and census characteristics. \nBuilding populations at different times of day are estimated for standard daytime hours (9am-5pm); for morning and evening commute hours when people are in transit (7am-9am; 5pm-7pm), and; for nighttime hours when the majority of people are at home (7pm-7am). \nThe capital value of buildings assets is provided for structural and non-structural components of the building, as well as the potential building contents. Asset values are estimated based on industry replacement costs for representative regions across Canada."
-    fr: "L’élément « Exposition physique » de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu). \nCe modèle comprend un inventaire de plus de 9,1 millions de bâtiments au Canada, la dynamique de la population à divers moments de la journée pour 35,1 millions de personnes et la valeur en capital de biens immobiliers totalisant plus de 8,3 billions de dollars canadiens. \nLes bâtiments sont classés en fonction du type de construction, de l’occupation et de l’âge. Ces classes sont basées sur la taxonomie normalisée HAZUS des bâtiments de l’Amérique du Nord. On compte 38 classes de construction représentant différents types de bois, de béton, de maçonnerie, d’acier et de structures préfabriquées; 33 classes d’occupation représentant une variété d’utilisations résidentielles, civiques, commerciales et industrielles; et 4 classes d’âge représentant le niveau présumé de conception du bâtiment. La distribution des « archétypes de bâtiments » obtenus est attribuée à des régions habitées en fonction de l’utilisation du sol et des caractéristiques du recensement. \nLe nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h). \nLa valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
-  id: nhsl_physical_exposure_all_indicators
+    en: | 
+          The Physical Exposure component of the National Human Settlement Layer (NHSL) includes a delineation of settled areas and related land use across Canada, as well as information about buildings, persons, and capital value of buildings assets (structure and contents) within those areas.\n
+          This model represents an inventory of more than 9.1 million buildings in Canada; population dynamics at different times of day for 35.1 million people, and; the capital value of building assets totalling more than 8.3 trillion CAD$.\n
+          Buildings are classified according to their construction type, occupancy, and age. These classes are derived from the standard North American  HAZUS  building  taxonomy and include 38 construction classes representing different types of wood, concrete, masonry, steel and prefabricated structures; 33 occupancy classes representing a mix of residential, civic, commercial and industrial land uses; and 4 age classes representing the assumed level of building design. The distribution of resulting ‘building archetypes’ are assigned to settled areas based on associated land-use and census characteristics.\n
+          Building populations at different times of day are estimated for standard daytime hours (9am-5pm); for morning and evening commute hours when people are in transit (7am-9am; 5pm-7pm), and; for nighttime hours when the majority of people are at home (7pm-7am).\n
+          The capital value of buildings assets is provided for structural and non-structural components of the building, as well as the potential building contents. Asset values are estimated based on industry replacement costs for representative regions across Canada.
+    fr: |
+          L’élément « Exposition physique » de la couche ZPN délimite les régions habitées de l’ensemble du Canada et l’utilisation du sol dans ces régions, en plus d’inclure des renseignements sur les bâtiments, la population et la valeur en capital des biens immobiliers (structure et contenu).\n
+          Ce modèle comprend un inventaire de plus de 9,1 millions de bâtiments au Canada, la dynamique de la population à divers moments de la journée pour 35,1 millions de personnes et la valeur en capital de biens immobiliers totalisant plus de 8,3 billions de dollars canadiens.\n
+          Les bâtiments sont classés en fonction du type de construction, de l’occupation et de l’âge. Ces classes sont basées sur la taxonomie normalisée HAZUS des bâtiments de l’Amérique du Nord. On compte 38 classes de construction représentant différents types de bois, de béton, de maçonnerie, d’acier et de structures préfabriquées; 33 classes d’occupation représentant une variété d’utilisations résidentielles, civiques, commerciales et industrielles; et 4 classes d’âge représentant le niveau présumé de conception du bâtiment. La distribution des « archétypes de bâtiments » obtenus est attribuée à des régions habitées en fonction de l’utilisation du sol et des caractéristiques du recensement.\n
+          Le nombre d’occupants des bâtiments à différents moments de la journée est estimé pour les trois périodes suivantes : le jour (de 9 h à 17 h), pendant les déplacements domicile-travail du matin et du soir (de 7 h à 9 h et de 17 h à 19 h) et la nuit, lorsque la majorité des gens sont à la maison (de 19 h à 7 h).\n
+          La valeur en capital des biens immobiliers est fournie pour les éléments structurels et non structurels des bâtiments, ainsi que pour le contenu potentiel du bâtiment. La valeur des biens est estimée en fonction des coûts de remplacement de l’industrie pour des régions représentatives du Canada."
+  id: nhsl_physical_exposure_indicators
   map_layer: '5'
   map_type: esri_rest
   map_url:
@@ -409,13 +441,13 @@ datasets:
     type: Web Service
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s.zip
+    link: nhsl_physical_exposure_indicators_s.zip
     name: Physical Exposure polygon geometry (Canada)
     region: ca
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b.zip
+    link: nhsl_physical_exposure_indicators_b.zip
     name: Physical Exposure point geometry (Canada)
     region: ca
     type: Dataset
@@ -433,157 +465,157 @@ datasets:
     type: Document
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_ab.zip
+    link: nhsl_physical_exposure_indicators_s_ab.zip
     name: Physical Exposure polygon geometry (AB)
     region: ab
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_ab.zip
+    link: nhsl_physical_exposure_indicators_b_ab.zip
     name: Physical Exposure point geometry (AB)
     region: ab
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_bc.zip
+    link: nhsl_physical_exposure_indicators_s_bc.zip
     name: Physical Exposure polygon geometry (BC)
     region: bc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_bc.zip
+    link: nhsl_physical_exposure_indicators_b_bc.zip
     name: Physical Exposure point geometry (BC)
     region: bc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_mb.zip
+    link: nhsl_physical_exposure_indicators_s_mb.zip
     name: Physical Exposure polygon geometry (MB)
     region: mb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_mb.zip
+    link: nhsl_physical_exposure_indicators_b_mb.zip
     name: Physical Exposure point geometry (MB)
     region: mb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_nb.zip
+    link: nhsl_physical_exposure_indicators_s_nb.zip
     name: Physical Exposure polygon geometry (NB)
     region: nb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_nb.zip
+    link: nhsl_physical_exposure_indicators_b_nb.zip
     name: Physical Exposure point geometry (NB)
     region: nb
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_nl.zip
+    link: nhsl_physical_exposure_indicators_s_nl.zip
     name: Physical Exposure polygon geometry (NL)
     region: nl
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_nl.zip
+    link: nhsl_physical_exposure_indicators_b_nl.zip
     name: Physical Exposure point geometry (NL)
     region: nl
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_ns.zip
+    link: nhsl_physical_exposure_indicators_s_ns.zip
     name: Physical Exposure polygon geometry (NS)
     region: ns
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_ns.zip
+    link: nhsl_physical_exposure_indicators_b_ns.zip
     name: Physical Exposure point geometry (NS)
     region: ns
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_nt.zip
+    link: nhsl_physical_exposure_indicators_s_nt.zip
     name: Physical Exposure polygon geometry (NT)
     region: nt
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_nt.zip
+    link: nhsl_physical_exposure_indicators_b_nt.zip
     name: Physical Exposure point geometry (NT)
     region: nt
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_nu.zip
+    link: nhsl_physical_exposure_indicators_s_nu.zip
     name: Physical Exposure polygon geometry (NU)
     region: nu
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_nu.zip
+    link: nhsl_physical_exposure_indicators_b_nu.zip
     name: Physical Exposure point geometry (NU)
     region: nu
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_on.zip
+    link: nhsl_physical_exposure_indicators_s_on.zip
     name: Physical Exposure polygon geometry (ON)
     region: 'on'
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_on.zip
+    link: nhsl_physical_exposure_indicators_b_on.zip
     name: Physical Exposure point geometry (ON)
     region: 'on'
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_pe.zip
+    link: nhsl_physical_exposure_indicators_s_pe.zip
     name: Physical Exposure polygon geometry (PE)
     region: pe
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_pe.zip
+    link: nhsl_physical_exposure_indicators_b_pe.zip
     name: Physical Exposure point geometry (PE)
     region: pe
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_qc.zip
+    link: nhsl_physical_exposure_indicators_s_qc.zip
     name: Physical Exposure polygon geometry (QC)
     region: qc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_qc.zip
+    link: nhsl_physical_exposure_indicators_b_qc.zip
     name: Physical Exposure point geometry (QC)
     region: qc
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_sk.zip
+    link: nhsl_physical_exposure_indicators_s_sk.zip
     name: Physical Exposure polygon geometry (SK)
     region: sk
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_sk.zip
+    link: nhsl_physical_exposure_indicators_b_sk.zip
     name: Physical Exposure point geometry (SK)
     region: sk
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_s_yt.zip
+    link: nhsl_physical_exposure_indicators_s_yt.zip
     name: Physical Exposure polygon geometry (YT)
     region: yt
     type: Dataset
   - format: GPKG
     language: en-fr
-    link: nhsl_physical_exposure_all_indicators_b_yt.zip
+    link: nhsl_physical_exposure_indicators_b_yt.zip
     name: Physical Exposure point geometry (YT)
     region: yt
     type: Dataset
