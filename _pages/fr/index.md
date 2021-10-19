@@ -39,10 +39,10 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
 </div>
 <hr>
 <div class="row mrgn-tp-xl mrgn-btm-xl">
-    <div class="col-md-4">
+    <div class="col-md-4 col-md-push-8">
         <img src="../assets/img/psra.png" class="img-rounded img-responsive full-width" alt="Image du Canada">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 col-md-pull-4">
         <h3>Modèle national de risque sismique <mark>Bientôt disponible</mark></h3>
         <p>Le modèle national de risque sismique pour le Canada présente un cadre structuré d'indicateurs qui profilent les dimensions physiques, sociales et économiques du risque sismique à l'échelle du quartier.</p>
         <a href="psra.html" class="btn btn-primary">Explorer la collection</a>

@@ -295,15 +295,15 @@ crossorigin=""></script>
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [10, 50, 100, 300],
-        labels = [' People Displaced', ' People Displaced', ' People Displaced', ' People Displaced'];
+        label = ' People Displaced';
 
     div.innerHTML = "<div style=\"padding: 3px;\"><b>People displaced after 90 days</b></div>";
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++ ) {
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i]) + '"></i> ' +
-            grades[i] + ( grades[i + 1] ? '&ndash;' + grades[i + 1] + labels[i] + '<br>' : '+' + labels[i]);
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i] + ( grades[i + 1] ? '&ndash;' + grades[i + 1] + label + '<br>' : '+' + label);
     }
 
     return div;

@@ -130,4 +130,7 @@ breadcrumbs:
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
         integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 
-<script src="../assets/script.js"></script>
+<script src="../assets/js/app.js"></script>
+<script>
+  showProv( [ "nhsl_physical_exposure_indicators", "nhsl_social_fabric_indicators" ] );
+</script>
