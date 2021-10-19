@@ -34,7 +34,7 @@ Welcome to the OpenDRR data download site. Here you will find the latest version
     <div class="col-md-8">
         <h3>Human Settlement in Canada</h3>
         <p>The National Human Settlement Layer (NHSL) is a collection of thematic datasets that describe the physical, social and economic characteristics of urban centres and rural/remote communities across Canada.</p>
-        <a href="nhsl.html" class="btn btn-primary">Explore</a>
+        <a href="{{ site.url }}/national-human-settlement/en/nhsl.html" class="btn btn-primary">Explore</a>
     </div>
 </div>
 <hr>
