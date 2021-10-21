@@ -114,28 +114,28 @@ breadcrumbs:
                   <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{ scenario.name }}.md" class="btn btn-primary">{{ btntxt }}</a></td>
               </tr>
               <tr>
-                  <td>Riskprofiler Page (Points)</td>
+                  <td>OGC API - Features (Points)</td>
                   <td class="hidden-xs">Web Service</td>
                   <td><span class="label HTML">HTML</span></td>
-                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_{{ scenario.name | downcase}}_indicators_b" class="btn btn-primary">{{ btntxt }}</a></td>
+                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_{{ scenario.name | downcase}}_indicators_b?lang=fr-CA" class="btn btn-primary">{{ btntxt }}</a></td>
               </tr>
               <tr>
-                  <td>Riskprofiler Page (Polygons)</td>
+                  <td>OGC API - Features (Polygons)</td>
                   <td class="hidden-xs">Web Service</td>
                   <td><span class="label HTML">HTML</span></td>
-                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_{{ scenario.name | downcase }}_indicators_s" class="btn btn-primary">{{ btntxt }}</a></td>
+                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_{{ scenario.name | downcase }}_indicators_s?lang=fr-CA" class="btn btn-primary">{{ btntxt }}</a></td>
               </tr>
-              <tr>
+              <!-- <tr>
                   <td>{{ scenario.title }} (Points)</td>
                   <td class="hidden-xs">Dataset</td>
                   <td><span class="label GPKG">GPKG</span></td>
                   <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{ scenario.name }}_indicators_b.gpkg.zip" class="btn btn-primary">{{ btntxt }}</a></td>
-                  </tr>
+              </tr>
               <tr>
                   <td>{{ scenario.title }} (Polygons)</td>
                   <td class="hidden-xs">Dataset</td><td><span class="label GPKG">GPKG</span></td>
                   <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{ scenario.name }}_indicators_s.gpkg.zip" class="btn btn-primary">{{ btntxt }}</a></td>
-              </tr>
+              </tr> -->
           </tbody>
       </table>
   </div>
