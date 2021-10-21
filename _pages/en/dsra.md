@@ -1,7 +1,7 @@
 ---
 authorName: Natural Resources Canada
 authorUrl:
-dateModified: 2021-05-07
+dateModified: 2021-10-21
 pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
@@ -39,6 +39,18 @@ breadcrumbs:
     </p>
     <div class="panel panel-primary mrgn-tp-sm">
       <div class="panel-heading">
+        <div class="panel-title">Datasets</div>
+      </div>
+      <ul class="list-group">
+      {% for scenario in site.data.dsra.scenarios %}
+        <li class="list-group-item">
+          <a href="#{{ scenario.name }}" style="display:block; width:inherit; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;">{{ scenario.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="panel panel-primary mrgn-tp-sm">
+      <div class="panel-heading">
         <div class="panel-title">Distribution contact</div>
       </div>
       <ul class="list-group">
@@ -52,21 +64,6 @@ breadcrumbs:
         </li>
       </ul>
     </div>
-  </div>
-</div>
-
-<h3>Completed Scenarios</h3>
-
-<div class="row">
-  <div class="col-md-12">
-    <iframe width="100%" height="480" frameborder="0" src="https://viewscreen.githubusercontent.com/view/geojson?url=https%3a%2f%2fraw.githubusercontent.com%2fDamonU2%2fearthquake-scenarios%2fgeojson-maps%2fFINISHED%2fFinishedScenarios.geojson" title="FinishedScenarios.geojson"></iframe>
-    <table style="width:100%; font-size:14px;">
-      <tr>
-        <td><img src="../assets/img/small.png" width='20'> Magnitude less than 6.0</td>
-        <td><img src="../assets/img/medium.png" width='25'> Magnitude 6.0 to 7.9</td>
-        <td><img src="../assets/img/large.png" width='30'> Magnitude 8.0 or greater</td>
-      </tr>
-    </table>
   </div>
 </div>
 
@@ -90,7 +87,8 @@ breadcrumbs:
 {% if page.lang == 'en' %}{% assign btntxt = "Access" %}{% else %}{% assign btntxt = "Accès" %}{% endif %}
 
 {% for scenario in site.data.dsra.scenarios %}
-  <h4 id={{ scenario.name }}>{{ scenario.title }}</h4>
+  <a name="{{ scenario.name }}"></a>
+  <h2 id={{ scenario.name }}>{{ scenario.title }}</h2>
   <p>
     <div class="card" style="float:left;margin:10px 20px 0px 0px;">
       <img src="https://github.com/OpenDRR/earthquake-scenarios/raw/master/FINISHED/{{ scenario.name }}.png" width="350" class="img-rounded img-responsive"/>
