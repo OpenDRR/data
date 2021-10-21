@@ -19,6 +19,8 @@ breadcrumbs:
     link: "/en"
   - title: "Human Settlement and Natural Hazards in Canada"
 ---
+<link href='../assets/css/app.css' rel='stylesheet'/>
+
 {% assign nhsl_set = site.data.nhsl.datasets | where: "id", "nhsl" %}
 {% assign nhsl_text = nhsl_set[0].description[page.lang] | split: '\n' %}
 {% assign para_text = nhsl_text | slice: 1, nhsl_text.size %}
@@ -129,38 +131,7 @@ breadcrumbs:
 <script src="https://code.jquery.com/jquery-1.12.2.min.js"
         integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
 
+<script src="../assets/js/app.js"></script>
 <script>
-  let layers = [ 'nhsl_risk_dynamics_indicators', 'nhsl_social_fabric_indicators', 'nhsl_physical_exposure_indicators', 'nhsl_hazard_threat_indicators']
-  for ( l in layers ) {
-    $( '#select-rgn-' + layers[l] ).on( 'change', function() {
-      $( ".ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn" ).hide();
-
-      $("select").val( $( this ).val() );
-
-      if ( $( this ).val() ) {
-        let p = '.' + $( this ).val() + ', .rgn';
-        $( p ).fadeIn();
-      }
-    });
-  }
+  showProv( [ "nhsl_physical_exposure_indicators", "nhsl_social_fabric_indicators" ] );
 </script>
-
-<style>
-
-.ab, .bc, .mb, .ns, .nl, .qc, .on, .nu, .yt, .nt, .sk, .pe, .nb, .rgn { display:none; }
-
-.GPKG {
-  color: #083c6c;
-  background-color: #e8f2f4;
-}
-
-.ESRI.REST {
-  color: #278400;
-  background-color: #d8eeca;
-}
-
-.EXCEL {
-  color: #f90;
-  background-color: #f9f4d4;
-}
-</style>

@@ -49,10 +49,23 @@ crossorigin=""></script>
 <link href='../assets/css/app.css' rel='stylesheet'/>
 
 <div id="map"></div>
+<div id="sidebar"></div>
+
+{% assign variables = '' %}
+{% for attribute in site.data.nhsl_social_fabric_attributes.attributes %}
+  {% capture variable %}
+  window['{{attribute.name}}' + 'Desc'] = '{{attribute.description[page.lang]}}';
+  window['{{attribute.name}}' + 'Detail'] = '{{attribute.detailed[page.lang]}}';
+  window['{{attribute.name}}' + 'Format'] = Number('{{attribute.format}}');
+  {% endcapture %}
+  {% assign variables = variables | append: variable %}
+{% endfor %}
 
 <script>
 
-	var tiles = L.tileLayer('//{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	{{variables}}
+
+	var tiles = L.tileLayer( '//{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	});
 
@@ -68,10 +81,17 @@ crossorigin=""></script>
 		});
 		$( '#modal' ).remove();
 	}).on( 'loading', function ( e ) {
-		$('#map').before('<div id="modal"></div>');
+		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
     	return L.Util.template( '<p>Score Total de Vulnérabilité Sociale: <strong>{SVlt_Score}</strong></p>', layer.feature.properties );
-  });
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, total_social_vulnerability_score );
+  	});
 
 	var financial_agency_score = L.esri.featureLayer({
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/2',
@@ -85,10 +105,17 @@ crossorigin=""></script>
 		});
 		$( '#modal' ).remove();
 	}).on( 'loading', function ( e ) {
-		$('#map').before('<div id="modal"></div>');
+		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
     	return L.Util.template( '<p>Note de l\'Agence Financière: <strong>{VEt_Score}</strong></p>', layer.feature.properties );
-  });
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, financial_agency_score );
+  	});
 
     var housing_condition_score = L.esri.featureLayer({
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/3',
@@ -102,10 +129,17 @@ crossorigin=""></script>
 		});
 		$( '#modal' ).remove();
 	}).on( 'loading', function ( e ) {
-		$('#map').before('<div id="modal"></div>');
+		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
     	return L.Util.template( '<p>Note de l\'état du logement: <strong>{VHt_Score}</strong></p>', layer.feature.properties );
-  });
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, housing_condition_score );
+  	});
 
     var social_connectivity_score = L.esri.featureLayer({
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/4',
@@ -119,11 +153,17 @@ crossorigin=""></script>
 		});
 		$( '#modal' ).remove();
 	}).on( 'loading', function ( e ) {
-		$('#map').before('<div id="modal"></div>');
+		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
     	return L.Util.template( '<p>Note de Connectivité Sociale: <strong>{VFt_Score}</strong></p>', layer.feature.properties );
-  });
-
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, social_connectivity_score );
+  	});
 	var individual_autonomy_score = L.esri.featureLayer({
 		url: 'https://maps-cartes.services.geo.ca/server_serveur/rest/services/NRCan/nhsl_fr/MapServer/5',
 		simplifyFactor: 0.25,
@@ -139,6 +179,13 @@ crossorigin=""></script>
 		$( '#map' ).before( '<div id="modal"></div>' );
 	}).bindPopup( function ( layer ) {
     	return L.Util.template( '<p>Note d\'Autonomie Individuelle: <strong>{VAt_Score}</strong></p>', layer.feature.properties );
+	}).on('add', function ( e ) {
+    	if ( oldId && oldLayer) {
+		  $( '#sidebar' ).html( '' );
+      	  oldLayer.resetFeatureStyle( oldId );
+    	}
+  	}).on('click', function ( e ) {
+		showAttributes( e, individual_autonomy_score );
   	});
 
   var map = L.map( 'map', {
@@ -169,6 +216,82 @@ crossorigin=""></script>
 
   total_social_vulnerability_score.addTo( map );
 
+  var oldId;
+  var oldLayer;  
+
+  function showAttributes( e, current_layer ) {
+
+    current_layer.resetFeatureStyle( oldId );
+
+    oldId = e.layer.feature.id;
+    oldLayer = current_layer;
+
+    current_layer.setFeatureStyle(e.layer.feature.id, {
+      fillColor: 'red',
+      color: 'red',
+      weight: 3,
+      fillOpacity: 0.5
+    });
+      
+    current_layer.query()
+      .where("OBJECTID = " + e.layer.feature.id )
+      .run( function( error, resp ) {
+
+        let props = resp.features[0].properties,
+          string = '<table class="table table-striped table-responsive"><tr>';
+
+          counter = 1;
+          for ( const key in props ) {
+
+            desc = window[key + 'Desc'];
+            detail = window[key + 'Detail']
+            format = window[key + 'Format']
+            value = props[key]
+
+            if ( format && value ) {
+              if ( format === 444 ) {
+                value = value.toLocaleString(undefined, {style:'currency', currency:'USD'});
+              }
+              else if ( format === 111 ) {
+                value = value.toLocaleString(undefined, { maximumFractionDigits: 0 })
+              }
+              else if ( format === 555 ) {
+                value *= 100
+                value = value.toLocaleString(undefined, { maximumFractionDigits: 2 });
+                value += '%';
+              }
+              else if ( format < 0 ) {
+                mult = Math.abs(format);
+                rounded = Math.round(value / (10 ** mult)) * 10 ** mult;
+                value = rounded.toLocaleString(undefined);
+              }
+              else if ( format > 0 ) {
+                value = value.toLocaleString(undefined, { maximumFractionDigits: format });
+              }
+
+              string +=
+              '<td class="attr"><span class="prop" title="' + detail + '">' + desc + ' - ' + key + '</span><span class="val">' + value + '</span></td>';
+            }
+            else if ( key === 'OBJECTID' || key === 'SHAPE_Length' || key === 'SHAPE_Area' ) {}
+			else if ( desc ) {
+              string +=
+                '<td class="attr"><span class="prop" title="' + detail + '">' + desc + '</span><span class="val">' + value + '</span></td>';
+            }
+            else {
+              string +=
+              '<td class="attr"><span class="prop">' + key + '</span><span class="val">' + value + '</span></td>';
+            }
+            if ( counter % 3 === 0) {
+                string += '</tr><tr>';
+              }
+            counter += 1;
+          }
+        string += '</tr></table>';
+        $( '#sidebar' ).html( '<h3>Propriétés de la Zone Sélectionnée</h3>' + string );
+
+      });
+  }
+
   function buildLegend( metadata ) {
 
 	map.removeControl(legend);
@@ -187,8 +310,8 @@ crossorigin=""></script>
 
 		for ( var i = 0; i < renderers.length; i++ ) {
 			div.innerHTML +=
-			'<div style="white-space: nowrap;margin-top: 2px;"><i style="background:rgb(' + renderers[i]['symbol'].color[0] + ',' + renderers[i]['symbol'].color[1] + ',' + renderers[i]['symbol'].color[2] + ',' + renderers[i]['symbol'].color[3] + ');border-color:rgb(' + renderers[i]['symbol']['outline'].color[0] + ',' + renderers[i]['symbol']['outline'].color[1] + ',' + renderers[i]['symbol']['outline'].color[2]+ ',' + renderers[i]['symbol']['outline'].color[3] + ');border-width:' + renderers[i]['symbol']['outline'].width + 'px;"></i> ' +
-			renderers[i]['label'] + '</div>';
+			'<div style="white-space: nowrap;margin-top: 2px;"><i style="background:rgb( ' + renderers[i][ 'symbol' ].color[0] + ',' + renderers[i][ 'symbol' ].color[1] + ',' + renderers[i][ 'symbol' ].color[2] + ',' + renderers[i][ 'symbol' ].color[3] + ' );border-color:rgb( ' + renderers[i][ 'symbol' ][ 'outline' ].color[0] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[1] + ',' + renderers[i][ 'symbol' ][ 'outline' ].color[2]+ ',' + renderers[i][ 'symbol' ][ 'outline' ].color[3] + ' );border-width:' + renderers[i][ 'symbol' ][ 'outline' ].width + 'px;"></i> ' +
+			renderers[i][ 'label' ] + '</div>';
 		}
 
 		return div;

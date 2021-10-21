@@ -20,6 +20,8 @@ breadcrumbs:
   - title: "Earthquake Scenarios"
 ---
 
+<link href='../assets/css/app.css' rel='stylesheet'/>
+
 <div class="row">
   <div class="col-md-8">
     <p><strong>The National Earthquake Scenario Catalogue, presents the probable shaking, damage, loss and consequences from hypothetical earthquakes that could impact Canadians.</strong></p>
@@ -88,8 +90,21 @@ breadcrumbs:
 {% if page.lang == 'en' %}{% assign btntxt = "Access" %}{% else %}{% assign btntxt = "Accès" %}{% endif %}
 
 {% for scenario in site.data.dsra.scenarios %}
-  <h4 id={{scenario.name}}>{{scenario.title}}</h4>
-  <p style="word-break: break-word;">{{scenario.description[page.lang]}}</p>
+  <h4 id={{ scenario.name }}>{{ scenario.title }}</h4>
+  <p>
+    <div class="card" style="float:left;margin:10px 20px 0px 0px;">
+      <img src="https://github.com/OpenDRR/earthquake-scenarios/raw/master/FINISHED/{{ scenario.name }}.png" width="350" class="img-rounded img-responsive"/>
+      <div class="card-body">
+        <a href="dsra_scenario_map.html?scenario={{ scenario.name }}" class="btn btn-primary btn-lg btn-block mrgn-tp-sm" role="button">
+         {% if page.lang == 'en' %} View on Map {% else %} Voir sur la carte {% endif %}
+        </a>
+      </div>
+      <br>
+    </div>
+    <div class="scenario-desc" style="word-break: break-word;">
+      {{ scenario.description[page.lang] }}
+    </div>
+  </p>
   <div>
       <table class="table table-striped table-responsive">
           <tbody>
@@ -98,56 +113,49 @@ breadcrumbs:
                   <td>GitHub repository</td>
                   <td class="hidden-xs">Document</td>
                   <td><span class="label HTML">HTML</span></td>
-                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{scenario.name}}.md" class="btn btn-primary">{{btntxt}}</a></td>
+                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{ scenario.name }}.md" class="btn btn-primary">{{ btntxt }}</a></td>
               </tr>
               <tr>
                   <td>Riskprofiler Page (Points)</td>
                   <td class="hidden-xs">Web Service</td>
                   <td><span class="label HTML">HTML</span></td>
-                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/dsra_{{scenario.name}}_indicators_b" class="btn btn-primary">{{btntxt}}</a></td>
+                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_{{ scenario.name | downcase }}_indicators_b" class="btn btn-primary">{{ btntxt }}</a></td>
               </tr>
               <tr>
                   <td>Riskprofiler Page (Polygons)</td>
                   <td class="hidden-xs">Web Service</td>
                   <td><span class="label HTML">HTML</span></td>
-                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/dsra_{{scenario.name}}_indicators_s" class="btn btn-primary">{{btntxt}}</a></td>
+                  <td><a href="https://geo-api.stage.riskprofiler.ca/collections/opendrr_dsra_{{ scenario.name | downcase }}_indicators_s" class="btn btn-primary">{{ btntxt }}</a></td>
               </tr>
               <tr>
-                  <td>{{scenario.title}} (Points)</td>
+                  <td>{{ scenario.title }} (Points)</td>
                   <td class="hidden-xs">Dataset</td>
                   <td><span class="label GPKG">GPKG</span></td>
-                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{scenario.name}}_indicators_b.gpkg.zip" class="btn btn-primary">{{btntxt}}</a></td>
+                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{ scenario.name }}_indicators_b.gpkg.zip" class="btn btn-primary">{{ btntxt }}</a></td>
                   </tr>
               <tr>
-                  <td>{{scenario.title}} (Polygons)</td>
+                  <td>{{ scenario.title }} (Polygons)</td>
                   <td class="hidden-xs">Dataset</td><td><span class="label GPKG">GPKG</span></td>
-                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{scenario.name}}_indicators_s.gpkg.zip" class="btn btn-primary">{{btntxt}}</a></td>
+                  <td><a href="https://github.com/OpenDRR/earthquake-scenarios/blob/master/FINISHED/{{ scenario.name }}_indicators_s.gpkg.zip" class="btn btn-primary">{{ btntxt }}</a></td>
               </tr>
           </tbody>
       </table>
   </div>
 {% endfor %}
 
-<style>
+<script>
 
-.GPKG {
-  color: #083c6c;
-  background-color: #e8f2f4;
-}
+  var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig,
+    descriptions = document.getElementsByClassName('scenario-desc');
 
-.ESRI.REST {
-  color: #278400;
-  background-color: #d8eeca;
-}
+  for (let i = 0; i < descriptions.length; i++) {
+    descriptions[i].innerHTML = urlify( descriptions[i].innerHTML );
+  }
 
-.EXCEL {
-  color: #f90;
-  background-color: #f9f4d4;
-}
+  function urlify( text ) {
+    return text.replace( urlRegex, function( url ) {
+      return '<a href="' + url + '">' + url + '</a>';
+    })
+  }
 
-.HTML {
-  color: #FF0000;
-  background-color: #FFCCCC;
-}
-
-</style>
+</script>
