@@ -7,21 +7,21 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: Earthquake Scenario Map
-lang: en
-altLangPage: ../fr/dsra_scenario_map.html
+title: Carte des scénarios de tremblement de terre
+lang: fr
+altLangPage: ../en/dsra_scenario_map.html
 nositesearch: true
 nomenu: true
 nofooter: true
 breadcrumbs:
   - title: "OpenDRR"
     link: "https://www.github.com/OpenDRR/"
-  - title: "OpenDRR Downloads"
-    link: "/en"
-  - title: "Earthquake Scenarios"
-    link: "/en/dsra"
-  - title: "Earthquake Scenario Map"
-    link: "/en/dsra_scenario_map"
+  - title: "Téléchargements de OpenDRR"
+    link: "/fr"
+  - title: "Scénarios de tremblement de terre"
+    link: "/fr/dsra"
+  - title: "Carte des scénarios de tremblement de terre"
+    link: "/fr/dsra_scenario_map"
 ---
 <!-- Load Leaflet from CDN -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -50,9 +50,9 @@ crossorigin=""></script>
 <div id="map"></div>
 <div id="sidebar"></div>
 
-<div id="alert">Unable to load scenario</div>
+<div id="alert">Impossible de charger le scénario</div>
 <div id="scenarios">
-  <h5>Available scenarios:</h5>
+  <h5>Scénarios disponibles:</h5>
   <ul>
     {% for scenario in site.data.dsra.scenarios %}
       <li><a href="{{ context.environments.first["page"]["url"] }}?scenario={{scenario.name}}"><small>{{ scenario.title }}</small></a></li>
@@ -138,7 +138,7 @@ crossorigin=""></script>
     var nxt_lnk;
 
     $.getJSON( url, function ( data ) {
-      
+
       geojsonLayer.addData( data );
 
       for ( var l in data.links ) {
@@ -148,7 +148,7 @@ crossorigin=""></script>
           break;
         }
       }
-      
+
       // if next link continue loading data
       if ( nxt_lnk ) {
         getData( nxt_lnk );
@@ -273,10 +273,9 @@ crossorigin=""></script>
             //try again
             $.ajax( this );
             return;
-        }   
-        console.log( "Doh! " + error )    
+        }
+        console.log( "Doh! " + error )
         return;
-        
         });
       }
     });
@@ -294,9 +293,9 @@ crossorigin=""></script>
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [0, 10, 50, 100, 300],
-        label = ' People Displaced';
+        label = ' Personnes déplacées';
 
-    div.innerHTML = "<div style=\"padding: 3px;\"><b>People displaced after 90 days</b></div>";
+    div.innerHTML = "<div style=\"padding: 3px;\"><b>Personnes déplacées après 90 jours</b></div>";
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++ ) {
