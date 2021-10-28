@@ -56,7 +56,7 @@ Welcome to the OpenDRR data download site. Here you will find the latest version
     <div class="col-md-8">
         <h3>Earthquake Scenarios</h3>
         <p>National Earthquake Scenario Catalogue, which presents the probable shaking, damage, loss and consequences from hypothetical earthquakes that could impact Canadians.</p>
-      <a href="dsra.html" class="btn btn-primary">Explore</a>
+      <a href="{{ site.url }}/earthquake-scenarios/en" class="btn btn-primary">Explore</a>
     </div>
 </div>
 
