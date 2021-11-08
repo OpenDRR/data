@@ -32,9 +32,9 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
         <img src="../assets/img/nhsl.png" class="img-rounded img-responsive full-width" alt="Image du Canada">
     </div>
     <div class="col-md-8">
-        <h3>Zones de peuplement au Canada</h3>
+        <h3>Zones de peuplement au Canada</h3><mark>Bientôt disponible</mark>
         <p>La couche des zones de peuplement au niveau national (couche ZPN) est une collection d’ensembles de données thématiques qui décrivent les caractéristiques physiques, sociales et économiques des centres urbains et des collectivités rurales et éloignées du Canada.</p>
-        <a href="nhsl.html" class="btn btn-primary">Explorer la collection</a>
+        <a href="{{ site.url }}/national-human-settlement/fr" class="btn btn-primary" disabled>Explorer la collection</a>
     </div>
 </div>
 <hr>
@@ -43,9 +43,9 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
         <img src="../assets/img/psra.png" class="img-rounded img-responsive full-width" alt="Image du Canada">
     </div>
     <div class="col-md-8 col-md-pull-4">
-        <h3>Modèle national de risque sismique <mark>Bientôt disponible</mark></h3>
+        <h3>Modèle national de risque sismique</h3><mark>Bientôt disponible</mark>
         <p>Le modèle national de risque sismique pour le Canada présente un cadre structuré d'indicateurs qui profilent les dimensions physiques, sociales et économiques du risque sismique à l'échelle du quartier.</p>
-        <a href="psra.html" class="btn btn-primary">Explorer la collection</a>
+        <a href="psra.html" class="btn btn-primary" disabled>Explorer la collection</a>
     </div>
 </div>
 <hr>
@@ -56,7 +56,7 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
     <div class="col-md-8">
         <h3>Scénarios de tremblement de terre</h3>
         <p>Catalogue national de scénarios de tremblement de terre, qui présente les secousses, les dommages, les pertes et les conséquences probables de tremblements de terre hypothétiques qui pourraient frapper la population canadienne.</p>
-        <a href="dsra.html" class="btn btn-primary">Explorer la collection</a>
+        <a href="{{ site.url }}/earthquake-scenarios/fr" class="btn btn-primary">Explorer la collection</a>
     </div>
 </div>
 
