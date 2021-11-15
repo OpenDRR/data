@@ -19,9 +19,6 @@ breadcrumbs:
     link: "/fr"
   - title: "Le modèle national de risque sismique pour le Canada"
 ---
-
-<link href='../assets/css/app.css' rel='stylesheet'/>
-
 <div class="row">
   <div class="col-md-8">
     <p><strong>Le modèle national de risque sismique pour le Canada présente un cadre structuré d'indicateurs qui profilent les dimensions physiques, sociales et économiques du risque sismique à l'échelle du quartier.</strong></p>
