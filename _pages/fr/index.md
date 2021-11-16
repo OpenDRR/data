@@ -45,7 +45,7 @@ Bienvenue sur le site de téléchargement de données OpenDRR. Vous trouverez ic
     <div class="col-md-8 col-md-pull-4">
         <h3>Modèle national de risque sismique</h3><mark>Bientôt disponible</mark>
         <p>Le modèle national de risque sismique pour le Canada présente un cadre structuré d'indicateurs qui profilent les dimensions physiques, sociales et économiques du risque sismique à l'échelle du quartier.</p>
-        <a href="psra.html" class="btn btn-primary" disabled>Explorer la collection</a>
+        <a href="psra.html" class="btn btn-primary disabled" disabled>Explorer la collection</a>
     </div>
 </div>
 <hr>
