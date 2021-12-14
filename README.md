@@ -1,6 +1,6 @@
-# data
+<table><tr><td><strong>NOTE: this repository is now archived. Please see <a href="https://github.com/OpenDRR/downloads">OpenDRR/downloads</a></strong></td></tr></table>
 
-NOTE: this repository is now archived. Please see [OpenDRR/downloads](https://github.com/OpenDRR/downloads)
+# data
 
 All products are released under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada)
 
@@ -53,9 +53,9 @@ Project Link: [https://opendrr.github.io](https://opendrr.github.io)
 
 ---
 
-# data
+<table><tr><td><strong>NOTE: ce dépôt est maintenant archivé. Veuillez voir <a href="https://github.com/OpenDRR/downloads">OpenDRR/downloads</a></strong></td></tr></table>
 
-NOTE : ce dépôt est maintenant archivé. Veuillez voir [OpenDRR/downloads](https://github.com/OpenDRR/downloads)
+# data
 
 Tous les produits sont publiés sous la [licence du gouvernement ouvert – Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada)
 
